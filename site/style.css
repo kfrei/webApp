@@ -2,15 +2,24 @@
 	box-sizing: border-box;
 	margin: 0; 
 	padding: 0;
+	overflow: hidden;
+	clear: both;
 	font-family: Helvetica, Arial;
 	font-weight: 100;
 	font-size: 110%;
+
 }
 
 
 h1 {
 	color: red;
 	font-size: 45px;
+	text-align: center;
+}
+p{
+	margin-left: 20%;
+	margin-right: 20%;
+
 }
 
 #top {
