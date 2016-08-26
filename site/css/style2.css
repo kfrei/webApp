@@ -48,7 +48,7 @@ h1 {
 
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
 
 .col-md-4.col-left {
 	margin-left: 11.11%;
@@ -64,8 +64,10 @@ h1 {
 
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
-
+@media (min-width: 769px) and (max-width: 992px) {
+p{
+	text-align: left;
+}
 .col-sm-5.col-left {
 	margin-left: 5.55%;
 	margin-right: 0;
@@ -77,5 +79,19 @@ h1 {
 	padding: 0;
 	color: crimson;
 } 
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+p{
+	text-align: left;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+p{
+	text-align: left;
+}
 
 }
