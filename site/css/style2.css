@@ -48,7 +48,7 @@ h1 {
 
 }
 
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
 
 .col-md-4.col-left {
 	margin-left: 11.11%;
@@ -64,7 +64,7 @@ h1 {
 
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 991px) {
 p{
 	text-align: left;
 }
