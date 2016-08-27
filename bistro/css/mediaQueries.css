@@ -1,3 +1,6 @@
+
+
+/*
 @media (min-width: 1681px) and (max-width: 1920px)  {
 
 }
@@ -5,24 +8,59 @@
 @media (min-width: 1367px) and (max-width: 1680px) {
 
 }
+*/
 
-@media (min-width: 1201px) and (max-width: 1366px) {
-
-}
-
-@media (min-width: 1025px)and (max-width: 1200px) {
+@media (min-width: 1200px) {
 
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+	#logo-img {
+	  background: url('../images/restaurant-logo_medium.png') no-repeat;
+	  width: 100px;
+	  height: 100px;
+	  margin: 5px 5px 5px 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
 
 }
 
-@media (min-width: 481px)  and (max-width: 768px) {
+@media (max-width: 767px) {
 
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
 
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+
+	.navbar-brand p { /* Kosher cert */
+	  	font-size: .6em;
+	 	margin-top: 12px;
+	}
+
+	.navbar-brand p img { /* Star K*/
+		height: 20px;
+	}
+
+	#collapsable-nav a {
+		font-size: 1.3em;
+	}
+		#collapsable-nav a span {
+		font-size: 0.9em;
+		margin-right: 5px;
+	}
 }
+
+/*
 
 @media  (min-width: 300px) and (max-width: 480px) {
 
 }
+
+*/
