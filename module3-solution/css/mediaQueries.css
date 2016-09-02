@@ -64,6 +64,8 @@
 
 
 @media (max-width: 479px) {
-
+  article {
+      margin: 0 20px;
+    }
 }
 
