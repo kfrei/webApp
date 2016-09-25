@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*
+    overflow: auto;
+    clear: both;
+    font-family: 'Oxygen','Lato','Roboto', 'Open Sans', sans-serif;;
+    */
+    font-weight: 300;
+    font-size:16px;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+body{
+    background-color: #fff;
+}
+
+.section {
+    min-height: 700px;
+    overflow: hidden;
+}
+
+#s01, #s03, #s05{
+    background-color: #fafafa;
+}
+#s02, #s04{
+    background-color: #f1f1f1;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+/* ----------------------------------- */
+/* HEADER                              */
+/* ----------------------------------- */
+
+
+
+
+
+
+/* MAIN NAVIGATION */
+
+
+
+
+/* ----------------------------------- */
+
+ul, li { list-style-type: none; }
+
+a { text-decoration: none; }
+
+.mynav {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background: #3498DB;
+    overflow:hidden;
+}
+
+.mynav li {
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+
+.mynav a {
+    display: block;
+    margin: 0 20px;
+    height: 40px;
+    color:#fff;
+}
+
+.mynav .active, .mynav li:hover { background: #2980B9; }
+
+
+/* STICKY  NAVIGATION
+.mysticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(250,250,250,0.93);
+    box-shadow: 0 1px 1px #a1a1a1;
+    z-index: 40;
+}
+
+
+
+.mysticky .main-nav li a:link,
+.mysticky .main-nav li a:visited {
+    padding: 10px 0;
+    color: #808080;
+}
+
+.mysticky .main-nav li a:hover,
+.mysticky .main-nav li a:active {
+    border-bottom: 3px solid #50c3d6;
+}
+
+.mysticky .main-nav li{
+    margin-top: 3px;
+}
+.mysticky .main-nav{
+    padding-bottom: 5px;
+}
+
+.mysticky .logo-teal {display: block}
+.mysticky .logo {display: none}
+*/
