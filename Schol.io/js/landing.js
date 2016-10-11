@@ -15,9 +15,10 @@ jQuery(document).ready(function($) {
     $(window).scroll(function(){
 
         if($(window).scrollTop()>550){
-            header.css({"background":"rgba(245,245,245,0.88)","border-bottom":"1px solid #d1d1d1",});
+            header.css({"background":"rgba(240,240,240,0.92)","border-bottom":"1px solid #d1d1d1","height": "61px",});
             header.removeClass("navbar-top");
             header.addClass("navbar-fixed-top");
+            header.addClass("navbar-scroll");
             logo.css({"display":"none"});
             logo_sticky.css({"display":"block"});
             sandwitch.css({"display":"none"});
