@@ -78,7 +78,7 @@ video {
 
 .sc-landing-card h3{font-weight:300;text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);}
 
-.sc-landing-card-1{background:url('../../img/college.png');background-size:cover;}
+.sc-landing-card-1{background:url('/img/college.png');background-size:cover;}
 .sc-landing-card-1:hover{opacity: 0.8;}
 
 /*Footer*/
