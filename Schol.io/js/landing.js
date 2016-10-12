@@ -1,7 +1,7 @@
-//Sticky Menu
 
 jQuery(document).ready(function($) {
 
+    //Sticky Menu
     var logo = $('.sc-landing-logo');
     var logo_sticky = $('.sc-landing-logo-sticky');
 
@@ -14,8 +14,8 @@ jQuery(document).ready(function($) {
 
     $(window).scroll(function(){
 
-        if($(window).scrollTop()>550){
-            header.css({"background":"rgba(240,240,240,0.92)","border-bottom":"1px solid #d1d1d1","height": "61px",});
+        if($(window).scrollTop()>600){
+            header.css({"background":"rgba(240,240,240,0.92)","border-bottom":"1px solid #c1c1c1","height": "61px",});
             header.removeClass("navbar-top");
             header.addClass("navbar-fixed-top");
             header.addClass("navbar-scroll");
@@ -37,44 +37,16 @@ jQuery(document).ready(function($) {
 
     });
 
-});
 
-
-//Landing Page Menu Toggle - Collapse
-
-jQuery(document).ready(function($) {
-
-    var sandwitch = $('#sc-landing-menu-sandwitch');
+    //Landing Page Menu Toggle - Collapse
 
     //Οταν πατάς το sandwitch για να ανοίξει
     sandwitch.click(function(){
         console.log('ΠΑΤΗΘΗΚΕ');
     });
 
-});
 
-//Smooth Scroll
-$(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
-
-
-
-//Landing Page Menu Toggle - Collapse
-
-jQuery(document).ready(function($){
-
+    //Landing Page Menu Toggle - Collapse
     var itempressed = $('.sc-landing-menu-mobile-item-pressed');
     var menuopen =   $('.sc-landing-menu-sandwitch');
     var menuclose =   $('.sc-landing-menu-mobile-close');
@@ -97,4 +69,24 @@ jQuery(document).ready(function($){
     itempressed.click(function(){
         mobilemenu.css({"display":"none"});
     });
+
+
+    //Smooth Scroll
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+
+
 });
+

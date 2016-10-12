@@ -2,10 +2,11 @@
 
 #header .active a {
     padding-bottom: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #a1a1a1;
+
 }
 
- .navbar-scroll li {
+.navbar-scroll li {
      top: -11px;
 }
 
@@ -66,8 +67,10 @@ video {
     background-image: -webkit-linear-gradient(rgba(5,5,10,0.1), rgba(5,5,10,0.7)),url(""); }
 
 /* Search Bar */
-.sc-landing-search-bar-holder{width:100%;  height:100px;  top:600px;  position:absolute;  background:rgba(31,52,63,0.9);  z-index:100;  }
-.sc-landing-search-bar-content{padding-top:30px;}
+.sc-landing-search-bar-holder{
+    width:100%;  height:90px;  top:610px; opacity: 0.93;
+    position:absolute;  background:rgba(31,52,63,0.85);  z-index:100;  }
+.sc-landing-search-bar-content{padding-top:25px;}
 
 /*Second Section*/
 .sc-landing-sec2{min-height:400px!important;width:100%;}
@@ -91,19 +94,27 @@ video {
 
 .sc-landing-sec4-content h2{font-weight:300}
 
-.sc-landing-card{height:255px;}
 
 .sc-landing-card-filter{background: rgba(0,0,0,0.2); width: 100%; padding-top: 110px; padding-bottom: 82px;}
 
-.sc-landing-card h3{font-weight:300;text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);}
+.sc-landing-card h3{font-weight:300;text-shadow: 2px 2px 7px rgba(0, 0, 0, 1); margin: 0}
 
-.sc-landing-card-1{background:url('/img/college.png');background-size:cover;}
-.sc-landing-card-1:hover{
+.sc-landing-card{
+    height:255px;
+    }
+
+.sc-landing-card:hover{
     opacity: 0.8;
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
-    transform:scale(1.02);
-}
+    transform:scale(1.02);}
+
+.sc-landing-card-1{ background:url('/img/sect-photo/college.png'); background-size:cover;}
+
+
+.sc-landing-card-2 { background:url('/img/sect-photo/student.png'); background-size:cover; }
+
+.sc-landing-card-6 { background:url('/img/sect-photo/lab.png'); background-size:cover; }
 
 /*Footer*/
 .sc-landing-footer{min-height:100px!important }
