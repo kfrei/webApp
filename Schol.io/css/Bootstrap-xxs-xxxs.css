@@ -9,7 +9,7 @@
     float:left;
 }
 
-@media screen and (min-width:481px) and (max-width: 640px){
+@media screen and (min-width:481px) and (max-width: 710px){
 
     .col-xxs-pull-12 { right:100%; }
     .col-xxs-pull-11 { right:91.66666667%; }
