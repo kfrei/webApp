@@ -115,7 +115,7 @@ video {
     -webkit-transform: scale(1.02);
     transform:scale(1.02);}
 
-.sc-landing-card-1{ background:url('/img/sect-photo/college.png') 0 0 /auto auto; background-size:cover;}
+.sc-landing-card-1{ background:url('/img/sect-photo/college.png') 0 0 / cover;}
 
 
 .sc-landing-card-2 { background:url('/img/sect-photo/student.png'); background-size:cover; }
