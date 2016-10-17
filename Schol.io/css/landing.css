@@ -81,7 +81,7 @@ video {
 
 .sc-landing-sec2-content h2{font-weight:300}
 .sc-landing-sec2-content h4{font-weight:300}
-.sc-landing-sec2-content p{color:#8e8e8e;}
+.sc-landing-sec2-content p{color:#8e8e8e; max-width: 400px;}
 
 /*Third Section*/
 .sc-landing-sec3{min-height:400px!important}
