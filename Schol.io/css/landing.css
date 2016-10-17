@@ -110,20 +110,23 @@ video {
     }
 
 .sc-landing-card:hover{
+    /*
     opacity: 0.8;
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
-    transform:scale(1.02);}
+    transform:scale(1.02);
+    */
+}
 
 .sc-landing-card-1{ background:url('/img/sect-photo/college.png') 0 0 / cover;}
-
 
 .sc-landing-card-2 { background:url('/img/sect-photo/student.png'); background-size:cover; }
 
 .sc-landing-card-6 { background:url('/img/sect-photo/lab.png'); background-size:cover; }
 
 /*Footer*/
-.sc-landing-footer{min-height:100px!important }
+.sc-landing-footer{min-height:200px}
+.pad-top-50 { padding-top: 50px;}
 
 
 /* //////////////////////////////////////////////////////////////////// */
