@@ -10,10 +10,13 @@
 	position: relative;
 	float: left;
 	overflow: hidden;
-	background: #2d7997;
+	background: #2c7290;
 	text-align: center;
 	cursor: pointer;
-
+	/*
+	background-image: -webkit-linear-gradient(rgba(40,40,80,20), rgba(14, 14, 14, 40)),url("");
+	*/
+	
 }
 
 
@@ -21,7 +24,7 @@
 .grid figure img {
 	position: relative;
 	display: block;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 .grid figure figcaption {
@@ -53,6 +56,7 @@
 	font-size: 0;
 	opacity: 0;
 }
+
 
 .grid figure h2 {
 	word-spacing: -0.15em;
