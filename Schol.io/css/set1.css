@@ -10,13 +10,13 @@
 	position: relative;
 	float: left;
 	overflow: hidden;
-	background: #2c7290;
+
 	text-align: center;
 	cursor: pointer;
 	/*
-	background-image: -webkit-linear-gradient(rgba(40,40,80,20), rgba(14, 14, 14, 40)),url("");
+	background: #1d81a3;
 	*/
-	
+	background-image: -webkit-linear-gradient(rgba(12, 37, 49, 0.51), rgb(36, 57, 77)),url("");
 }
 
 
@@ -61,6 +61,7 @@
 .grid figure h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
 }
 
 .grid figure h2 span {
