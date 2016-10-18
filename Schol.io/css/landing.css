@@ -122,12 +122,12 @@ video {
 
 .sc-landing-card-1{ background:url('/img/sect-photo/college.png') 0 0 / cover;}
 
-.sc-landing-card-2 { background:url('/img/sect-photo/student.png'); background-size:cover; }
+.sc-landing-card-2 { background:url('/img/sect-photo/student.png') 0 0 / cover; }
 
-.sc-landing-card-6 { background:url('/img/sect-photo/lab.png'); background-size:cover; }
+.sc-landing-card-6 { background:url('/img/sect-photo/lab.png') 0 0 / cover; }
 
 /*Footer*/
-.sc-landing-footer{min-height:200px}
+.sc-landing-footer{min-height:300px}
 
 
 
