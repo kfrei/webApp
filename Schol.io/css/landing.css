@@ -98,9 +98,6 @@ video {
 
 .sc-landing-sec4-content h2{font-weight:300}
 
-.marin-bot-50 {
-    margin-bottom: 50px;
-}
 
 .sc-landing-card-filter{background: rgba(0,0,0,0.2); width: 100%; padding-top: 110px; padding-bottom: 112px;}
 
@@ -131,7 +128,7 @@ video {
 
 /*Footer*/
 .sc-landing-footer{min-height:200px}
-.pad-top-50 { padding-top: 50px;}
+
 
 
 /* //////////////////////////////////////////////////////////////////// */
@@ -169,13 +166,20 @@ video {
 @media (min-width: 768px) and (max-width: 991px) {
     /* Search Bar */
     .sc-landing-search-bar-holder{height:150px;  top:550px;}
+
 }
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     /* First Section */
     .sc-landing-sec1-content{margin-top:90px;}
     /* Search Bar */
     .sc-landing-search-bar-holder{height:200px;  top:500px;}
+
+    .clear-fix {
+        clear: both;
+        display: block;
+    }
 
 }
 /* Portrait phones and smaller */

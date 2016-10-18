@@ -8,7 +8,6 @@
     clear: both;
     */
     font-family: 'Roboto', sans-serif;
-
 }
 
 
@@ -19,8 +18,24 @@
     float: none;
 }
 
-
 .center-block {/* Bootsrap Class */ }
+
+.text-incr-125{  font-size: 125%;  }
+.text-incr-150{  font-size: 150%;  }
+.text-incr-175{  font-size: 175%;  }
+.text-incr-200{  font-size: 200%;  }
+
+.pad-top-10 { padding-top: 10px; }
+.pad-top-20 { padding-top: 20px; }
+.pad-top-40 { padding-top: 40px; }
+.pad-top-50 { padding-top: 50px; }
+.pad-bot-10 { padding-bottom: 10px;}
+.pad-left-20 { padding-left: 20px; }
+.pad-right-20 { padding-right: 20px; }
+
+.margin-left-20 { margin-left: 20px; }
+.margin-right-20 { margin-right: 20px; }
+.margin-bot-50 { margin-bottom: 50px; }
 
 /*=============================================*/
 /*  /////////////////////////////////////////  */
