@@ -59,14 +59,15 @@
     <!--
     <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <script src=“https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBMIv89-oqimNek5dsVQMTY0PV5qmYRDjoE”></script>
-
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places?&key=AIzaSyBUVNZRdxX2MnfOZ8NhpQC-Z8fxe4enEkI"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places?&key=AIzaSyBUVNZRdxX2MnfOZ8NhpQC-Z8fxe4enEkI"></script>
     -->
 
-    <script src="http://maps.googleapis.com/maps/api/js?libraries=places?&key=AIzaSyBUVNZRdxX2MnfOZ8NhpQC-Z8fxe4enEkI"></script>
 
     <!-- Angular js-->
+    <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
-
+    -->
 
     <!-- Local javascript files -->
     <script src="js/typed.js"></script>
@@ -74,16 +75,16 @@
     <!--  -->
     <script src="js/landing.js"></script>
     <!--  -->
+    <!--
     <script src="js/angular-app.js"></script>
-
-
-
+    ng-app="landing-app"
+    -->
 
 
 
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home" ng-app="landingApp">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
     <!-- Scholio Header -->
     <header class="navbar navbar-top sc-landing-header" id="header" >
         <div class="container">
@@ -205,13 +206,16 @@
                             </select>
                         </div>
 
-                        <div class="col-md-5 col-sm-6" ng-controller="landCtrl">
+                        <div class="col-md-5 col-sm-6" >
                            <!--
-                            <input class="sc-no-border" type="text" name="" placeholder="Στην τοποθεσία..">
-                            -->
-                            <input type="text" id="Autocomplete" class="form-control " ng-autocomplete="result2"
+                            <input class="sc-no-border" type="text" name="" placeholder="Στην τοποθεσία.">
+                            ng-controller="landCtrl"
+                             <input type="text" id="Autocomplete" class="form-control " ng-autocomplete="result2"
                                    details="details2" options="options2" placeholder=" Στην Περιοχή:"/>
+                            -->
 
+
+                            <input class="sc-no-border" id="autocomplete" placeholder="Στην Περιοχή:" type="text"> </input>
                         </div>
 
                         <div class="col-md-2 col-sm-12">
@@ -404,7 +408,7 @@
     <footer id="sc-landing-sec5" class="sc-landing-footer sc-dark-blue">
         <div class="container">
         <div class="row  ">
-            <div class="pull-left pad-top-50 text-incr-125 col-md-6  col-sm-6 col-xs-5" >
+            <div class="pull-left pad-top-50 text-incr-125 col-md-5  col-sm-5 col-xs-4" >
                 <a href="#" class="sc-t-white margin-right-20 ">Επικοινωνία</a>
                 <span  class="clear-fix pad-top-10 pad-bot-10">  <a href="#" class="sc-t-white margin-right-20">Blog</a></span>
                 <span class="">  <a href="#" class="sc-t-white">Όροι Χρήσης</a></span>

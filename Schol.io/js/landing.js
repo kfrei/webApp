@@ -101,5 +101,20 @@ jQuery(document).ready(function($) {
     });
 
 
+    //google.maps.places.Autocomplete
+    /*
+    $(function() {
+        new google.maps.places.Autocomplete(
+            (document.getElementById('autocomplete')), {
+                types: ['geocode']
+            });
+    });
+    */
+
+
+
+
+
+
 });
 
