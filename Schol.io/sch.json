@@ -7,7 +7,7 @@
 
 "password":"pass",
 
-"adress":"Σεβενίδη, 17, Πυλαία",
+"address":"Σεβενίδη, 17, Πυλαία",
 "city":"Θεσσαλονίκη",
 "phone":"+30 2310-398398",
 "website":"www.act.edu",
@@ -34,7 +34,7 @@
 
 "password":"pass",
 
-"adress":"Ελ. Βενιζέλου 14 & Τσιμισκή",
+"address":"Ελ. Βενιζέλου 14 & Τσιμισκή",
 "city":"Θεσσαλονίκη",
 "phone":"+30 2310-241010",
 "website":"www.mitropolitiko.edu.gr",
@@ -60,7 +60,7 @@
 
 "password":"pass",
 
-"adress":"Τσιμισκή 14, Θεσσαλονίκη",
+"address":"Τσιμισκή 14, Θεσσαλονίκη",
 "city":"Θεσσαλονίκη",
 "phone":"+30 2310-260200",
 "website":"www.iek-akmi.edu.gr",
