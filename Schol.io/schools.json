@@ -1,0 +1,111 @@
+[
+ {"id":1,
+"category":"College",
+"schoolName":"American College of Thessaloniki",
+"ratingStar":4.2,
+"ratingCounter":8,  
+
+"password":"pass",
+
+"adress":"Σεβενίδη, 17, Πυλαία",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-398398",
+"website":"www.act.edu",
+"email":"webmaster@act.edu",
+  
+"scholarships":4,
+"studies":14,
+"students":52,
+"teachers":12,
+  
+"logo":"act-logo.png",
+"image":"act-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+ "skills": [
+     {"sk":"Πρόγραμμα Σπουδών","cSk":25},
+     {"sk":"Σύνδεση με την αγορά εργασίας","cSk": 19},
+     {"sk":"Υποδομές/Εγκαταστάσεις","cSk":23},
+     ],
+  
+  "studentsSuceed":[
+      {"year":2016,"count":50,"success":50},{"year":2015,"count":40,"success":38},{"year":2014,"count":47,"success":40},{"year":2013,"count":47,"success":45},{"year":2012,"count":41,"success":35}
+  ],
+  "images":["act1.jpg","act2.jpg"],
+  "top":10
+ },
+    
+    
+    
+ {"id":2,
+"category":"College",
+"schoolName":"Μητροπολιτικό Κολλέγιο Θεσσαλονίκης",
+"ratingStar":4.8,
+"ratingCounter":12,  
+
+"password":"pass",
+
+"adress":"Ελ. Βενιζέλου 14 & Τσιμισκή",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-241010",
+"website":"www.mitropolitiko.edu.gr",
+"email":"info@metropolitan.edu.gr",
+  
+"scholarships":6,
+"studies":12,
+"students":58,
+"teachers":14,
+  
+"logo":"amc-logo.png",
+"image":"AMC-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+ "skills": [
+     {"sk":"Πρόγραμμα Σπουδών","cSk":25},
+     {"sk":"Σύνδεση με την αγορά εργασίας","cSk": 19},
+     {"sk":"Υποδομές/Εγκαταστάσεις","cSk":23},
+     ],
+  
+  "studentsSuceed":[
+      {"year":2016,"count":50,"success":50},{"year":2015,"count":40,"success":38},{"year":2014,"count":47,"success":40},{"year":2013,"count":47,"success":45},{"year":2012,"count":41,"success":35}
+  ],
+  "images":["amc1.jpg","amc2.jpg"],
+  "top":0
+ },    
+    
+    
+     {"id":3,
+"category":"IEK",
+"schoolName":"ΑΚΜΗ",
+"ratingStar":4.8,
+"ratingCounter":12,  
+
+"password":"pass",
+
+"adress":"Τσιμισκή 14, Θεσσαλονίκη",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-260200",
+"website":"www.iek-akmi.edu.gr",
+"email":"info@iek-akmi.edu.gr",
+  
+"scholarships":7,
+"studies":14,
+"students":48,
+"teachers":16,
+  
+"logo":"akmi-logo.png",
+"image":"akmi-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+ "skills": [
+     {"sk":"Πρόγραμμα Σπουδών","cSk":25},
+     {"sk":"Σύνδεση με την αγορά εργασίας","cSk": 19},
+     {"sk":"Υποδομές/Εγκαταστάσεις","cSk":23},
+     ],
+  
+  "studentsSuceed":[
+      {"year":2016,"count":50,"success":50},{"year":2015,"count":40,"success":38},{"year":2014,"count":47,"success":40},{"year":2013,"count":47,"success":45},{"year":2012,"count":41,"success":35}
+  ],
+  "images":["akmi1.jpg","akmi2.jpg"],
+  "top":5
+     }, 
+
+
+]

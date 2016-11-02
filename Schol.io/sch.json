@@ -1,0 +1,81 @@
+[
+ {"id":1,
+"category":"Κολλέγια",
+"schoolName":"American College of Thessaloniki",
+"ratingStar":4.2,
+"ratingCounter":8,  
+
+"password":"pass",
+
+"adress":"Σεβενίδη, 17, Πυλαία",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-398398",
+"website":"www.act.edu",
+"email":"webmaster@act.edu",
+  
+"scholarships":4,
+"studies":14,
+"students":52,
+"teachers":12,
+  
+"logo":"act-logo.png",
+"image":"act-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+  "top":20
+ },
+    
+    
+    
+ {"id":2,
+"category":"Κολλέγια",
+"schoolName":"Μητροπολιτικό Κολλέγιο Θεσσαλονίκης",
+"ratingStar":4.8,
+"ratingCounter":12,  
+
+"password":"pass",
+
+"adress":"Ελ. Βενιζέλου 14 & Τσιμισκή",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-241010",
+"website":"www.mitropolitiko.edu.gr",
+"email":"info@metropolitan.edu.gr",
+  
+"scholarships":6,
+"studies":12,
+"students":58,
+"teachers":14,
+  
+"logo":"amc-logo.png",
+"image":"AMC-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+  "top":0
+ },    
+    
+    
+     {"id":3,
+"category":"IEK",
+"schoolName":"ΑΚΜΗ",
+"ratingStar":4.4,
+"ratingCounter":10,  
+
+"password":"pass",
+
+"adress":"Τσιμισκή 14, Θεσσαλονίκη",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-260200",
+"website":"www.iek-akmi.edu.gr",
+"email":"info@iek-akmi.edu.gr",
+  
+"scholarships":7,
+"studies":14,
+"students":48,
+"teachers":16,
+  
+"logo":"akmi-logo.png",
+"image":"akmi-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+  "top":10
+     }
+
+
+]
