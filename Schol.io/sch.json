@@ -100,9 +100,32 @@
 "image":"newyork-pic1.jpg",
 "aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
   "top":10
+     },
+
+     {"id":5,
+"category":"Ιδιωτικά Σχολεία",
+"schoolName":"Εκπαιδευτήρια Φρυγανιώτη",
+"ratingStar":4.2,
+"ratingCounter":14,  
+
+"password":"pass",
+
+"address":"Περιοχή Παπαγεωργίου, Πολίχνη",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-692940",
+"website":"www.fryganiotis.gr",
+"email":"info@fryganiotis.gr",
+  
+"scholarships":7,
+"studies":16,
+"students":54,
+"teachers":12,
+  
+"logo":"fryganioti-logo.png",
+"image":"fryganioti-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+  "top":20
      }
-
-
 
 
 ]
