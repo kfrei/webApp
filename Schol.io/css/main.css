@@ -154,7 +154,7 @@ h5{font-size:18px;}
 .sc-button2:focus{outline:none;}
 .sc-button2:active{outline:none;}
 
-.sc-button3{min-width:160px;height:35px;text-align:center;border-radius:30px;border:0;outline:none;}
+.sc-button3{min-width:160px;height:35px;text-align:center;border-radius:30px;border:0;outline:none; margin-bottom: 10px;}
 
 /*=============================================*/
 /*  /////////////////////////////////////////  */

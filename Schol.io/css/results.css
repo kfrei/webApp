@@ -228,9 +228,10 @@ p {padding: 15px; color: #5d5d5d;  }
     .kf-check{ width: 160px; }
     .form-group input[type="checkbox"] + .btn-group > label span {  width: 7px; }
 
-    .card { height: 320px;}
+    .card { height: 330px;}
     .card-photo {width: 280px; height: 195px;}
     .but-pad { padding-left: 310px;}
+
 
 
     }
@@ -266,7 +267,7 @@ p {padding: 15px; color: #5d5d5d;  }
 
 @media (min-width: 541px) and (max-width: 600px) {
     /*  */
-    .card { height: 690px;}
+    .card { height: 695px;}
     .card-photo {width: 100%; height: 330px; max-height: 330px;}
     .kf-col-xs-10  { width: 88%}
     .kf-col-xs-offset-1 { margin-left: 6%}
@@ -291,9 +292,9 @@ p {padding: 15px; color: #5d5d5d;  }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
     /* */
-    .card { height: 660px;}
+    .card { height: 635px;}
     .card-photo {width: 100%; height: 285px; max-height: 270px;}
-    #img3 {   left: 30px;  top: 210px; }
+    #img3 {   left: 30px;  top: 218px; }
     .xs-text-incr-85 {font-size: 88%}
     .sc-button3 {min-width: 120px;}
 
