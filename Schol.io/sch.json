@@ -125,6 +125,31 @@
 "image":"fryganioti-pic1.jpg",
 "aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
   "top":20
+     },
+
+          {"id":6,
+"category":"Ιδιωτικά Σχολεία",
+"schoolName":"Εκπαιδευτήρια Βασιλειάδη",
+"ratingStar":4.0,
+"ratingCounter":12,  
+
+"password":"pass",
+
+"address":"38 Amalias Avenue, Syntagma",
+"city":"Αθήνα",
+"phone":"+30 210-3225961",
+"website":"",
+"email":"",
+  
+"scholarships":7,
+"studies":16,
+"students":54,
+"teachers":12,
+  
+"logo":"",
+"image":"",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+  "top":null
      }
 
 
