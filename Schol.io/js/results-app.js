@@ -10,8 +10,8 @@ angular.module("resultsApp",[])
                 console.log("something went wrong: ", data);
             });
 
-        $scope.sortType     = 'ratingStar'; // set the default sort type
-        $scope.sortReverse  = false;  // set the default sort order
+        $scope.orderSelect = 'ratingStar'; // set the default sort type
+        $scope.sortReverse  = true;  // set the default sort order
 
         $scope.scholars=0;
         $scope.reviews=0;

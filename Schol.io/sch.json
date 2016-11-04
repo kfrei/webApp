@@ -2,7 +2,7 @@
  {"id":1,
 "category":"Κολλέγια",
 "schoolName":"American College of Thessaloniki",
-"ratingStar":4.2,
+"ratingStar":4.5,
 "ratingCounter":8,  
 
 "password":"pass",
@@ -29,7 +29,7 @@
  {"id":2,
 "category":"Κολλέγια",
 "schoolName":"Μητροπολιτικό Κολλέγιο Θεσσαλονίκης",
-"ratingStar":null,
+"ratingStar":0,
 "ratingCounter":0,  
 
 "password":"pass",
@@ -55,7 +55,7 @@
      {"id":3,
 "category":"IEK",
 "schoolName":"ΑΚΜΗ",
-"ratingStar":4.8,
+"ratingStar":4.1,
 "ratingCounter":4,  
 
 "password":"pass",
@@ -66,7 +66,7 @@
 "website":"www.iek-akmi.edu.gr",
 "email":"info@iek-akmi.edu.gr",
   
-"scholarships":7,
+"scholarships":9,
 "studies":14,
 "students":48,
 "teachers":16,
@@ -80,7 +80,7 @@
      {"id":4,
 "category":"Κολλέγια",
 "schoolName":"New York College",
-"ratingStar":4.1,
+"ratingStar":4.3,
 "ratingCounter":16,  
 
 "password":"pass",

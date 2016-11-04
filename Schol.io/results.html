@@ -182,7 +182,7 @@
 
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-xxs">
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-xxs " style="">
                     <div class=" box left-box1">
                         <p class="text-incr-115 margin-left-10"> Πεδία Αναζήτησης</p>
 
@@ -273,25 +273,26 @@
                         </div>
                         <!--<span ng-show="filtered.length==0" > Δεν Βρεθηκαν αποτελέσματα</span>-->
                         <div class="pull-right margin-top-15 margin-bot-15" >
-                            <span class=" " style=";">
+                            <span>
                                 <!--<i class='glyphicon glyphicon-filter '></i> -->
                                 Ταξινόμηση με βάση
                             </span>
 
-                                <form class="pull-right margin-left-10 "  style="margin-top: -8px;">
-                                    <select title="" class="selectpicker" data-width="160px" ng-model="orderBy">
-                                        <option id="drop2" data-subtext="" value=""
-                                                <!--data-content=" <i class='glyphicon glyphicon-filter margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'-->
-                                                > &nbsp; </span>"></option>
-                                        <option data-icon="glyphicon glyphicon-star" data-subtext="" class="kf-option" value="Αξιολογήσεις">&nbsp; Αξιολογήσεις</option>
+                                <form class="pull-right margin-left-10 margin-top--8">
+                                    <select title="" class="selectpicker" data-width="150px" ng-model="orderSelect">
+                                        <!--<option id="drop2" data-subtext="" value=""-->
+                                                <!--&lt;!&ndash;data-content=" <i class='glyphicon glyphicon-filter margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'&ndash;&gt;-->
+                                                <!--&gt; &nbsp; </span>"></option>-->
+                                        <option data-icon="glyphicon glyphicon-star" data-subtext="" class="kf-option" value="ratingStar">&nbsp; Αξιολόγηση</option>
+                                        <option data-icon="fa fa-trophy" data-subtext="" class="kf-option" value="scholarships">&nbsp; Υποτροφίες</option>
                                     </select>
                                 </form>
 
                         </div>
 
 
-                        <ul class="">
-                            <li class="" ng-repeat="school in schools | filter: {city: cityFilter}  | filter: checkBoxFilter ">
+                        <ul>
+                            <li class="" ng-repeat="school in schools | orderBy: orderSelect:sortReverse  | filter: {city: cityFilter}  | filter: checkBoxFilter ">
 
 
                                 <div class="card clear-fix margin-bot-25">
@@ -319,8 +320,8 @@
                                                  ng-src="img/colleges/{{school.logo}}">
                                     <span class="pull-left">
                                         <h5 class="pad-top-10">  {{school.schoolName}}</h5>
-                                        <span class="" ng-show="school.ratingCounter!=0"> <rating  class="text-incr-85 sc-t-orange" id="Rating"></rating></span>
-                                        <span class="sc-t-orange"> {{school.ratingStar}} </span> <span class="">  &nbsp; ( {{school.ratingCounter}}  Αξιολογήσεις)</span>
+                                        <span  ng-show="school.ratingCounter!=0"> <rating  class="text-incr-85 sc-t-orange" id="Rating"></rating></span>
+                                        <span ng-show="school.ratingCounter!=0" class="sc-t-orange"> {{school.ratingStar}} </span> <span class="">  &nbsp; ( {{school.ratingCounter}}  Αξιολογήσεις)</span>
                                     </span>
                                         </div>
 
