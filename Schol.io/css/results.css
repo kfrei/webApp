@@ -161,11 +161,11 @@ p {padding: 15px; color: #5d5d5d;  }
 /* /////////////////////////  Cards   ///////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////// */
 
-.card { background: white; height: 295px; }
+.card { background: white; height: 305px; }
 
 .card-ribbon {position: relative;}
 
-.card-photo {width: 345px; height: 295px; margin-right: 8px;
+.card-photo {width: 345px; height: 305px; margin-right: 8px;
     /*background-image: -webkit-linear-gradient(rgba(5,5,16,0.4), rgba(0,0,5,0.8)),url("../img/colleges/act-pic1.jpg") ;*/
     /*background-image: linear-gradient(rgba(206, 255, 255, 0.01), rgba(0, 0, 0, 0.40)),url("../img/colleges/act-pic1.jpg") ;*/
     background-size: cover;
@@ -239,7 +239,7 @@ p {padding: 15px; color: #5d5d5d;  }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     /*  */
-    .card { height: 320px;}
+    .card { height: 335px;}
     .card-photo {width: 270px; height: 195px; margin-bottom: 20px;}
 
 }
@@ -301,7 +301,7 @@ p {padding: 15px; color: #5d5d5d;  }
 
 @media (max-width: 400px) {
     /* */
-    .card { height: 680px;}
+    .card { height: 620px;}
     .card-photo {width: 100%; height: 250px; max-height: 270px;}
     #img3 {  left: 30px; top: 190px; }
 

@@ -110,14 +110,14 @@
 
 "password":"pass",
 
-"address":"Περιοχή Παπαγεωργίου, Πολίχνη",
+"address":"Περιοχή Νοσοκ. Παπαγεωργίου, Πολίχνη",
 "city":"Θεσσαλονίκη",
 "phone":"+30 2310-692940",
 "website":"www.fryganiotis.gr",
 "email":"info@fryganiotis.gr",
   
 "scholarships":7,
-"studies":16,
+"studies":null,
 "students":54,
 "teachers":12,
   
@@ -130,24 +130,24 @@
           {"id":6,
 "category":"Ιδιωτικά Σχολεία",
 "schoolName":"Εκπαιδευτήρια Βασιλειάδη",
-"ratingStar":4.0,
-"ratingCounter":12,  
+"ratingStar":0,
+"ratingCounter":0, 
 
 "password":"pass",
 
-"address":"38 Amalias Avenue, Syntagma",
-"city":"Αθήνα",
-"phone":"+30 210-3225961",
-"website":"",
-"email":"",
+"address":"12o χλμ Θεσ/νίκης-Μουδανιών, Θέρμη",
+"city":"Θεσσαλονίκη",
+"phone":"+30 2310-475958",
+"website":"www.vassiliadis.edu.gr",
+"email":"info@vassiliadis.edu.gr",
   
 "scholarships":7,
-"studies":16,
+"studies":null,
 "students":54,
 "teachers":12,
   
-"logo":"",
-"image":"",
+"logo":"vasileiadi-logo.png",
+"image":"vasileiadi-pic1.jpg",
 "aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
   "top":null
      }
