@@ -13,7 +13,7 @@
 "website":"www.act.edu",
 "email":"webmaster@act.edu",
   
-"scholarships":4,
+"scholarships":0,
 "studies":14,
 "students":52,
 "teachers":12,
@@ -29,8 +29,8 @@
  {"id":2,
 "category":"Κολλέγια",
 "schoolName":"Μητροπολιτικό Κολλέγιο Θεσσαλονίκης",
-"ratingStar":4.8,
-"ratingCounter":12,  
+"ratingStar":null,
+"ratingCounter":0,  
 
 "password":"pass",
 
@@ -55,12 +55,12 @@
      {"id":3,
 "category":"IEK",
 "schoolName":"ΑΚΜΗ",
-"ratingStar":4.4,
-"ratingCounter":10,  
+"ratingStar":4.8,
+"ratingCounter":4,  
 
 "password":"pass",
 
-"address":"Τσιμισκή 14, Θεσσαλονίκη",
+"address":"Τσιμισκή 14",
 "city":"Θεσσαλονίκη",
 "phone":"+30 2310-260200",
 "website":"www.iek-akmi.edu.gr",
@@ -75,7 +75,34 @@
 "image":"akmi-pic1.jpg",
 "aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
   "top":10
+     },
+
+     {"id":4,
+"category":"Κολλέγια",
+"schoolName":"New York College",
+"ratingStar":4.1,
+"ratingCounter":16,  
+
+"password":"pass",
+
+"address":"38 Amalias Avenue, Syntagma",
+"city":"Αθήνα",
+"phone":"+30 210-3225961",
+"website":"www.nyc.gr",
+"email":"nycth@nyc.gr",
+  
+"scholarships":7,
+"studies":16,
+"students":54,
+"teachers":12,
+  
+"logo":"newyork-logo.png",
+"image":"newyork-pic1.jpg",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+  "top":10
      }
+
+
 
 
 ]

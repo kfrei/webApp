@@ -208,7 +208,7 @@
                         <form class="centered-text" >
 
                             <select title="Εκπαιδευτικός Φορέας" class="selectpicker" data-width="90%" ng-model="categoryFilter">
-                                <option id="drop1" data-icon="glyphicon glyphicon-education" data-subtext="" value=""
+                                <option id="drop1" data-icon="glyphicon glyphicon-education" data-subtext="" value="null"
                                         data-content=" <i class='glyphicon glyphicon-education margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'> &nbsp;  Εκπαιδευτικός Φορέας</span>">....</option>
 
                                 <option data-icon="glyphicon glyphicon-globe" data-subtext="" class="kf-option" value="Κολλέγια">&nbsp; Κολλέγια</option>
@@ -230,7 +230,7 @@
                         <p class="text-incr-115 margin-left-10"> Φίλτρα Αναζήτησης</p>
 
                         <div class="[ form-group ] centered-text" >
-                            <input type="checkbox" name="checkbox-1" id="checkbox-1" autocomplete="off" />
+                            <input type="checkbox" name="checkbox-1" id="checkbox-1" autocomplete="off" ng-model="scholars" ng-value-true=1 ng-value-false=0/>
                             <div class="[ btn-group ]" >
                                 <label for="checkbox-1" class="[ btn btn-default ]">
                                     <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
@@ -243,7 +243,7 @@
                         </div>
 
                         <div class="[ form-group ] centered-text" >
-                            <input type="checkbox" name="checkbox-2" id="checkbox-2" autocomplete="off" />
+                            <input type="checkbox" name="checkbox-2" id="checkbox-2" autocomplete="off" ng-model="reviews" ng-value-true=1 ng-value-false=0/>
                             <div class="[ btn-group ]" >
                                 <label for="checkbox-2" class="[ btn btn-default ]">
                                     <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
@@ -268,18 +268,33 @@
 
                 <div class="col-lg-9 col-md-9 col-sm-12 kf-col-xs-10 kf-col-xs-offset-1" >
                     <div class="">
-                        <div ng-repeat="school in schools | filter: {city: cityFilter} | filter: {category: categoryFilter} ">
-                            <div class="pull-left margin-top-15 margin-bot-15">  <span ng-show="$last" >Βρεθηκαν {{$index+1}} αποτελέσματα {{}}</span>     </div>
-                            <span ng-show="$last==null" > Δεν Βρεθηκαν αποτελέσματα</span>
+                        <div ng-repeat="school in schools | filter: {city: cityFilter}  | filter: checkBoxFilter">
+                            <div class="pull-left margin-top-15 margin-bot-15">  <span ng-show="$last" >Βρεθηκαν {{$index+1}} αποτελέσματα </span>     </div>
                         </div>
-                        <div class="pull-right"></div>
+                        <!--<span ng-show="filtered.length==0" > Δεν Βρεθηκαν αποτελέσματα</span>-->
+                        <div class="pull-right margin-top-15 margin-bot-15" >
+                            <span class=" " style=";">
+                                <!--<i class='glyphicon glyphicon-filter '></i> -->
+                                Ταξινόμηση με βάση
+                            </span>
+
+                                <form class="pull-right margin-left-10 "  style="margin-top: -8px;">
+                                    <select title="" class="selectpicker" data-width="160px" ng-model="orderBy">
+                                        <option id="drop2" data-subtext="" value=""
+                                                <!--data-content=" <i class='glyphicon glyphicon-filter margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'-->
+                                                > &nbsp; </span>"></option>
+                                        <option data-icon="glyphicon glyphicon-star" data-subtext="" class="kf-option" value="Αξιολογήσεις">&nbsp; Αξιολογήσεις</option>
+                                    </select>
+                                </form>
+
+                        </div>
 
 
                         <ul class="">
-                            <li class="" ng-repeat="school in schools | filter: {city: cityFilter} | filter: {category: categoryFilter} ">
+                            <li class="" ng-repeat="school in schools | filter: {city: cityFilter}  | filter: checkBoxFilter ">
 
 
-                                <div class="card clear-fix margin-bot-25" > <!-- ====================== -->
+                                <div class="card clear-fix margin-bot-25">
 
                                     <div class="card-ribbon">
                                         <div  ng-show="school.top==10" class="ribbon top10"><span style="font-size: smaller">top {{school.top}}</span></div>
@@ -304,7 +319,7 @@
                                                  ng-src="img/colleges/{{school.logo}}">
                                     <span class="pull-left">
                                         <h5 class="pad-top-10">  {{school.schoolName}}</h5>
-                                        <span class=""> <rating  class="text-incr-85 sc-t-orange" id="Rating"></rating></span>
+                                        <span class="" ng-show="school.ratingCounter!=0"> <rating  class="text-incr-85 sc-t-orange" id="Rating"></rating></span>
                                         <span class="sc-t-orange"> {{school.ratingStar}} </span> <span class="">  &nbsp; ( {{school.ratingCounter}}  Αξιολογήσεις)</span>
                                     </span>
                                         </div>
@@ -361,7 +376,7 @@
                                             </div>
 
 
-                                            <div class="col-lg-4  col-md-1 col-sm-6 col-xs-12 margin-top-15 card-buttons">
+                                            <div class="col-lg-4  col-md-1 col-sm-5 col-xs-12 margin-top-15 card-buttons">
                                                 <div class="hidden-xs but-pad">
                                                     <a href="">
                                                         <button type="button" class="sc-button3 sc-dark-grey sc-t-white pull-right" >
@@ -452,6 +467,7 @@ $('rating').raty({
     half     : true,
     starHalf : 'fa fa-fw fa-star-half'
 });
+
 </script>
 
 
