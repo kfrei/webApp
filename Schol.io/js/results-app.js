@@ -1,7 +1,7 @@
 
 
 
-angular.module("resultsApp",[])
+angular.module("resultsApp",['ui.bootstrap'])
 
     .controller("resultsCtrl",function ($scope,$http) {
         $scope.schools = $http.get("sch.json")
@@ -24,10 +24,19 @@ angular.module("resultsApp",[])
                 && (item.category == $scope.categoryFilter || $scope.categoryFilter =="null") ) {
                 filtered.push(item);
                 return filtered;
-
             }
-
         };
+
+        $scope.currentPage = 1;
+        $scope.itemsPerPage = 3;
+        $scope.maxSize = 2;
+        $scope.totalItems = $scope.schools.length;
+
+
+
+
+
+
 
     });
 
