@@ -283,7 +283,10 @@
 
                 <div class="col-lg-9 col-md-9 col-sm-12 kf-col-xs-10 kf-col-xs-offset-1" >
 
-                        <div ng-repeat="school in schools | filter: {city: cityFilter}  | filter: checkBoxFilter">
+                        <div ng-repeat="school in schools
+                        | toArray
+                        | filter: cityFilter
+                        | filter: checkBoxFilter">
                             <div class="pull-left margin-top-15 margin-bot-15">  <span ng-show="$last" >Βρεθηκαν {{$index+1}} αποτελέσματα </span>     </div>
                         </div>
                         <!--<span ng-show="filtered.length==0" > Δεν Βρεθηκαν αποτελέσματα</span>-->
@@ -308,8 +311,9 @@
 
                         <ul>
                             <li class="" ng-repeat="school in schools
+                            | toArray
                             | orderBy: orderSelect:sortReverse
-                            | filter: {city: cityFilter}
+                            | filter: cityFilter
                             | filter: checkBoxFilter
                             | limitTo:itemsPerPage:((currentPage-1)*itemsPerPage )">
 
