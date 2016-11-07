@@ -268,7 +268,7 @@ p {padding: 15px; color: #5d5d5d;  }
 
 @media (min-width: 541px) and (max-width: 600px) {
     /*  */
-    .card { height: 695px;}
+    .card { height: 700px;}
     .card-photo {width: 100%; height: 324px; max-height: 340px;}
     .kf-col-xs-10  { width: 88%}
     .kf-col-xs-offset-1 { margin-left: 6%}

@@ -51,16 +51,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ribbon.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/ribbon.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06960557">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="results-app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/results-app.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="results.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/results.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.431373">
-              <caret line="181" column="48" selection-start-line="181" selection-start-column="48" selection-end-line="181" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.17964073">
+              <caret line="270" column="23" selection-start-line="270" selection-start-column="23" selection-end-line="270" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -127,9 +117,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/results-app.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/css/results.css" />
         <option value="$PROJECT_DIR$/results.html" />
         <option value="$PROJECT_DIR$/css/ribbon.css" />
+        <option value="$PROJECT_DIR$/css/results.css" />
       </list>
     </option>
   </component>
@@ -760,10 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/results.css">
+    <entry file="file://$PROJECT_DIR$/css/ribbon.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.431373">
-          <caret line="181" column="48" selection-start-line="181" selection-start-column="48" selection-end-line="181" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.06960557">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -796,10 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ribbon.css">
+    <entry file="file://$PROJECT_DIR$/css/results.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06960557">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.17964073">
+          <caret line="270" column="23" selection-start-line="270" selection-start-column="23" selection-end-line="270" selection-end-column="23" />
           <folding />
         </state>
       </provider>
