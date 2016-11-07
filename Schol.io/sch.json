@@ -20,7 +20,7 @@
   
 "logo":"act-logo.png",
 "image":"act-pic1.jpg",
-"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a laoreet odio, quis auctor arcu.",
   "top":20
  },
     
@@ -47,7 +47,7 @@
   
 "logo":"amc-logo.png",
 "image":"AMC-pic1.jpg",
-"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "top":0
  },    
     
@@ -73,7 +73,7 @@
   
 "logo":"akmi-logo.png",
 "image":"akmi-pic1.jpg",
-"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+"aboutCollege":"Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
   "top":10
      },
 
@@ -98,7 +98,7 @@
   
 "logo":"newyork-logo.png",
 "image":"newyork-pic1.jpg",
-"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+"aboutCollege":"Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
   "top":10
      },
 
@@ -121,9 +121,9 @@
 "students":54,
 "teachers":12,
   
-"logo":"fryganioti-logo.png",
+"logo":"fryganioti-logo2.png",
 "image":"fryganioti-pic1.jpg",
-"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at elit sed neque facilisis congue ac vitae sapien.",
   "top":20
      },
 
@@ -148,7 +148,7 @@
   
 "logo":"vasileiadi-logo.png",
 "image":"vasileiadi-pic1.jpg",
-"aboutCollege":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu. Aliquam at elit sed neque facilisis congue ac vitae sapien. Donec convallis ullamcorper augue, eget maximus nisl viverra id.",
+"aboutCollege":"Nulla rhoncus lacus ac dapibus eleifend. Maecenas a laoreet odio, quis auctor arcu.",
   "top":5
      }
 

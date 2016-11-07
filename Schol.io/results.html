@@ -191,7 +191,7 @@
     </header>
 
     <!-- Scholio Main Section. -->
-    <main id="main"  class="main"   ng-controller="resultsCtrl">
+    <main id="main"  class="main"   ng-controller="resultsCtrl" data-ng-init="init()" ng-cloak>
         <div class="container">
             <div class="row up">
             </div>
@@ -383,7 +383,7 @@
 
                                     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 ">
 
-                                        <div class="">
+                                        <div class="margin-top-5">
                                             <div class="col-lg-10 col-md-11 col-sm-6 col-xs-12 sc-t-grey">
                                                 <span><i class="fa fa-map-marker pull-left pad-top-3 " aria-hidden="true"></i></span>
                                                 <span class="pull-left pad-left-10 xs-text-incr-85 text-incr-95">{{school.address}}</span>

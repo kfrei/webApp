@@ -20,44 +20,22 @@ angular.module("resultsApp",['ui.bootstrap'])
             console.log("initialize !");
 
             $scope.schools = $http.get("sch.json")
-                .success(function (data) {
-
-                    var st1= data;
-                    var temp = JSON.stringify(data)
-                        .replace(/ά/g,"α")
-                        .replace(/έ/g,"ε")
-                        .replace(/ή/g,"η")
-                        .replace(/ί/g,"ι")
-                        .replace(/ό/g,"ο")
-                        .replace(/ύ/g,"υ")
-                        .replace(/ώ/g,"ω")
-                        .replace(/address/g,"address2")
-                        .replace(/city/g,"city2");
-                    var st2= JSON.parse(temp);
-                    $scope.schools  = angular.merge([], st2, st1);
-
-                    //$scope.schoolsOLD = data
-
-                })
+                .success(function (data) {$scope.schools = data})
                 .error(function (data) {
                     console.log("something went wrong: ", data);
                 });
 
-
+            $scope.checkBoxFilter = function(item){
+                filtered = [];
+                if(item.scholarships >=  $scope.scholars && item.ratingCounter >=  $scope.reviews
+                    //&& ( item.city == $scope.cityFilter || $scope.cityFilter==null )
+                    && (item.category == $scope.categoryFilter || $scope.categoryFilter =="null") ) {
+                    filtered.push(item);
+                    return filtered;
+                }
+            };
             $scope.totalItems = $scope.schools.length;
         };
-
-        $scope.checkBoxFilter = function(item){
-            filtered = [];
-            if(item.scholarships >=  $scope.scholars && item.ratingCounter >=  $scope.reviews
-                    //&& ( item.city == $scope.cityFilter || $scope.cityFilter==null )
-                && (item.category == $scope.categoryFilter || $scope.categoryFilter =="null") ) {
-                filtered.push(item);
-                return filtered;
-            }
-        };
-
-
 
         $timeout(function(){
             $scope.ready = true;
