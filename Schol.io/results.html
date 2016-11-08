@@ -131,7 +131,6 @@
                     <div class="">
                         <ul class="nav navbar-nav navbar-right sc-landing-menu">
                             <li class="sc-landing-menu-item"><a href="#sc-landing-sec2">ΣΧΕΤΙΚΑ</a></li>
-                            <li class="sc-landing-menu-item"><a href="#sc-landing-sec4">ΕΚΠΑΙΔΕΥΤΗΡΙΑ</a></li>
                             <li class="sc-landing-menu-item"><a href="">ΥΠΟΤΡΟΦΙΕΣ</a></li>
                             <li class="sc-landing-menu-item"><a href="#sc-landing-sec5">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
                             <li><a href=""><button type="button" class="sc-button-landing sc-button sc-green sc-t-white">Εγγραφή</button></a></li>
@@ -152,7 +151,11 @@
 
                     <div class="">
                         <div class="navbar-right pull-right">
-                            <i class="fa fa-filter margin-right-30 margin-top-30 text-incr-175 sc-t-dark-grey" aria-hidden="true"></i>
+                            <a class="" role="button"
+                               data-toggle="collapse" href="#collapseMenu"
+                               aria-expanded="false" aria-controls="collapseMenu"">
+                                    <i class="fa fa-filter margin-right-30 margin-top-30 text-incr-175 sc-t-dark-grey" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -163,14 +166,12 @@
                         </div>
                         <br><br>
                         <div class="pull-right">
-                            <a href="#sc-landing-sec2">
-
+                            <a href="#">
                                 <div class="sc-landing-menu-mobile-item sc-landing-menu-mobile-item-pressed">ΣΧΕΤΙΚΑ</div>
                             </a>
-                            <a href="#sc-landing-sec4">
-                                <div class="sc-landing-menu-mobile-item sc-landing-menu-mobile-item-pressed">ΕΚΠΑΙΔΕΥΤΗΡΙΑ</div>
+                            <a href="#">
+                                <div class="sc-landing-menu-mobile-item sc-landing-menu-mobile-item-pressed">ΥΠΟΤΡΟΦΙΕΣ</div>
                             </a>
-                            <div class="sc-landing-menu-mobile-item sc-landing-menu-mobile-item-pressed">ΥΠΟΤΡΟΦΙΕΣ</div>
                             <div class="sc-landing-menu-mobile-item sc-landing-menu-mobile-item-pressed">ΕΠΙΚΟΙΝΩΝΙΑ</div>
                             <div class=""><br></div>
                             <a href=""><button type="button" class="sc-button sc-green sc-t-white pull-right">Εγγραφή</button></a>
@@ -194,9 +195,75 @@
     <main id="main"  class="main"   ng-controller="resultsCtrl" data-ng-init="init()" ng-cloak>
         <div class="container">
             <div class="row up">
+
             </div>
 
             <div class="row">
+
+                <div class="collapse  hidden-md hidden-lg col-xs-12 mob-filter " id="collapseMenu"
+                     style=" position: fixed;">
+
+                        <div class="" style="">
+                            <div class=" box left-box1" style="z-index: 195;">
+                                <p class="text-incr-115 centered-text"> Πεδία Αναζήτησης</p>
+
+                                <form class="centered-text" style="max-width: 335px;">
+
+                                    <select title="Εκπαιδευτικός Φορέας" class="selectpicker" data-width="70%" ng-model="categoryFilter">
+                                        <option id="drop1" data-icon="glyphicon glyphicon-education" data-subtext="" value="null"
+                                                data-content=" <i class='glyphicon glyphicon-education margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'> &nbsp;  Εκπαιδευτικός Φορέας</span>">....</option>
+
+                                        <option data-icon="glyphicon glyphicon-globe" data-subtext="" class="kf-option" value="Κολλέγια">&nbsp; Κολλέγια</option>
+                                        <option data-icon="glyphicon glyphicon-blackboard" data-subtext="" class="kf-option" value="Ιδιωτικά Σχολεία">&nbsp;  Ιδιωτικά Σχολεία</option>
+                                        <option data-icon="glyphicon glyphicon-briefcase" data-subtext="" class="kf-option" value="IEK">&nbsp; IEK </option>
+                                        <option data-icon="glyphicon glyphicon-grain" data-subtext="" class="kf-option" value="Επαγγελματικές Σχολές">&nbsp; Επαγγελματικές Σχολές</option>
+                                        <option data-icon="glyphicon glyphicon-pencil" data-subtext="" class="kf-option" value="Φροντιστήρια">&nbsp;  Φροντιστήρια </option>
+                                    </select>
+                                </form>
+
+                                <div class="input-group centered-text pad-top-20">
+                                    <span class="input-group-addon text-incr-115 kf-gray" id="basic-addon1"><i class="fa fa-map-marker margin-right-5"></i></span>
+                                    <input type="text" class="kf-option" id="input1" placeholder="Περιοχή/πόλη" ng-model="cityFilter">
+                                </div>
+
+                            </div>
+
+                            <div class=" box left-box2 ">
+                                <p class="text-incr-115 centered-text"> Φίλτρα Αναζήτησης</p>
+
+                                <div class="[ form-group ] centered-text" >
+                                    <input type="checkbox" name="checkbox-1" id="checkbox-1" autocomplete="off" ng-model="scholars" ng-value-true=1 ng-value-false=0/>
+                                    <div class="[ btn-group ]" >
+                                        <label for="checkbox-1" class="[ btn btn-default ]">
+                                            <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
+                                            <span> </span>
+                                        </label>
+                                        <label for="checkbox-1" class="[ btn btn-default ] kf-check kf-gray ">
+                                            <i class="fa fa-trophy pad-right-15" aria-hidden="true"></i> Με &nbsp; υποτροφίες
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="[ form-group ] centered-text" >
+                                    <input type="checkbox" name="checkbox-2" id="checkbox-2" autocomplete="off" ng-model="reviews" ng-value-true=1 ng-value-false=0/>
+                                    <div class="[ btn-group ]" >
+                                        <label for="checkbox-2" class="[ btn btn-default ]">
+                                            <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
+                                            <span> </span>
+                                        </label>
+                                        <label for="checkbox-2" class="[ btn btn-default ] kf-check kf-gray  " >
+                                            <i class="fa fa-star pad-right-15" aria-hidden="true"></i> Με αξιολογήσεις
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                </div>
+
+
                 <div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-xxs " style="">
                     <div class=" box left-box1">
                         <p class="text-incr-115 margin-left-10"> Πεδία Αναζήτησης</p>
@@ -274,7 +341,7 @@
                     </div>
 
                     <a href="">
-                        <button type="button" class="sc-button2 sc-green2 sc-t-white pull-right margin-top-15">
+                        <button type="button" class="sc-button2 sc-primary sc-t-white pull-right margin-top-15">
                         <i class="fa fa-search pad-right-15" aria-hidden="true"></i>Αναζήτηση</button>
                     </a>
 

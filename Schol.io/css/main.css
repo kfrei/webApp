@@ -110,13 +110,14 @@ a:link, a:visited, a:hover, a:active  {
 .sc-medium-grey{background:#d2d2d2;}
 .sc-dark-grey{background: #888;}
 .sc-white{background:#ffffff;}
+.sc-primary{background:#337AB7;}
 
 .sc-t-white{color: white;}
 .sc-t-green{color: #00bcd4;}
 .sc-t-grey{color: #888;}
 .sc-t-dark-grey{color: #4a5a62;}
 .sc-t-orange {color: #ee980e;}
-
+.sc-t-primary{color: #337AB7;}
 
 
 /*=============================================*/
