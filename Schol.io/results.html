@@ -199,9 +199,9 @@
             </div>
 
             <div class="row">
-
+                <!--============ collapseMenu =============-->
                 <div class="collapse  hidden-md hidden-lg col-xs-12 mob-filter " id="collapseMenu"
-                     style=" position: fixed;">
+                     style=" ">
 
                         <div class="" style="">
                             <div class=" box left-box1" style="z-index: 195;">
@@ -261,7 +261,7 @@
 
                         </div>
 
-                </div>
+                </div><!-- collapseMenu -->
 
 
                 <div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-xxs " style="">
@@ -354,22 +354,22 @@
                         | toArray
                         | filter: cityFilter
                         | filter: checkBoxFilter">
-                            <div class="pull-left margin-top-15 margin-bot-15">  <span ng-show="$last" >Βρεθηκαν {{$index+1}} αποτελέσματα </span>     </div>
+                            <div class="pull-left margin-top-10 margin-bot-15">  <span ng-show="$last" >Βρεθηκαν {{$index+1}} αποτελέσματα </span>     </div>
                         </div>
                         <!--<span ng-show="filtered.length==0" > Δεν Βρεθηκαν αποτελέσματα</span>-->
                         <div class="pull-right margin-top-15 margin-bot-15 sm-pull-left xs-pull-left" >
-                            <span>
+                            <span class="xs-text-incr-85">
                                 <!--<i class='glyphicon glyphicon-filter '></i> -->
                                 Ταξινόμηση με βάση
                             </span>
 
-                                <form class="pull-right margin-left-10 margin-top--8 ">
-                                    <select title="" class="selectpicker" data-width="150px" ng-model="orderSelect">
+                                <form class="pull-right margin-left-10 margin-top--8 font-90">
+                                    <select title="" class="selectpicker font-90 shortDrop" data-width="140px" ng-model="orderSelect">
                                         <!--<option id="drop2" data-subtext="" value=""-->
                                                 <!--&lt;!&ndash;data-content=" <i class='glyphicon glyphicon-filter margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'&ndash;&gt;-->
                                                 <!--&gt; &nbsp; </span>"></option>-->
-                                        <option data-icon="glyphicon glyphicon-star" data-subtext="" class="kf-option" value="ratingStar">&nbsp; Αξιολόγηση</option>
-                                        <option data-icon="fa fa-trophy" data-subtext="" class="kf-option" value="scholarships">&nbsp; Υποτροφίες</option>
+                                        <option data-icon="glyphicon glyphicon-star" data-subtext="" class="font-90" value="ratingStar">&nbsp; Αξιολόγηση</option>
+                                        <option data-icon="fa fa-trophy" data-subtext="" class="font-90" value="scholarships">&nbsp; Υποτροφίες</option>
                                     </select>
                                 </form>
 

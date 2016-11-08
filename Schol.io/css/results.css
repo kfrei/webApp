@@ -103,7 +103,10 @@ p {padding: 15px; color: #5d5d5d;  }
 /* ///////////////////////  dropDown   ////////////////////////////// */
 
 .mob-filter { z-index: 195; opacity: 0.97;
-    top: 145px;}
+    position: fixed;
+    top: 132px;}
+
+.font-90{font-size: 80%!important;}
 
 /* ///////////////////////  Location Search  ////////////////////////////// */
 
@@ -125,7 +128,6 @@ p {padding: 15px; color: #5d5d5d;  }
     border-bottom-left-radius: 0;
     }
 
-    .kf-option {  font-size: 95%!important;  }
 
     ::-webkit-input-placeholder {  color:    #888;   /* default placeholder text */  }
 
@@ -290,7 +292,7 @@ p {padding: 15px; color: #5d5d5d;  }
     .kf-col-xs-offset-1 { margin-left: 4%}
     #img3 {  left: 30px;  top: 243px; }
     .sm-pull-left {width: 70%; float: left!important;}
-
+    .xs-text-incr-80 {font-size: 81%;}
 }
 
 
@@ -300,10 +302,12 @@ p {padding: 15px; color: #5d5d5d;  }
     .card { height: 650px;}
     .card-photo {width: 100%; height: 285px; max-height: 270px;}
     #img3 {   left: 30px;  top: 218px; }
-    .xs-text-incr-85 {font-size: 86%}
+    .xs-text-incr-85 {font-size: 86%;}
+    .xs-text-incr-80 {font-size: 81%;}
     .sc-button3 {min-width: 120px;}
     .sm-pull-left {width: 88%; float: left!important;}
-
+    .box {  height: 200px;  }
+    .shortDrop{ width: 138px!important;}
 }
 
 @media (max-width: 400px) {
@@ -311,6 +315,8 @@ p {padding: 15px; color: #5d5d5d;  }
     .card { height: 635px;}
     .card-photo {width: 100%; height: 242px; max-height: 280px;}
     #img3 {  left: 30px; top: 190px; }
+    .xs-text-incr-80 {font-size:81%;}
 
-
+    .box {  height: 170px;  }
+    .shortDrop{ width: 135px!important;}
 }
