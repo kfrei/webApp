@@ -149,16 +149,14 @@
                         </div>
                     </div>
 
-                    <div class="">
-                        <div class="navbar-right pull-right" id="filter-btn">
+
+                        <div class="pull-right margin-right-30" id="filter-btn">
                             <a class="" role="button"
-                               data-target="#collapseMenu"
-                               data-toggle="collapse"
                                aria-expanded="false" >
                                     <i class="fa fa-filter margin-right-30 margin-top-30 text-incr-175 sc-t-dark-grey" aria-hidden="true"></i>
                             </a>
                         </div>
-                    </div>
+
 
                 <div class="visible-xs visible-sm">
                     <div class="sc-landing-menu-mobile-holder sc-dark-blue">
@@ -421,7 +419,7 @@
                                     <span class="pull-left">
                                         <h5 class="pad-top-10">  {{school.schoolName}}</h5>
                                         <span  ng-show="school.ratingCounter!=0"> <rating  class="text-incr-85 sc-t-orange" id="Rating"></rating></span>
-                                        <span ng-show="school.ratingCounter!=0" class="sc-t-orange"> {{school.ratingStar}} </span> <span class="">  &nbsp; ( {{school.ratingCounter}}  Αξιολογήσεις)</span>
+                                        <span ng-show="school.ratingCounter!=0" class="sc-t-orange"> {{school.ratingStar}} </span> <span class="xs-text-incr-85">  &nbsp; ( {{school.ratingCounter}}  Αξιολογήσεις)</span>
                                     </span>
                                         </div>
 
@@ -465,8 +463,8 @@
 
                                         <div class="">
                                             <div class="col-lg-10 col-md-11 col-sm-6 col-xs-12 sc-t-grey">
-                                                <span><i class="fa fa-map-marker pull-left pad-top-3 " aria-hidden="true"></i></span>
-                                                <span class="pull-left pad-left-10 xs-text-incr-85 text-incr-95">{{school.address}}</span>
+                                                <span><i class="fa fa-map-marker pull-left pad-top-3 xs-text-incr-85 " aria-hidden="true"></i></span>
+                                                <span class="pull-left pad-left-5 xs-text-incr-85 text-incr-95">{{school.address}}</span>
                                                 <br>
                                                 <div class="hidden-xs">
                                                     <span><i class="fa fa-street-view pull-left pad-top-3 " aria-hidden="true"></i></span>
@@ -474,11 +472,11 @@
                                                     <br>
                                                 </div>
                                                 <div class="pad-top-3"></div>
-                                                <span><i class="fa fa-phone pull-left pad-top-2 " aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-phone pull-left pad-top-2 xs-text-incr-85" aria-hidden="true"></i></span>
                                                 <span class="pull-left pad-left-5">{{school.phone}}</span>
                                                 <br>
                                                 <div class="pad-top-3"></div>
-                                                <span><i class="fa fa-globe pull-left pad-top-3 " aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-globe pull-left pad-top-3 xs-text-incr-85" aria-hidden="true"></i></span>
                                                 <span class="pull-left pad-left-5"> <a href="http://{{school.website}}/" target="_blank">{{school.website}}</a></span>
 
                                                 <div class="hidden-xs">
