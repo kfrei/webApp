@@ -50,7 +50,7 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Landing CSS -->
-    <link href="css/results.css" rel="stylesheet">
+    <link href="css/results1.css" rel="stylesheet">
 
 
     <!--====== Javascript Files =======-->
@@ -150,10 +150,11 @@
                     </div>
 
                     <div class="">
-                        <div class="navbar-right pull-right">
+                        <div class="navbar-right pull-right" id="filter-btn">
                             <a class="" role="button"
-                               data-toggle="collapse" href="#collapseMenu"
-                               aria-expanded="false" aria-controls="collapseMenu">
+                               data-target="#collapseMenu"
+                               data-toggle="collapse"
+                               aria-expanded="false" >
                                     <i class="fa fa-filter margin-right-30 margin-top-30 text-incr-175 sc-t-dark-grey" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -199,101 +200,100 @@
             </div>
 
             <div class="row">
-                <!--============ collapseMenu =============-->
-                <div class="collapse  hidden-md hidden-lg col-xs-12 mob-filter " id="collapseMenu"
-                     style=" ">
 
-                        <div class="" style="">
-                            <div class=" box left-box1" style="z-index: 195;">
-                                <p class="text-incr-115 centered-text"> Πεδία Αναζήτησης</p>
 
-                                <a class="" role="button"
-                                   data-toggle="collapse" href="#collapseMenu"
-                                   aria-expanded="false" aria-controls="collapseMenu">
-                                        <span class="btn-close">
-                                            <i class="fa fa-times text-incr-115 sc-t-grey" aria-hidden="true"></i>
-                                        </span>
-                                </a>
 
-                                <form class="centered-text" style="max-width: 335px;">
+                    <div  class="">
+                        <div style="padding: 0 20px;">
 
-                                    <select title="Εκπαιδευτικός Φορέας" class="selectpicker" data-width="70%" ng-model="categoryFilter">
-                                        <option id="drop1" data-icon="glyphicon glyphicon-education" data-subtext="" value="null"
-                                                data-content=" <i class='glyphicon glyphicon-education margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'> &nbsp;  Εκπαιδευτικός Φορέας</span>">....</option>
+                            <!--============ collapseMenu =============-->
+                            <div id="mobFilt" class="  hidden-md hidden-lg col-xs-8 mob-filter left--300"
+                                 style="   margin-top: -80px;
+                                  padding: 0 ; width: 254px;">
 
-                                        <option data-icon="glyphicon glyphicon-globe" data-subtext="" class="kf-option" value="Κολλέγια">&nbsp; Κολλέγια</option>
-                                        <option data-icon="glyphicon glyphicon-blackboard" data-subtext="" class="kf-option" value="Ιδιωτικά Σχολεία">&nbsp;  Ιδιωτικά Σχολεία</option>
-                                        <option data-icon="glyphicon glyphicon-briefcase" data-subtext="" class="kf-option" value="IEK">&nbsp; IEK </option>
-                                        <option data-icon="glyphicon glyphicon-grain" data-subtext="" class="kf-option" value="Επαγγελματικές Σχολές">&nbsp; Επαγγελματικές Σχολές</option>
-                                        <option data-icon="glyphicon glyphicon-pencil" data-subtext="" class="kf-option" value="Φροντιστήρια">&nbsp;  Φροντιστήρια </option>
-                                    </select>
-                                </form>
+                                <div class="" style="">
+                                    <div class=" box left-box1" style="z-index: 195;">
+                                        <p class="text-incr-115 centered-text box1-title"> Πεδία Αναζήτησης
+                                            <a class="" role="button" id="close-btn"
+                                               aria-expanded="false" aria-controls="">
+                                            <i class="fa fa-times text-incr-115 sc-t-grey pad-left-35" aria-hidden="true"></i>
+                                            </a>
+                                        </p>
 
-                                <div class="input-group centered-text pad-top-20">
-                                    <span class="input-group-addon text-incr-115 kf-gray" id="basic-addon1"><i class="fa fa-map-marker margin-right-5"></i></span>
-                                    <input type="text" class="kf-option" id="input1" placeholder="Περιοχή/πόλη" ng-model="cityFilter">
-                                </div>
 
-                            </div>
 
-                            <div class=" box left-box2 ">
-                                <p class="text-incr-115 centered-text"> Φίλτρα Αναζήτησης</p>
 
-                                <div class="[ form-group ] centered-text" >
-                                    <input type="checkbox" name="checkbox-1" id="checkbox-1" autocomplete="off" ng-model="scholars" ng-value-true=1 ng-value-false=0/>
-                                    <div class="[ btn-group ]" >
-                                        <label for="checkbox-1" class="[ btn btn-default ]">
-                                            <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
-                                            <span> </span>
-                                        </label>
-                                        <label for="checkbox-1" class="[ btn btn-default ] kf-check kf-gray ">
-                                            <i class="fa fa-trophy pad-right-15" aria-hidden="true"></i> Με &nbsp; υποτροφίες
-                                        </label>
+                                        <form class="centered-text" style="max-width: 335px;">
+
+                                            <select title="Εκπαιδευτικός Φορέας" class="selectpicker" data-width="90%" ng-model="categoryFilter">
+                                                <option id="drop1" data-icon="glyphicon glyphicon-education" data-subtext="" value="null"
+                                                        data-content=" <i class='glyphicon glyphicon-education margin-right-5 kf-gray'></i> <span class='kf-gray text-incr-85'> &nbsp;  Εκπαιδευτικός Φορέας</span>">....</option>
+
+                                                <option data-icon="glyphicon glyphicon-globe" data-subtext="" class="kf-option" value="Κολλέγια">&nbsp; Κολλέγια</option>
+                                                <option data-icon="glyphicon glyphicon-blackboard" data-subtext="" class="kf-option" value="Ιδιωτικά Σχολεία">&nbsp;  Ιδιωτικά Σχολεία</option>
+                                                <option data-icon="glyphicon glyphicon-briefcase" data-subtext="" class="kf-option" value="IEK">&nbsp; IEK </option>
+                                                <option data-icon="glyphicon glyphicon-grain" data-subtext="" class="kf-option" value="Επαγγελματικές Σχολές">&nbsp; Επαγγελματικές Σχολές</option>
+                                                <option data-icon="glyphicon glyphicon-pencil" data-subtext="" class="kf-option" value="Φροντιστήρια">&nbsp;  Φροντιστήρια </option>
+                                            </select>
+                                        </form>
+
+                                        <div class="input-group centered-text pad-top-20">
+                                            <span class="input-group-addon text-incr-115 kf-gray" id="basic-addon1"><i class="fa fa-map-marker margin-right-5"></i></span>
+                                            <input type="text" class="kf-option" id="input1" placeholder="Περιοχή/πόλη" ng-model="cityFilter">
+                                        </div>
+
                                     </div>
-                                </div>
 
-                                <div class="[ form-group ] centered-text" >
-                                    <input type="checkbox" name="checkbox-2" id="checkbox-2" autocomplete="off" ng-model="reviews" ng-value-true=1 ng-value-false=0/>
-                                    <div class="[ btn-group ]" >
-                                        <label for="checkbox-2" class="[ btn btn-default ]">
-                                            <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
-                                            <span> </span>
-                                        </label>
-                                        <label for="checkbox-2" class="[ btn btn-default ] kf-check kf-gray  " >
-                                            <i class="fa fa-star pad-right-15" aria-hidden="true"></i> Με αξιολογήσεις
-                                        </label>
+                                    <div class=" box left-box2 ">
+                                        <p class="text-incr-115 centered-text"> Φίλτρα Αναζήτησης</p>
+
+                                        <div class="[ form-group ] centered-text" >
+                                            <input type="checkbox" name="checkbox-1" id="checkbox-1" autocomplete="off" ng-model="scholars" ng-value-true=1 ng-value-false=0/>
+                                            <div class="[ btn-group ]" >
+                                                <label for="checkbox-1" class="[ btn btn-default ]">
+                                                    <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
+                                                    <span> </span>
+                                                </label>
+                                                <label for="checkbox-1" class="[ btn btn-default ] kf-check kf-gray ">
+                                                    <i class="fa fa-trophy pad-right-15" aria-hidden="true"></i> Με &nbsp; υποτροφίες
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="[ form-group ] centered-text" >
+                                            <input type="checkbox" name="checkbox-2" id="checkbox-2" autocomplete="off" ng-model="reviews" ng-value-true=1 ng-value-false=0/>
+                                            <div class="[ btn-group ]" >
+                                                <label for="checkbox-2" class="[ btn btn-default ]">
+                                                    <span class="[ glyphicon glyphicon-ok ] kf-gray"></span>
+                                                    <span> </span>
+                                                </label>
+                                                <label for="checkbox-2" class="[ btn btn-default ] kf-check kf-gray  " >
+                                                    <i class="fa fa-star pad-right-15" aria-hidden="true"></i> Με αξιολογήσεις
+                                                </label>
+                                            </div>
+                                        </div>
+
                                     </div>
+
                                 </div>
 
-                            </div>
+                            </div><!-- collapseMenu -->
+
 
                         </div>
+                    </div>
 
-                </div><!-- collapseMenu -->
 
 
-                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-xxs " style="">
+
+
+
+
+
+
+                <div id="filters" class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-xxs " style="">
                     <div class=" box left-box1">
                         <p class="text-incr-115 margin-left-10"> Πεδία Αναζήτησης</p>
-
-                        <!--
-                        <div class="dropdown centered-text">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <span class="kf-color-drkgray margin-right-5"><i class="fa fa-graduation-cap margin-right-5"></i></span>
-                                <span class="kf-color-drkgray pad-left-10"> Εκπαιδευτικός Φορέας &nbsp;</span>
-                                <span class="caret kf-color-drkgray"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Κολλέγια</a></li>
-                                <li><a href="#">ΙΕΚ</a></li>
-                                <li><a href="#">Επαγγελματικές Σχολές</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Ιδιωτικά Σχολεία</a></li>
-                                <li><a href="#">Φροντιστήρια</a></li>
-                            </ul>
-                        </div>
-                        -->
 
                         <form class="centered-text" >
 
@@ -356,7 +356,7 @@
                 </div>  <!-- //col-lg-3-->
 
 
-                <div class="col-lg-9 col-md-9 col-sm-12 kf-col-xs-10 kf-col-xs-offset-1" >
+                <div class=" col-lg-9 col-md-9 col-sm-12 kf-col-xs-10 kf-col-xs-offset-1 left" id="main-results" >
 
                         <div ng-repeat="school in schools
                         | toArray
@@ -550,6 +550,17 @@
 
 
     </main>
+
+
+
+
+
+
+
+
+
+
+
 
     <footer id="" class="sc-landing-footer sc-dark-blue">
         <div class="container">

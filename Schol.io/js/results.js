@@ -1,5 +1,5 @@
 
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
 
     //Landing Page Menu Toggle - Collapse
     var itempressed = $('.sc-landing-menu-mobile-item-pressed');
@@ -39,6 +39,15 @@ jQuery(document).ready(function($) {
     //});
 
 
+    $("#filter-btn").click(function(){
+        $("#main-results").toggleClass("left left-240");
+        $("#mobFilt").toggleClass("left--300 left");
+    });
+
+    $("#close-btn").click(function(){
+        $("#main-results").toggleClass("left left-240");
+        $("#mobFilt").toggleClass("left--300 left");
+    });
 
 });
 
