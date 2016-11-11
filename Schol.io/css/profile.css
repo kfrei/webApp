@@ -86,21 +86,23 @@ body {
     border: solid 1px #e1e1e1;
 }
 
-.sticky-bar { height: 50px;
-    background-color: #567584;
-    margin-bottom: 10px;
-
-}
 
 .affix {  top: 60px;  }
 
-.sidebar { width: 300px;}
+.sidebar {  width: 300px;}
 
-.topbar{ }
+.topbar{}
+
+.nav-ul {height: 50px;}
 
 .sticky-bar-affix{margin-left: -15px;
-    width: 705px;}
+    width: 705px;
+    }
 
+.hidden {display: none}
+.visible {display: block}
+
+.sticky-bar-affix li a {  padding: 0 0 0 15px; margin-top: 15px}
 /*.top {*/
     /*height: 500px;*/
     /*!*background:url('../img/profile/hero12e.png') 0 0 / cover;*!*/
@@ -189,7 +191,7 @@ body {
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     /*  */
-    .sidebar { width: 165px!important;}
+    .sidebar {  width: 170px;}
     .sticky-bar-affix{  width: 539px;}
 
 }
@@ -202,25 +204,23 @@ body {
     .sticky-bar-affix{   width: 680px;}
 
 }
-
+/* Bootstrap xs class */
 @media (min-width:601px) and (max-width: 767px) {
     /*  */
-    .sticky-bar-affix{   width: 95%}
+    .sticky-bar-affix{   width: 95.3%}
 
 }
 
 @media (min-width: 541px) and (max-width: 600px) {
     /*  */
-    .sticky-bar-affix{   width: 94%}
+    .sticky-bar-affix{   width: 94.5%}
+
 }
-
-
-
 
 
 @media (min-width: 481px) and (max-width: 540px) {
     /*  */
-    .sticky-bar-affix{   width: 93%}
+    .sticky-bar-affix{   width: 94.1%}
 }
 
 
@@ -229,12 +229,12 @@ body {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
     /* */
-    .sticky-bar-affix{   width: 92%}
+    .sticky-bar-affix{   width: 93.3%}
 
 }
 
 @media (max-width: 400px) {
     /* */
 
-    .sticky-bar-affix{   width: 91%}
+    .sticky-bar-affix{   width: 91.4%}
 }
