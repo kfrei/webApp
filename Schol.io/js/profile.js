@@ -12,13 +12,13 @@ jQuery(document).ready(function($) {
         if($(window).scrollTop()>100){
 
 
-            $('tpb').removeClass("hidden-xs");
+            $('tpb').removeClass("hidden");
             //$('.topbar').css({"display":"block"});
 
 
         }else {
             //$('.topbar').css({"display": "none"});
-            $('tpb').addClass("hidden-xs");
+            $('tpb').addClass("hidden");
         }
     });
 
