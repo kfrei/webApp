@@ -4,14 +4,11 @@ jQuery(document).ready(function($) {
 
     //Sticky Menu
 
-
-
-
     $(window).scroll(function(){
 
         if($(window).scrollTop()>100){
 
-
+            //$('header').addClass("hidden");
             $('tpb').removeClass("hidden");
             //$('.topbar').css({"display":"block"});
 
@@ -19,6 +16,7 @@ jQuery(document).ready(function($) {
         }else {
             //$('.topbar').css({"display": "none"});
             $('tpb').addClass("hidden");
+            //$('header').removeClass("hidden");
         }
     });
 

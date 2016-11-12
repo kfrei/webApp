@@ -87,9 +87,12 @@ body {
 }
 
 
-.affix {  top: 60px;  }
+.affix {  top: 70px;  }
 
-.sidebar {  width: 300px;}
+.sidebar {  width: 300px;
+   
+   }
+
 
 .topbar{}
 
