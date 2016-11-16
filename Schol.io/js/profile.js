@@ -9,13 +9,13 @@ jQuery(document).ready(function($) {
         if($(window).scrollTop()>100){
 
             //$('header').addClass("hidden");
-            $('tpb').removeClass("hidden");
+            //$('tpb').removeClass("hidden");
             //$('.topbar').css({"display":"block"});
 
 
         }else {
             //$('.topbar').css({"display": "none"});
-            $('tpb').addClass("hidden");
+            //$('tpb').addClass("hidden");
             //$('header').removeClass("hidden");
         }
     });

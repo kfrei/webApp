@@ -60,7 +60,7 @@ section{padding-top:100px!important; padding-bottom:100px!important;}
 .sc-landing-menu-sandwitch-button-sticky{display:block;}
 .sc-landing-menu-sandwitch{}
 
-.sc-landing-menu-mobile-holder{padding:20px;width:230px;height:100%;position:fixed;right:0; top:0;z-index: 999999;display:none;}
+.sc-landing-menu-mobile-holder{padding:20px;width:230px;height:100%;position:fixed;right:0; top:0;z-index: 999;display:none;}
 .sc-landing-menu-mobile-close{font-size:25px;cursor:pointer;}
 .sc-landing-menu-mobile-item{font-size:18px;text-align:right;color:white;font-weight:300;padding-top:20px;}
 
@@ -76,7 +76,7 @@ body {
 }
 
 .up {
-    height: 100px;
+    height: 70px;
 }
 
 
@@ -90,8 +90,8 @@ body {
 .affix {  top: 61px;  }
 
 .sidebar {  width: 300px;
-    position: fixed;
-
+    /*position: fixed;*/
+    z-index: -1;
    }
 
 
@@ -100,7 +100,9 @@ body {
 .nav-ul {height: 50px;}
 
 .sticky-bar-affix{margin-left: -15px;
+    /*position: fixed;*/
     width: 705px;
+    z-index: 3;
     }
 
 .hidden {display: none}
@@ -118,10 +120,17 @@ body {
 /* ---------------  LEFT BOX    -------------- */
 /*  /////////////////////////////////////////  */
 
+.box2 {
+    height: 250px;
+    border: solid 1px #e1e1e1;
+}
+
+
 .box {
     height: 250px;
     border: solid 1px #e1e1e1;
 }
+
 
 .left-box1{
     background-color: #fff;
