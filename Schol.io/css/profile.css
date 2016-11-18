@@ -146,6 +146,7 @@ body {
 }
 
 
+.box a:link,  .box a:active, .box a:visited {  color: black}
 
 
 /* ///////////////////////  dropDown   ////////////////////////////// */
