@@ -79,7 +79,7 @@ hr {
 .margin-bot-25 { margin-bottom: 25px; }
 .margin-bot-50 { margin-bottom: 50px; }
 
-
+.overflow-x{overflow-x: hidden}
 
 
 a:link, a:visited, a:hover, a:active  {
