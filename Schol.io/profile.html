@@ -48,6 +48,10 @@
     -->
     <link href="css/Bootstrap-xxs-xxxs.css" rel="stylesheet">
 
+
+    <!-- BX Slider CSS -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+
     <!-- Ribbon CSS -->
     <!--<link href="css/ribbon.css" rel="stylesheet">-->
 
@@ -56,6 +60,8 @@
 
     <!-- Landing CSS -->
     <link href="css/profile.css" rel="stylesheet">
+
+
 
 
     <!--====== Javascript Files =======-->
@@ -81,7 +87,7 @@
 
     <!-- Angular js-->
     <!--  -->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>-->
 
@@ -91,12 +97,14 @@
     <!-- Rating js-->
     <script src="js/jquery.raty-fa.js"></script>
 
+    <!-- BX Slider-->
+    <script src="js/jquery.bxslider.js"></script>
+
     <!--  -->
     <script src="js/profile.js"></script>
-    <!--  -->
 
-    <!-- -->
-    <!--<script src="js/results-app.js"></script>-->
+    <!-- Angular App-->
+    <script src="js/profile-app.js"></script>
 
 
 
@@ -105,18 +113,8 @@
 
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home"  ng-app="resultsApp">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home"  ng-app="profileApp">
     <!-- Scholio Header -->
-
-
-
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="top">-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
 
                     <header class="navbar navbar-fixed-top navbar-scroll sc-landing-header" id="header" style="opacity: 0.8">
                         <div class="container">
@@ -194,32 +192,104 @@
 
 
 
-
-
-
     <!-- Scholio Main Section. -->
-    <main id="main"  class="main">
+    <main id="main"  class="main"  ng-controller="profileCtrl" data-ng-init="init()" ng-cloak>
         <div class="container">
 
             <div class="row up">
+            </div>
+
+
+            <div class="up">
+                <div class=" margin-bot-15 ">
+
+                    <div
+                        ng-repeat="school in schools
+                                    | toArray
+                                    | filter: schoolFilter">
+
+                        <img id="img1"  class=" img-mini pull-left margin-right-10 margin-top-15"
+                         ng-src="img/colleges/{{school.logo}}">
+                        <span class="pull-left">
+                            <h5 class="pad-top-10">  {{school.schoolName}}</h5>
+                            <span  ng-show="school.ratingCounter!=0"> <rating  class="text-incr-85 sc-t-orange" id="Rating"></rating></span>
+                            <span ng-show="school.ratingCounter!=0" class="sc-t-orange"> {{school.ratingStar}} </span>
+                            <span class="xs-text-incr-85">  &nbsp; ( {{school.ratingCounter}}  Αξιολογήσεις)</span>
+                        </span>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row margin-top-30 hidden-xs hidden-sm hidden2">
+                <div class="">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="" >
+                            <img src="img/colleges/img-act/act-pic1.jpg" alt="profile-pic" style="" class=" img-grid"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="" >
+                            <img src="img/colleges/img-act/act-pic2.jpg" alt="profile-pic" style="" class=" img-grid "/>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hidden-sm">
+                        <div class="" >
+                            <img src="img/colleges/img-act/act-pic3.jpg" alt="profile-pic" style="" class=" img-grid "/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" hidden-sm hidden-xs">
+                    <div class="col-lg-3 col-md-3 ">
+                        <div class="" >
+                            <img src="img/colleges/img-act/act-pic4.jpg" alt="profile-pic" style="" class=" img-grid2"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="" >
+                            <img src="img/colleges/img-act/act-pic5.jpg" alt="profile-pic" style="" class=" img-grid2 "/>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5">
+                        <div class="" >
+                            <img src="img/colleges/img-act/act-pic6.jpg" alt="profile-pic" style="" class=" img-grid2 "/>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 hidden-md">
+                        <div class="" >
+                            <img src="img/colleges/img-act/act-pic7.jpg" alt="profile-pic" style="" class=" img-grid2 "/>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
-            <div class="row">
 
+            <!-- BX SLIDER -->
+            <div class="row pad-left-5 pad-right-5 visible-sm visible-xs">
+                <div class="bxslider" style="">
+                    <div class="slide"><img src="img/colleges/img-act/act-pic1.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic2.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic3.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic4.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic5.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic6.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic7.jpg"></div>
+                </div>
             </div>
 
-                <div class="col-lg-3 col-sm-3  box2 sc-dark-blue"></div>
-                <div class="col-lg-4 col-sm-4  box2 sc-primary "></div>
-                <div class="col-lg-5 col-sm-5  box2 sc-dark-blue"></div>
-                <div class="col-lg-5 col-sm-5  box2 sc-primary "></div>
-                <div class="col-lg-3 col-sm-3  box2 sc-dark-blue "></div>
-                <div class="col-lg-4 col-sm-4  box2 sc-primary "></div>
 
 
-            <div class="col-lg-9 col-md-9 hidden-sm sc-dark-grey main-box margin-top-30" >
-                    <tpb class="topbar  " style="">
-                        <nav class="  sticky-bar-affix " data-spy="affix" data-offset-top="540" >
+
+
+
+
+            <div class="col-lg-9 col-md-9 sc-dark-grey main-box margin-top-30 margin-bot-25" >
+                    <tpb class="topbar ">
+                        <nav class="  sticky-bar-affix hidden-sm hidden-xs" data-spy="affix" data-offset-top="650" >
                             <ul class=" nav-ul sc-dark-blue" style="">
                                 <li class="active"><a class="pull-left sc-t-white" href="#">Σχετικά</a></li>
                                 <li><a class="pull-left sc-t-white" href="#">Υποτροφίες</a></li>
@@ -231,8 +301,8 @@
             </div> <!-- //col-lg-9-->
 
 
-            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs margin-top-30"">
-                <div data-spy="affix" data-offset-top="540"  class="sidebar">
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs margin-top-30">
+                <div data-spy="affix" data-offset-top="650"  class="sidebar">
                     <div class=" box left-box1">
                     </div>
 

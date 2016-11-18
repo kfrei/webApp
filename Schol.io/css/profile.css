@@ -115,6 +115,10 @@ body {
     /*background:url('../img/profile/study.jpg') 0 0 / cover;*/
     /*}*/
 
+
+.img-grid, .img-grid2 {height: 250px; width: 100%; margin-bottom: 25px;}
+.img-grid2 {height: 200px;}
+
 /*=============================================*/
 /*  /////////////////////////////////////////  */
 /* ---------------  LEFT BOX    -------------- */
