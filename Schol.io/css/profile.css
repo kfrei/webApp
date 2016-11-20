@@ -138,11 +138,12 @@ body {
 
 .left-box1{
     background-color: #fff;
+    border-bottom: none;
 }
 
 .left-box2{
     background-color: #f5f5f5;
-    border-top: none;
+    /*border-top: none;*/
 }
 
 
@@ -185,22 +186,24 @@ body {
 @media (min-width: 1450px)  {
     /*  */
     .sticky-bar-affix{  width: 951px;}
+
 }
 
 
 @media (min-width: 1200px) and (max-width: 1449px) {
     /*  */
-    .sidebar { width: 288px!important;}
+    .sidebar { width: 288px!important;  }
     .sticky-bar-affix{  width: 905px;}
+
 }
 
 
 
-
+/* Landscape tablets IPAD  col-md-class */
 @media (min-width: 992px) and (max-width: 1199px) {
     /*  */
 
-    .sidebar { width: 220px!important;}
+    .sidebar { width: 220px!important; position: relative; }
 
 
     }
@@ -209,8 +212,9 @@ body {
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     /*  */
-    .sidebar {  width: 170px;}
+    .sidebar {  width: 170px; position: relative;}
     .sticky-bar-affix{  width: 539px;}
+
 
 }
 
@@ -221,11 +225,13 @@ body {
     /*  */
     .sticky-bar-affix{   width: 680px;}
 
+
 }
 /* Bootstrap xs class */
 @media (min-width:601px) and (max-width: 767px) {
     /*  */
     .sticky-bar-affix{   width: 95.3%}
+
 
 }
 

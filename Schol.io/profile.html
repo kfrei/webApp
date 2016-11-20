@@ -117,7 +117,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50" id="home"  ng-app="profileApp">
     <!-- Scholio Header -->
 
-                    <header class="navbar navbar-fixed-top navbar-scroll sc-landing-header" id="header" style="opacity: 0.8">
+                    <header class="navbar navbar-fixed-top navbar-scroll sc-landing-header" id="header" style="z-index: 99990">
                         <div class="container">
 
                         <div class="row">
@@ -284,10 +284,7 @@
 
 
 
-
-
-
-
+            <!-- Main scroll bar menu-->
             <div class="col-lg-9 col-md-9 sc-dark-grey main-box margin-top-30 margin-bot-25" >
                     <tpb class="topbar ">
                         <nav class="  sticky-bar-affix hidden-sm hidden-xs" data-spy="affix" data-offset-top="650" >
@@ -301,9 +298,9 @@
 
             </div> <!-- //col-lg-9-->
 
-
+            <!-- Right Sidebar  -->
             <div class="col-lg-3 col-md-3 hidden-sm hidden-xs margin-top-30">
-                <div data-spy="affix" data-offset-top="650"  class="sidebar">
+                <div data-spy="affix" data-offset-top="970"  class="sidebar">
 
 
                     <div class=" box left-box1 " ng-repeat="school in schools
@@ -336,11 +333,8 @@
                             </div>
                         </div>
 
-
-
-
-
                     </div>
+
 
                     <div class=" box left-box2 sc-t-grey" ng-repeat="school in schools
                                     | toArray

@@ -214,7 +214,7 @@ p {padding: 15px; color: #5d5d5d;  }
     opacity: 0.5;
 }
 
-.left--300 { left: -254px; }
+.left--300 { left: -259px; }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////    MEDIA QUERIES   ////////////////////////////////////////////// */
@@ -295,7 +295,7 @@ p {padding: 15px; color: #5d5d5d;  }
     #img3 {  top: 293px; }
     .mob-filter {top: 140px;}
     .btn-close { margin-left: 72%;}
-    .left--300 { left: -337px; }
+    .left--300 { left: -343px; }
     .left-box2{ background-color: #c0cbc4;
         height: 900px;}
 
