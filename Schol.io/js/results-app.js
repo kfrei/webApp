@@ -16,6 +16,8 @@ angular.module("resultsApp",['ui.bootstrap'])
         $scope.itemsPerPage = 3;
         $scope.maxSize = 2;
 
+
+
         $scope.init = function () {
             console.log("initialize !");
 
@@ -35,6 +37,7 @@ angular.module("resultsApp",['ui.bootstrap'])
                         .replace(/city/g,"city2");
                     var st2= JSON.parse(temp);
                     $scope.schools  = angular.merge([], st2, st1);
+                    //$scope.page=$scope.schools.length;
 
                     //$scope.schoolsOLD = data
 
@@ -53,7 +56,11 @@ angular.module("resultsApp",['ui.bootstrap'])
                     //&& ( item.city == $scope.cityFilter || $scope.cityFilter==null )
                 && (item.category == $scope.categoryFilter || $scope.categoryFilter =="null") ) {
                 filtered.push(item);
+                //if (filtered.length > 0  ) {$scope.page=filtered.length;}
+                //console.log($scope.page);
+
                 return filtered;
+
             }
         };
 

@@ -207,7 +207,7 @@
                             <!--============ collapseMenu =============-->
                             <div id="mobFilt" class="  hidden-md hidden-lg col-xs-8 mob-filter left--300"
                                  style="   margin-top: -80px;
-                                  padding: 0 ; width: 254px; box-shadow: 0px 0px 40px 0px #656262;">
+                                  padding: 0 ; width: 254px; box-shadow: 0px 0px 40px 0px #aa0c24;">
 
                                 <div class="" style="">
                                     <div class=" box left-box1" style="z-index: 195;">
@@ -359,8 +359,8 @@
                         <div ng-repeat="school in schools
                         | toArray
                         | filter: cityFilter
-                        | filter: checkBoxFilter">
-                            <div class="pull-left margin-top-10 margin-bot-15">  <span ng-show="$last" >Βρεθηκαν {{$index+1}} αποτελέσματα </span>     </div>
+                        | filter: checkBoxFilter as resultsFiltered">
+                            <div class="pull-left margin-top-10 margin-bot-15">  <span ng-show="$last" >Βρεθηκαν {{$index+1}} αποτελέσματα {{resultsFiltered.length}}</span>     </div>
                         </div>
                         <!--<span ng-show="filtered.length==0" > Δεν Βρεθηκαν αποτελέσματα</span>-->
                         <div class="pull-right margin-top-15 margin-bot-15 sm-pull-left xs-pull-left" >
@@ -388,7 +388,7 @@
                             | orderBy: orderSelect:sortReverse
                             | filter: cityFilter
                             | filter: checkBoxFilter
-                            | limitTo:itemsPerPage:((currentPage-1)*itemsPerPage )">
+                            | limitTo:itemsPerPage:((currentPage-1)*itemsPerPage )  ">
 
                                 <!--{{$index+1+( (currentPage-1)*numPerPage )}}-->
 
@@ -522,16 +522,24 @@
                             </li>
                         </ul>
 
-                    <ul class="pull-right"
-                        uib-pagination
-                        total-items="schools.length"
-                        items-per-page=3
-                        ng-model="currentPage"
-                        previous-text="Προηγούμενα"
-                        next-text="Επόμενα"
+
+                    <ul
+                    class="pull-right"
+                    uib-pagination
+                    total-items="resultsFiltered.length"
+                    items-per-page=3
+                    ng-model="currentPage"
+                    previous-text="Προηγούμενα"
+                    next-text="Επόμενα"
+
+                    >
+                    </ul>
 
 
-                    ></ul>
+
+
+
+
 
                     </div> <!-- //col-lg-9-->
 

@@ -190,12 +190,21 @@ body {
 }
 
 
-@media (min-width: 1200px) and (max-width: 1449px) {
-    /*  */
-    .sidebar { width: 288px!important;  }
-    .sticky-bar-affix{  width: 905px;}
 
+
+
+@media (min-width: 1200px) and (max-width: 1449px) {
+    .sticky-bar-affix{  width: 906px; }
+    .sidebar { width: 288px!important;  }
 }
+
+
+@media (min-width: 1200px) and (max-width: 1238px) {
+    .sticky-bar-affix{  width: 854px; }
+}
+
+
+
 
 
 
@@ -204,7 +213,7 @@ body {
     /*  */
 
     .sidebar { width: 220px!important; position: relative; }
-
+    .sticky-bar-affix{  width: 704px;}
 
     }
 
