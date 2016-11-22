@@ -95,7 +95,7 @@ body {
    }
 
 
-.topbar{}
+
 
 .nav-ul {height: 50px;}
 
@@ -109,11 +109,6 @@ body {
 .visible {display: block}
 
 .sticky-bar-affix li a {  padding: 0 0 0 15px; margin-top: 15px}
-/*.top {*/
-    /*height: 500px;*/
-    /*!*background:url('../img/profile/hero12e.png') 0 0 / cover;*!*/
-    /*background:url('../img/profile/study.jpg') 0 0 / cover;*/
-    /*}*/
 
 
 .img-grid, .img-grid2 {height: 230px; width: 100%; margin-bottom: 25px;}
