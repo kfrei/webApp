@@ -81,7 +81,7 @@ body {
 
 
 .main-box{
-    height: 860px;
+    min-height: 360px;
     background-color: #fff;
     border: solid 1px #e1e1e1;
 }
@@ -116,8 +116,8 @@ body {
     /*}*/
 
 
-.img-grid, .img-grid2 {height: 250px; width: 100%; margin-bottom: 25px;}
-.img-grid2 {height: 200px;}
+.img-grid, .img-grid2 {height: 230px; width: 100%; margin-bottom: 25px;}
+.img-grid2 {height: 190px;}
 
 /*=============================================*/
 /*  /////////////////////////////////////////  */
@@ -150,22 +150,26 @@ body {
 .box a:link,  .box a:active, .box a:visited {  color: black}
 
 
-/* ///////////////////////  dropDown   ////////////////////////////// */
+/* ///////////////////////  Section headers   ////////////////////////////// */
 
 
 
-/* ///////////////////////  Location Search  ////////////////////////////// */
+.section-header{
+    background-image: -webkit-linear-gradient(rgba(5,5,16,0.4), rgba(0,0,5,1)),url("../img/section-headers/hero11c.png") ;
+    background-image: linear-gradient(rgba(199, 199, 199, 0.4), #ffffff),url("../img/section-headers/hero11c2.png") ;
+    /*opacity: 0.5;*/
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed;*/
+    height:106px;
+    border: none;
+    filter:alpha(opacity=50);
+}
 
+.title {
+    /*position: absolute; top: 90px;*/
+}
 
-
-
-/* ///////////////////////  CHECK BOX    ////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////// */
-
-
-
-/* /////////////////////////  Cards   ///////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////// */
 
 
 /* //////////////////////////////////////////////////////////////////// */
@@ -254,6 +258,7 @@ body {
 @media (min-width: 481px) and (max-width: 540px) {
     /*  */
     .sticky-bar-affix{   width: 94.1%}
+
 }
 
 
@@ -263,11 +268,14 @@ body {
 @media (max-width: 480px) {
     /* */
     .sticky-bar-affix{   width: 93.3%}
-
+    .img-med {width: 50px;}
+    .xs-pad-top{padding-top: 6px; }
+    h4 {font-size: 120%;}
 }
 
 @media (max-width: 400px) {
     /* */
 
     .sticky-bar-affix{   width: 91.4%}
+    .img-med {width: 50px;}
 }
