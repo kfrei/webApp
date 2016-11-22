@@ -1,7 +1,7 @@
 
 
 
-angular.module("resultsApp",['ui.bootstrap'])
+angular.module("resultsApp",['ui.bootstrap','ngAnimate'])
 
     .controller("resultsCtrl",function ($timeout,$scope,$http) {
 

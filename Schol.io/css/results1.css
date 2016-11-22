@@ -36,6 +36,7 @@ height: 61px;
 }
 
 section{padding-top:100px!important; padding-bottom:100px!important;}
+
 /*Landing Header */
 .sc-landing-header{height:79px;background:transparent;}
 
@@ -177,6 +178,32 @@ p {padding: 15px; color: #5d5d5d;  }
     background-position: center;
 }
 
+
+/* /////////////////////////  Card Angular Animation on Enter & Leave   ///////////////////////////////// */
+
+.animation.ng-enter{
+    transition:0.3s linear all;
+    opacity:0;
+}
+
+.animation.ng-enter-active {
+    opacity: 1;
+}
+
+
+.animation.ng-leave{
+    transition: 0.35s linear all;
+    opacity: 1;
+    /*margin-left: 0px;*/
+}
+.animation.ng-leave-active {
+   opacity: 0.2;
+   /*margin-left: 500px;*/
+}
+
+
+/* //////////////////////// ///////////////////////////////// */
+
 #img2 {  top: 165px;  }
 
 #img2, #img3  {
@@ -191,9 +218,10 @@ p {padding: 15px; color: #5d5d5d;  }
 
 .margin-pad {margin: 50px 0; padding: 35px 0;}
 
-/* //////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////  For mobile sidebar ///////////////////////////////// */
 
 .left, .left-240, .left--300 {
     /*-webkit-transition: all 0.8s;*/

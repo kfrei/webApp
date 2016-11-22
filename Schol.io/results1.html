@@ -77,6 +77,8 @@
     <!--  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.20/angular.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.js"></script>
+
     <!-- No error Filter:noArray @ angular 1.3.20 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
 
@@ -387,8 +389,8 @@
                         </div>
 
 
-                        <ul>
-                            <li class="" ng-repeat="school in schools
+                        <ul class="">
+                            <li class="animation" ng-repeat="school in schools
                             | toArray
                             | orderBy: orderSelect:sortReverse
                             | filter: cityFilter
