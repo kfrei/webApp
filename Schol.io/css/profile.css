@@ -185,7 +185,7 @@ body {
 @media (min-width: 1450px)  {
     /*  */
     .sticky-bar-affix{  width: 951px;}
-
+    .xl-margin-right { margin-right: -4px;}
 }
 
 
@@ -195,6 +195,7 @@ body {
 @media (min-width: 1200px) and (max-width: 1449px) {
     .sticky-bar-affix{  width: 906px; }
     .sidebar { width: 288px!important;  }
+
 }
 
 

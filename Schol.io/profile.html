@@ -71,7 +71,7 @@
 
     <!-- jQuery js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+
 
 
     <!-- Bootstrap js-->
@@ -93,7 +93,7 @@
     <!-- Angular js-->
     <!--  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-    <!--<script src="http://code.angularjs.org/1.2.3/angular.js"></script>-->
+
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>-->
 
@@ -131,7 +131,7 @@
 <body data-spy="scroll" data-target=".navbar"  id="home"  ng-app="profileApp">
     <!-- Scholio Header -->
 
-                    <header class="navbar navbar-fixed-top navbar-scroll sc-landing-header" id="header" style="z-index: 99990">
+    <header class="navbar navbar-fixed-top navbar-scroll sc-landing-header" id="header" style="z-index: 99990">
                         <div class="container">
 
                         <div class="row">
@@ -240,12 +240,12 @@
 
             <!-- BX SLIDER -->
 
-            <div class="row" style="">
+            <div class="row xl-margin-right" style="">
                 <div  class="" ng-repeat="school in schools
                                     | toArray
                                     | filter: schoolFilter">
 
-                    <ul class="bxslider margin-left-7 margin-right-5"  data-bx-slider="
+                    <ul class="bxslider margin-left-7 "  data-bx-slider="
                 pager: false, controls: true, minSlides: 1, maxSlides:5, moveSlides: 1,
                 slideWidth: 290, slideMargin:15, infiniteLoop: true, hideControlOnEnd: false">
                         <li data-ng-repeat="photo in school.photos" data-notify-when-repeat-finished>
@@ -255,7 +255,7 @@
                 </div>
             </div>
 
-            
+
 
 
 
