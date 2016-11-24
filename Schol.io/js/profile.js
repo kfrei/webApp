@@ -12,7 +12,6 @@ jQuery(document).ready(function($) {
 
 
 
-
     //Sticky Menu
 
     $(window).scroll(function(){

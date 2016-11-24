@@ -5,6 +5,9 @@ angular.module("profileApp",[])
 
     .controller("profileCtrl",function ($timeout,$scope,$http) {
 
+        $scope.items = [1, 2, 3, 4, 5];
+
+
         $scope.init = function () {
 
             $scope.schools = $http.get("sch.json")
@@ -26,7 +29,6 @@ angular.module("profileApp",[])
                     return  filtered;
                 }
             };
-
 
 
 
