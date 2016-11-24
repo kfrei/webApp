@@ -1,6 +1,17 @@
 
 jQuery(document).ready(function($) {
 
+    //$('.bxslider').bxSlider({
+    //    slideWidth: 306,
+    //    minSlides: 3,
+    //    maxSlides: 5,
+    //    moveSlides: 1,
+    //    slideMargin: 15,
+    //    video: false
+    //});
+
+
+
 
     //Sticky Menu
 
