@@ -1,25 +1,6 @@
 
 jQuery(document).ready(function($) {
 
-    $('.bxslider').bxSlider({
-        slideWidth: 306,
-        minSlides: 2,
-        maxSlides: 5,
-        moveSlides: 1,
-        slideMargin: 15,
-        video: false
-    });
-
-    $('.bxslider2').bxSlider({
-        slideWidth: 320,
-        minSlides: 1,
-        maxSlides: 1,
-        moveSlides: 1,
-        slideMargin: 0,
-        auto: true,
-        autoDelay: 200
-    });
-
 
     //Sticky Menu
 

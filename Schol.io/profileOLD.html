@@ -238,19 +238,15 @@
             </div>
 
             <!-- BX SLIDER -->
-
-            <div class="row" style="">
-                <div  class="" ng-repeat="school in schools
-                                    | toArray
-                                    | filter: schoolFilter">
-
-                    <ul class="bxslider margin-left-7 margin-right-5"  data-bx-slider="
-                pager: false, controls: true, minSlides: 1, maxSlides:5, moveSlides: 1,
-                slideWidth: 290, slideMargin:15, infiniteLoop: true, hideControlOnEnd: false">
-                        <li data-ng-repeat="photo in school.photos" data-notify-when-repeat-finished>
-                            <img data-ng-src="img/colleges/img-act/{{photo}}" />
-                        </li>
-                    </ul>
+            <div class=" clear-fix row pad-left-5 pad-right-5 visible-sm visible-xs overflow-x">
+                <div class="bxslider">
+                    <div class="slide"><img src="img/colleges/img-act/act-pic1.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic2.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic3.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic4.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic5.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic6.jpg"></div>
+                    <div class="slide"><img src="img/colleges/img-act/act-pic7.jpg"></div>
                 </div>
             </div>
 
@@ -258,13 +254,8 @@
 
 
 
-
-
-
-
-
             <!-- Photo Grid -->
-            <div class="hidden" ng-repeat="school in schools
+            <div ng-repeat="school in schools
                                     | toArray
                                     | filter: schoolFilter">
 
@@ -299,7 +290,7 @@
 
                 <!-- Main scroll bar menu-->
 
-                        <nav class="sticky-bar-affix hidden-sm hidden-xs" data-spy="affix"  data-offset-top="360">
+                        <nav class="sticky-bar-affix hidden-sm hidden-xs" data-spy="affix"  data-offset-top="620">
                             <ul class=" nav-ul sc-dark-blue" style="">
                                 <li class="active"><a class="pull-left sc-t-white" href="#">Σχετικά</a></li>
                                 <li><a class="pull-left sc-t-white" href="#">Υποτροφίες</a></li>
@@ -349,7 +340,7 @@
 
             <!-- Right Sidebar  -->
             <div class="col-lg-3 col-md-3 hidden-sm hidden-xs margin-top-30">
-                <div data-spy="affix" data-offset-top="360"  class="sidebar">
+                <div data-spy="affix" data-offset-top="620"  class="sidebar">
 
 
                     <div class=" box left-box1 " ng-repeat="school in schools

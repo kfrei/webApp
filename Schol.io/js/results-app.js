@@ -17,7 +17,6 @@ angular.module("resultsApp",['ui.bootstrap','ngAnimate'])
         $scope.maxSize = 2;
 
 
-
         $scope.init = function () {
             console.log("initialize !");
 

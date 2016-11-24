@@ -5,7 +5,6 @@ angular.module("profileApp",[])
 
     .controller("profileCtrl",function ($timeout,$scope,$http) {
 
-
         $scope.init = function () {
 
             $scope.schools = $http.get("sch.json")
@@ -58,7 +57,33 @@ angular.module("profileApp",[])
                 });
             }
         };
-    });
+    })
+
+
+
+    /* BxSlider Directives for ng-repeat*/
+    .directive('bxSlider', [function () {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs) {
+                scope.$on('repeatFinished', function () {
+                    element.bxSlider(scope.$eval('{' + attrs.bxSlider + '}'));
+                });
+            }
+        }
+    }])
+    .directive('notifyWhenRepeatFinished', ['$timeout', function ($timeout) {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attr) {
+                if (scope.$last === true) {
+                    $timeout(function () {
+                        scope.$emit('repeatFinished');
+                    });
+                }
+            }
+        }
+    }]);
 
 
 
