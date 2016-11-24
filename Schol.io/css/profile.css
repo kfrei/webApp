@@ -195,7 +195,7 @@ body {
 @media (min-width: 1200px) and (max-width: 1449px) {
     .sticky-bar-affix{  width: 906px; }
     .sidebar { width: 288px!important;  }
-
+    .xl-margin-right { margin-right: -9px;}
 }
 
 
