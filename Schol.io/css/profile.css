@@ -149,7 +149,7 @@ body {
 
 
 
-.section-header{
+.section-header,.section-header2{
     background-image: -webkit-linear-gradient(rgba(5,5,16,0.4), rgba(0,0,5,1)),url("../img/section-headers/hero11c.png") ;
     background-image: linear-gradient(rgba(199, 199, 199, 0.4), #ffffff),url("../img/section-headers/hero11c2.png") ;
     /*opacity: 0.5;*/
@@ -160,6 +160,13 @@ body {
     border: none;
     filter:alpha(opacity=50);
 }
+
+
+.section-header2{
+    background-image: linear-gradient(rgba(199, 199, 199, 0.4), #ffffff),url("../img/section-headers/hero11e2.png") ;
+}
+
+
 
 .title {
     /*position: absolute; top: 90px;*/

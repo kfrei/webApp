@@ -38,6 +38,12 @@ hr {
 .text-incr-175{  font-size: 175%;  }
 .text-incr-200{  font-size: 200%;  }
 
+.font-weight-100 {font-weight: 100;}
+.font-weight-300 {font-weight: 300;}
+.font-weight-400 {font-weight: 400;}
+.font-weight-500 {font-weight: 500;}
+
+
 .pad-top-2 { padding-top: 2px; }
 .pad-top-3 { padding-top: 3px; }
 .pad-top-5 { padding-top: 5px; }
