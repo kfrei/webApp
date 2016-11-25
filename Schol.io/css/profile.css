@@ -46,8 +46,11 @@ section{padding-top:100px!important; padding-bottom:100px!important;}
 .sc-landing-menu{  padding-top:10px;  }
 
 .sc-landing-menu a{  color:#324c5a;}
-.sc-landing-menu li>a:hover{background-color:transparent!important;color:#ffffff;}
-.sc-landing-menu li>a:focus{background-color:transparent!important;color:#ffffff;}
+.sc-landing-menu li>a:hover{background-color:transparent}
+.sc-landing-menu li>a:focus{background-color:transparent}
+/*.sc-landing-menu li>a:hover{color:#ffffff;}*/
+/*.sc-landing-menu li>a:focus{color:#ffffff;}*/
+
 .sc-landing-menu-item{padding-top:8px;}
 
 .sc-button-landing{margin-top:-4px;}
