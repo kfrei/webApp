@@ -12,9 +12,11 @@
 "phone":"2310-398398",
 "website":"www.act.edu",
 "email":"webmaster@act.edu",
+
 "facebook":"www.facebook.com/ACTGreece",
 "twitter":"twitter.com/actgreece",
-"instagram":"www.instagram.com/explore/locations/1212953/the-american-college-of-thessaloniki",
+"instagram":"www.instagram.com/act_greece/",
+"youtube":"www.youtube.com/user/AnatoliaACT",
   
 "scholarships":0,
 "studies":14,
@@ -26,7 +28,7 @@
 "top":20,
 "photos":["act-pic1.jpg","act-pic2.jpg", "act-pic3.jpg","act-pic4.jpg","act-pic5.jpg", "act-pic6.jpg","act-pic7.jpg"],
 "BachelorStudies":[{"fa":"fa fa-line-chart","BS":"Διοίκηση Επιχειρήσεων"},{"fa":"fa fa-laptop","BS":"Εφαρμοσμένη Πληροφορική"},{"fa":"fa fa-link","BS":"Διεθνείς Σχέσεις"},{"fa":"fa fa-globe","BS":"Αγγλική Φιλολογία & Νέα Μέσα"}],
-"MasterStudies":["Διοίκηση Επιχειρήσεων","Τραπεζικά και Χρηματοοικονομικά","Επιχειρηματικότητα","Διοίκηση","Marketing","Ψηφιακό Μάρκετινγκ","Hospitality and Tourism Management"],
+"MasterStudies":[{"fa":"fa fa-line-chart","MS":"Διοίκηση Επιχειρήσεων"},{"fa":"fa fa-money","MS":"Τραπεζικά και Χρηματοοικονομικά"},{"fa":"fa fa-suitcase","MS":"Επιχειρηματικότητα"},{"fa":"fa fa-building-o","MS":"Διοίκηση"},{"fa":"fa fa-pie-chart","MS":"Ψηφιακό Μάρκετινγκ"},{"fa":"fa fa-bed","MS":"Hospitality and Tourism Management"}],
 "about1":"Το ACT είναι ένα ιδιωτικό, μη κερδοσκοπικό εκπαιδευτικό ίδρυμα.  Eίναι αναγνωρισμένο στις ΗΠΑ από την Επιτροπή για Ιδρύματα Ανώτατης Εκπαίδευσης (NEASC) και από το Υπουργείο Παιδείας.",
 "about2":" Το ολοκληρωμένο πρόγραμμα σπουδών του οδηγεί σε πτυχία Bachelor's στη Διοίκηση Επιχειρήσεων, στην Εφαρμοσμένη Πληροφορική, στις Διεθνείς Σχέσεις και στην Αγγλική Φιλολογία & Νέα Μέσα. Προσφέρει επίσης ένα μεταπτυχιακό πρόγραμμα στη Διοίκηση Επιχειρήσεων (MBA), στην Επιχειρηματικότητα και το Μάρκετινγκ.",
 "about3":" Προσφέρει τέλος ένα εκτεταμένο πρόγραμμα υποτροφιών με βάση όχι μόνο την οικονομική ανάγκη αλλά και τις επιδόσεις των υποψηφίων."
