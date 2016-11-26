@@ -136,6 +136,8 @@ a:link, a:visited, a:hover, a:active  {
 .sc-t-orange {color: #ee980e;}
 .sc-t-primary{color: #337AB7;}
 
+.fa-linear {-webkit-text-stroke: 0.7px black;
+color: transparent}
 
 /*=============================================*/
 /*  /////////////////////////////////////////  */
