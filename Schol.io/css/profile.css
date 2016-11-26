@@ -7,6 +7,7 @@
     display: block;
 }
 
+
 /*=============================================*/
 /*  /////////////////////////////////////////  */
 /* -------------  HEADER      ------------- */
@@ -18,10 +19,21 @@ border-bottom: 1px solid #c1c1c1;
 height: 61px;
 }
 
+#header2 a:link, #header2 a:visited  {color: #fff;}
+
 #header .active a {
     padding-bottom: 5px;
-    border-bottom: 2px solid #a1a1a1;
+    border-bottom: 2px solid #8e8e8e;
 }
+
+#header2 .active a {
+    color: orange;
+}
+#header2 a:hover {
+    color: #dde0e1 !important;
+}
+
+
 
 .navbar-scroll li {
     top: -11px;
@@ -66,10 +78,11 @@ section{padding-top:100px!important; padding-bottom:100px!important;}
 .sc-landing-menu-mobile-holder{padding:20px;width:230px;height:100%;position:fixed;right:0; top:0;z-index: 999;display:none;}
 .sc-landing-menu-mobile-close{font-size:25px;cursor:pointer;}
 .sc-landing-menu-mobile-item{font-size:18px;text-align:right;color:white;font-weight:300;padding-top:20px;}
-
+/*=============================================*/
 
 
 /*=============================================*/
+
 body {
     background-color: #F1F4F5;
 }
@@ -82,11 +95,17 @@ body {
     height: 70px;
 }
 
+.main-box,.main-box2 {
+    min-height: 380px;
+    border: solid 1px #e1e1e1;
+}
 
 .main-box{
-    min-height: 380px;
     background-color: #fff;
-    border: solid 1px #e1e1e1;
+}
+
+.main-box2 {
+    background-color: #fdfdfd;
 }
 
 
@@ -152,21 +171,24 @@ body {
 
 
 
-.section-header,.section-header2{
-    background-image: -webkit-linear-gradient(rgba(5,5,16,0.4), rgba(0,0,5,1)),url("../img/section-headers/hero11c.png") ;
-    background-image: linear-gradient(rgba(199, 199, 199, 0.4), #ffffff),url("../img/section-headers/hero11c2.png") ;
-    /*opacity: 0.5;*/
+.section-header,.section-header2,.section-header3{
+    /*opacity: 0.8;*/
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed;*/
     height:106px;
     border: none;
-    filter:alpha(opacity=50);
 }
 
-
+.section-header{
+    background-image: -webkit-linear-gradient(rgba(5,5,16,0.4), rgba(0,0,5,1)),url("../img/section-headers/hero11c.png") ;
+    background-image: linear-gradient(rgba(199, 199, 199, 0.4), #fff),url("../img/section-headers/hero11c2.png") ;
+}
 .section-header2{
-    background-image: linear-gradient(rgba(199, 199, 199, 0.4), #ffffff),url("../img/section-headers/hero11e2.png") ;
+    background-image: linear-gradient(rgba(199, 199, 199, 0.4), #fdfdfd),url("../img/section-headers/hero11e2.png") ;
+}
+.section-header3{
+    background-image: linear-gradient(rgba(199, 199, 199, 0.4), #fff),url("../img/section-headers/hero11h2.png") ;
 }
 
 
