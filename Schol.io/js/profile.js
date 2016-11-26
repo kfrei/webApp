@@ -11,7 +11,6 @@ jQuery(document).ready(function($) {
     //});
 
 
-
     //Sticky Menu
 
     $(window).scroll(function(){
@@ -73,7 +72,7 @@ jQuery(document).ready(function($) {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                 if (target.length) {
                     $('html, body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top-120
                     }, 400);
                     return false;
                 }

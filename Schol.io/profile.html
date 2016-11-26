@@ -115,7 +115,7 @@
 
 
 </head>
-<body data-spy="scroll" data-target=".spy"  id="home"  ng-app="profileApp">
+<body data-spy="scroll" data-target=".spy" data-offset="270" id="home"  ng-app="profileApp">
     <!-- Scholio Header -->
 
     <header class="spy navbar navbar-fixed-top navbar-scroll sc-landing-header" id="header" style="z-index: 99990">
@@ -267,11 +267,11 @@
             </div>
 
             <!-- Sections IDs position -->
-            <span id="sxetika" style="top: 370px; position: absolute; visibility: hidden">.</span>
-            <span id="spoudes" style="top: 730px; position: absolute; visibility: hidden">.</span>
-            <span id="ypotrofies" style="top: 1140px; position: absolute; visibility: hidden">.</span>
-            <span id="reviews" style="top: 1540px; position: absolute; visibility: hidden">.</span>
-            <span id="faculty" style="top: 1930px; position: absolute; visibility: hidden">.</span>
+            <!--<span id="sxetika" style="top: 370px; position: absolute; visibility: hidden">.</span>-->
+            <!--<span id="spoudes" style="top: 730px; position: absolute; visibility: hidden">.</span>-->
+            <!--<span id="ypotrofies" style="top: 1140px; position: absolute; visibility: hidden">.</span>-->
+            <!--<span id="reviews" style="top: 1540px; position: absolute; visibility: hidden">.</span>-->
+            <!--<span id="faculty" style="top: 1930px; position: absolute; visibility: hidden">.</span>-->
 
 
             <!-- MAIN Section-->
@@ -300,7 +300,7 @@
 
                     <!-- Σχετικά -->
                     <div class="row main-box margin-bot-25">
-                        <div  class="section-header">
+                        <div  class="section-header" id="sxetika">
                             <p  class=" title margin-left-20 pad-top-40 text-incr-200" style="font-weight: 100;"> Σχετικά</p>
                         </div>
                         <div class="margin-left-20 margin-right-20 sc-t-grey text-justify">
@@ -317,29 +317,31 @@
                     </div>
 
                     <!-- Σπουδές -->
-                    <div class="row main-box2 margin-bot-25">
-                        <div class="section-header2">
-                            <p class=" title margin-left-20 pad-top-40 text-incr-200" style="font-weight: 100;"> Σπουδές-Ειδικότητες</p>
-                        </div>
-                        <div class="col-sm-6 margin-bot-25">
-                            <p class="margin-left-20 text-incr-150" style="font-weight: 100;"> Bachelor's Degree</p>
-                            <div class="margin-left-20 sc-t-grey font-weight-300 margin-bot-10" ng-repeat ="study in school.BachelorStudies">
-                                <span class="margin-right-5"> <i class="{{study.fa}}" aria-hidden="true"></i> </span>
-                                <span>{{study.BS}}</span>
+
+                        <div class="row main-box2 margin-bot-25">
+                            <div class="section-header2" id="spoudes">
+                                <p class=" title margin-left-20 pad-top-40 text-incr-200" style="font-weight: 100;"> Σπουδές-Ειδικότητες</p>
+                            </div>
+                            <div class="col-sm-6 margin-bot-25">
+                                <p class="margin-left-20 text-incr-150" style="font-weight: 100;"> Bachelor's Degree</p>
+                                <div class="margin-left-20 sc-t-grey font-weight-300 margin-bot-10" ng-repeat ="study in school.BachelorStudies">
+                                    <span class="margin-right-5"> <i class="{{study.fa}}" aria-hidden="true"></i> </span>
+                                    <span>{{study.BS}}</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 margin-bot-25">
+                                <p class="margin-left-20 text-incr-150" style="font-weight: 100;"> Master's Degree</p>
+                                <div class="margin-left-20 sc-t-grey font-weight-300 margin-bot-10" ng-repeat ="study in school.MasterStudies">
+                                    <span class="margin-right-5"> <i class="{{study.fa}}" aria-hidden="true"></i> </span>
+                                    <span>{{study.MS}}</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 margin-bot-25">
-                            <p class="margin-left-20 text-incr-150" style="font-weight: 100;"> Master's Degree</p>
-                            <div class="margin-left-20 sc-t-grey font-weight-300 margin-bot-10" ng-repeat ="study in school.MasterStudies">
-                                <span class="margin-right-5"> <i class="{{study.fa}}" aria-hidden="true"></i> </span>
-                                <span>{{study.MS}}</span>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Υποτροφίες -->
-                    <div class="row main-box margin-bot-25">
+                    <div class="row main-box margin-bot-25" id="ypotrofies">
                         <div class="section-header3">
                             <p class=" title margin-left-20 pad-top-40 text-incr-200" style="font-weight: 100;"> Υποτροφίες</p>
                         </div>
@@ -349,7 +351,7 @@
 
 
                     <!-- Αξιολογησεις -->
-                    <div class="row main-box2 margin-bot-25">
+                    <div class="row main-box2 margin-bot-25" id="reviews">
                         <div class="section-header2">
                             <p class=" title margin-left-20 pad-top-40 text-incr-200" style="font-weight: 100;"> Αξιολογήσεις</p>
                         </div>
@@ -357,7 +359,7 @@
                     </div>
 
                     <!-- Υποτροφίες -->
-                    <div class="row main-box margin-bot-25">
+                    <div class="row main-box margin-bot-25" id="faculty">
                         <div class="section-header3">
                             <p class=" title margin-left-20 pad-top-40 text-incr-200" style="font-weight: 100;"> Διδακτικό Προσωπικό</p>
                         </div>
@@ -379,9 +381,7 @@
 
             <!-- Right Sidebar  -->
             <div class="col-lg-3 col-md-3 hidden-sm hidden-xs margin-top-30">
-                <div data-spy="affix" data-offset-top="370"  class="sidebar">
-
-
+                <div  class="sidebar">
                     <div class=" box left-box1 " ng-repeat="school in schools
                                     | toArray
                                     | filter: schoolFilter">
@@ -411,10 +411,10 @@
                                 <span class="pull-left pad-left-5"> <a href="mailto:{{school.email}}">{{school.email}}</a></span>
                             </div>
                         </div>
-
                     </div>
+                </div>
 
-
+                <div data-spy="affix" data-offset-top="620" class="sidebar">
                     <div class=" box left-box2 sc-t-grey" ng-repeat="school in schools
                                     | toArray
                                     | filter: schoolFilter">
@@ -443,8 +443,9 @@
                             <span class="pull-right">{{school.teachers}}</span>
 
                         </div>
-
                     </div>
+                </div>
+
 
 
 
