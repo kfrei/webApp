@@ -11,6 +11,11 @@ body {
     padding-top:140px;
     margin-top: -140px;
 }
+
+
+
+
+
 /*=============================================*/
 /*  /////////////////////////////////////////  */
 /* -------------  HEADER      ------------- */
@@ -22,12 +27,16 @@ border-bottom: 1px solid #c1c1c1;
 height: 61px;
 }
 
-#header2 a:link, #header2 a:visited  {color: #fff;}
-
 #header .active a {
     padding-bottom: 5px;
     border-bottom: 2px solid #8e8e8e;
 }
+
+#header2 a:link, #header2 a:visited  {
+    background-color: transparent!important;
+    color: #fff;
+}
+
 
 #header2 .active a {
     color: orange;
@@ -36,7 +45,7 @@ height: 61px;
     color: #dde0e1 !important;
 }
 
-
+/*  /////////////////////////////////////////  */
 
 .navbar-scroll li {
     top: -11px;

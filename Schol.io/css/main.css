@@ -92,7 +92,7 @@ hr {
 
 
 a:link, a:visited, a:hover, a:active  {
-    background-color: transparent!important;
+    background-color: transparent;
     text-decoration: none;
 }
  a:visited { color: #fff;  }

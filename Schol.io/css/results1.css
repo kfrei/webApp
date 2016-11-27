@@ -179,6 +179,12 @@ p {padding: 15px; color: #5d5d5d;  }
 }
 
 
+/* //////////////////////////////////////////////////////////////////// */
+ .paginate a:visited {  }
+
+
+
+
 /* /////////////////////////  Card Angular Animation on Enter & Leave   ///////////////////////////////// */
 
 /*.animation.ng-enter{*/
