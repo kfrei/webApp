@@ -57,6 +57,7 @@ hr {
 .pad-top-8 { padding-top: 8px; }
 .pad-top-10 { padding-top: 10px; }
 .pad-top-20 { padding-top: 20px; }
+.pad-top-30 { padding-top: 30px; }
 .pad-top-40 { padding-top: 40px; }
 .pad-top-50 { padding-top: 50px; }
 .pad-top-100 { padding-top: 100px; }
@@ -83,6 +84,7 @@ hr {
 .margin-right-10 { margin-right: 10px; }
 .margin-right-20 { margin-right: 20px; }
 .margin-right-30 { margin-right: 30px; }
+.margin-right-50 { margin-right: 80px; }
 
 .margin-top--8 { margin-top: -8px; }
 .margin-top-3  { margin-top: 3px; }
