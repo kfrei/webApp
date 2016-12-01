@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>Schol.io College Admin Panel</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                        <a href="" class="logo">
+                        <div class="icon-c-logo"> 
+                          <img src="assets/images/logo/logo-light-m.png" alt="logo-img" class="">   
+                        </div>
+                          <span> 
+                            <img src="assets/images/logo/logo-light.png" alt="logo-img" class="">   
+                         </span>
+                        </a>
+                       
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                            <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect">
+                                        <i class="md md-menu"></i>
+                                    </button>
+                                <span class="clearfix"></span>
+                            </div>
+
+                            <ul class="nav navbar-nav hidden-xs">
+
+                              
+                                <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                  <ul class="dropdown-menu dropdown-menu-animate">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+
+
+                            <form role="search" class="navbar-left app-search pull-left hidden-xs">
+			                     <input type="text" placeholder="Αναζήτηση..." class="form-control">
+			                     <a href=""><i class="fa fa-search"></i></a>
+			                </form>
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                <li class="dropdown hidden-xs">
+                                    <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                        <i class="fa fa-bell-o"></i> <span class="badge badge-xs badge-danger">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-animate drop-menu-right dropdown-menu-lg">
+                                        <li class="notifi-title"><span class="label label-default pull-right">2 Νεες</span>Eιδοποιησεις</li>
+                                        <li class="list-group nicescroll notification-list">
+                                           
+
+                                        
+
+                                           <!-- list item-->
+                                           <a href="" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-link noti-custom"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">Σύνδεση Φοιτητών</h5>
+                                                    <p class="m-0">
+                                                        <small>Εκκρέμουν <span class="text-primary font-600">2</span> νέα αιτήματα φοιτητών</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                           <!-- list item-->
+                                           <a href="" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-pencil-square-o noti-pink"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">Αίτημα Υποτροφίας</h5>
+                                                    <p class="m-0">
+                                                        <small>Εκκρέμουν <span class="text-primary font-600">4</span> νέα αιτήματα υποτροφίων</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="" class="list-group-item text-right">
+                                                <small class="font-600">Δείτε όλες τις ειδοποιήσεις</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="hidden-xs">
+                                    <a href="#" class="right-bar-toggle waves-effect"><i class="fa fa-cog"></i></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="#" id="btn-fullscreen" class="waves-effect"><i class="icon-size-fullscreen"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle profile waves-effect" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.png" alt="user-img" class="img-circle"> </a>
+                                    <ul class="dropdown-menu dropdown-menu-animate drop-menu-right">
+                                        <li><a href=""><i class="ti-user m-r-5"></i> Προφίλ</a></li>
+                                        <li><a href=""><i class="ti-settings m-r-5"></i> Ρυθμίσεις</a></li>
+                                        <li><a href=""><i class="ti-power-off m-r-5"></i> Αποσύνδεση</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <div class="user-details">
+                        <div class="pull-left">
+                            <img src="assets/images/users/avatar-1.png" alt="" class="thumb-md img-circle">
+                        </div>
+                        <div class="user-info">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">American College of Thessaloniki <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                      <li><a href=""><i class="ti-user m-r-5"></i> Προφίλ</a></li>
+                                      <li><a href=""><i class="ti-settings m-r-5"></i> Ρυθμίσεις</a></li>
+                                      <li><a href=""><i class="ti-power-off m-r-5"></i> Αποσύνδεση</a></li>
+                                </ul>
+                            </div>
+                            <p class="text-muted m-0">Κολλέγιο</p>
+                        </div>
+                    </div>
+                    <!--- Divider -->
+
+                    <div id="sidebar-menu">
+                        <ul>
+                        	<li class="text-muted menu-title">Διαχειριση</li>
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="icon-people"></i> <span> Δυναμικό </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="">Φοιτητές <span class="label label-primary pull-right">142</span></a> </li>
+                                    <li><a href="">Διδάσκοντες <span class="label label-primary pull-right">25</span></a></li>
+                                </ul>
+                            </li>
+
+                
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="md md-invert-colors-on"></i><span class="label label-primary pull-right">8</span><span> Προφίλ </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="">Grid</a></li>
+                                    <li><a href="">Widgets</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="md md-now-widgets"></i><span> Forms </span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="form-elements.html">General Elements</a></li>
+                                    <li><a href="form-advanced.html">Advanced Form</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="md md-poll"></i><span class="label label-default pull-right">11</span><span> Charts </span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="chart-flot.html">Flot Chart</a></li>
+                                    <li><a href="chart-morris.html">Morris Chart</a></li>
+                                    <li><a href="chart-chartjs.html">Chartjs</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="text-muted menu-title">More</li>
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="md md-pages"></i><span> Pages </span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="page-starter.html">Starter Page</a></li>
+                                    <li><a href="page-login.html">Login</a></li>
+                                </ul>
+                            </li>
+
+                          
+                  
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->                      
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                        <!-- Page-Title -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                              
+
+                            </div>
+                        </div>
+
+                        <div style="min-height: 700px;"></div>
+                        
+
+
+                    </div> <!-- container -->
+                               
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    2016 © Schol.io
+                </footer>
+
+            </div>
+            
+            
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar nicescroll">
+                <h4 class="text-center">Chat</h4>
+                <div class="contact-list nicescroll">
+                    <ul class="list-group contacts-list">
+                        <li class="list-group-item">
+                            <a href="#">
+                              <img class="thumb-sm" src="assets/images/users/avatar-3.png" alt="">
+                              <span class="name">ΙΕΚ Ακμή </span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <img class="thumb-sm" src="assets/images/users/avatar-2.png" alt="">
+                                <span class="name">New York College</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->
+
+
+    
+        <script>
+            var resizefunc = [];
+        </script>
+
+
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    
+    </body>
+</html>
