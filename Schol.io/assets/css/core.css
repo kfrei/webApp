@@ -576,7 +576,7 @@ a:focus {
   color: #f05050;
 }
 .text-muted {
-  color: #98a6ad;
+  color: #a6b4bb;
 }
 .text-primary {
   color: #5d9cec;
@@ -1401,13 +1401,13 @@ body.fixed-left .side-menu.left {
   color: #58c9c7 !important;
 }
 #sidebar-menu > ul > li > a {
-  color: #97A7C3;
+  color: #b9ccea;   /* CHANGE*/
   display: block;
   padding: 9px 20px;
   margin: 4px 0px;
 }
 #sidebar-menu > ul > li > a:hover {
-  color: #58c9c7;
+  color: #58c9c7;   /* CHANGE*/
   text-decoration: none;
 }
 #sidebar-menu > ul > li > a > span {
@@ -1431,7 +1431,7 @@ body.fixed-left .side-menu.left {
   margin: 3px 0 0 0;
 }
 #sidebar-menu > ul > li > a.active {
-  color: #58c9c7 !important;
+  color: #58c9c7 !important;    /* CHANGE*/
 }
 .menu-title {
   padding: 12px 20px !important;
@@ -2173,4 +2173,30 @@ body.fixed-left .side-menu.left {
     margin-left: 0px;
     margin-top: 0px;
   }
+}
+
+
+
+
+
+
+
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+  .topbar .topbar-left {
+    background-color: #ffffff;  /*CHANGE */
+
+  }
+
+
+  .logo-m {margin: 15px 0 0 20px; width: 30px; }
+}
+
+
+
+
+@media (max-width:480px) {
+
+  .logo-m {margin: 15px 0 0 16px; width: 30px; }
 }
