@@ -21,13 +21,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="panel.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="panel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58683205">
-              <caret line="148" column="129" selection-start-line="148" selection-start-column="129" selection-end-line="148" selection-end-column="129" />
+            <state vertical-scroll-proportion="-7.352941">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#1;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -37,18 +40,8 @@
       <file leaf-file-name="core.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/core.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.333334">
-              <caret line="1634" column="44" selection-start-line="1634" selection-start-column="44" selection-end-line="1634" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="components.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/components.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.431373">
+              <caret line="861" column="1" selection-start-line="861" selection-start-column="1" selection-end-line="861" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -67,9 +60,34 @@
       <file leaf-file-name="profile.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/profile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-31.166666">
               <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.55337906">
+              <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#i#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#2;n#div#1;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#3;n#div#1;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +135,8 @@
       <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="55062" selection-start-line="4" selection-start-column="55062" selection-end-line="4" selection-end-column="55062" />
+            <state vertical-scroll-proportion="13.803922">
+              <caret line="4" column="19091" selection-start-line="4" selection-start-column="19091" selection-end-line="4" selection-end-column="19091" />
               <folding />
             </state>
           </provider>
@@ -137,8 +155,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="133" column="32" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="32" />
+            <state vertical-scroll-proportion="-21.25">
+              <caret line="134" column="28" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -186,10 +204,10 @@
         <option value="$PROJECT_DIR$/css/Hexagon.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/results1.html" />
-        <option value="$PROJECT_DIR$/profile.html" />
         <option value="$PROJECT_DIR$/assets/css/responsive.css" />
         <option value="$PROJECT_DIR$/assets/css/core.css" />
         <option value="$PROJECT_DIR$/panel.html" />
+        <option value="$PROJECT_DIR$/profile.html" />
       </list>
     </option>
   </component>
@@ -710,6 +728,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#441#651#0" expanded="false" />
+            <element signature="e#752#850#0" expanded="false" />
+            <element signature="e#1244#1293#0" expanded="false" />
+            <element signature="e#1345#1380#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -717,20 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="123" column="75" selection-start-line="123" selection-start-column="75" selection-end-line="123" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/core.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.333334">
-          <caret line="1634" column="44" selection-start-line="1634" selection-start-column="44" selection-end-line="1634" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -747,14 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -776,26 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="55062" selection-start-line="4" selection-start-column="55062" selection-end-line="4" selection-end-column="55062" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="132" column="9" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="32" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -819,13 +805,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.25">
+          <caret line="134" column="28" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="13.803922">
+          <caret line="4" column="19091" selection-start-line="4" selection-start-column="19091" selection-end-line="4" selection-end-column="19091" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/core.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.431373">
+          <caret line="861" column="1" selection-start-line="861" selection-start-column="1" selection-end-line="861" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/panel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58683205">
-          <caret line="148" column="129" selection-start-line="148" selection-start-column="129" selection-end-line="148" selection-end-column="129" />
+        <state vertical-scroll-proportion="-7.352941">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#1;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.166666">
+          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55337906">
+          <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#2;n#div#1;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#3;n#div#1;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

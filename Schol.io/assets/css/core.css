@@ -1089,7 +1089,7 @@ textarea.form-control {
 }
 .popover .popover-title {
   background-color: transparent;
-  color: #58c9c7;
+  color: #00bcd4;
   font-weight: 600;
 }
 /* Code */
@@ -1165,7 +1165,7 @@ pre {
   text-align: center;
 }
 .logo i {
-  color: #58c9c7;
+  color: #00bcd4;
 }
 .logo .icon-c-logo {
   display: none;
@@ -1267,8 +1267,8 @@ pre {
   border: 2px solid #81c868;
 }
 .noti-info {
-  color: #34d3eb;
-  border: 2px solid #34d3eb;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
 }
 .noti-warning {
   color: #ffbd4a;
@@ -1291,8 +1291,8 @@ pre {
   border: 2px solid #fb6d9d;
 }
 .noti-custom {
-  color: #58c9c7;
-  border: 2px solid #58c9c7;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
 }
 .noti-inverse {
   color: #4c5667;
@@ -1339,7 +1339,7 @@ body.fixed-left .side-menu.left {
   padding: 0px 15px;
 }
 .button-menu-mobile:hover {
-  color: #58c9c7;
+  color: #00bcd4;
 }
 .sidebar-inner {
   height: 100%;
@@ -1398,7 +1398,7 @@ body.fixed-left .side-menu.left {
   margin-top: 2px;
 }
 #sidebar-menu .subdrop {
-  color: #58c9c7 !important;
+  color: #00bcd4 !important;
 }
 #sidebar-menu > ul > li > a {
   color: #b9ccea;   /* CHANGE*/
@@ -1407,7 +1407,7 @@ body.fixed-left .side-menu.left {
   margin: 4px 0px;
 }
 #sidebar-menu > ul > li > a:hover {
-  color: #58c9c7;   /* CHANGE*/
+  color: #00bcd4;   /* CHANGE*/
   text-decoration: none;
 }
 #sidebar-menu > ul > li > a > span {
@@ -1431,7 +1431,7 @@ body.fixed-left .side-menu.left {
   margin: 3px 0 0 0;
 }
 #sidebar-menu > ul > li > a.active {
-  color: #58c9c7 !important;    /* CHANGE*/
+  color: #00bcd4 !important;    /* CHANGE*/
 }
 .menu-title {
   padding: 12px 20px !important;
@@ -1531,8 +1531,8 @@ body.fixed-left .side-menu.left {
   position: relative;
   width: 260px;
   background: #21324e;
-  color: #58c9c7;
-  border-color: #58c9c7;
+  color: #00bcd4;
+  border-color: #00bcd4;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > ul {
   display: block;
@@ -1550,13 +1550,13 @@ body.fixed-left .side-menu.left {
   z-index: 6;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > ul a:hover {
-  color: #58c9c7;
+  color: #00bcd4;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover a span {
   display: inline;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu a.subdrop {
-  color: #58c9c7 !important;
+  color: #00bcd4 !important;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li > ul {
   display: none;
@@ -1577,7 +1577,7 @@ body.fixed-left .side-menu.left {
   transform: rotate(270deg);
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul ul li.active a {
-  color: #58c9c7;
+  color: #00bcd4;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li > a span {
   display: none;
@@ -2184,19 +2184,11 @@ body.fixed-left .side-menu.left {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  .topbar .topbar-left {
-    background-color: #ffffff;  /*CHANGE */
-
-  }
-
-
+  .topbar .topbar-left { background-color: #ffffff;  /*CHANGE */  }
   .logo-m {margin: 15px 0 0 20px; width: 30px; }
 }
 
 
-
-
 @media (max-width:480px) {
-
   .logo-m {margin: 15px 0 0 16px; width: 30px; }
 }
