@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Schol.io College Panel">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>Schol.io College Admin Panel</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <!--<link href="assets/css/components.css" rel="stylesheet" type="text/css" />-->
+        <!--<link href="assets/css/pages.css" rel="stylesheet" type="text/css" />-->
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />     <!-- for Responsive on XS leftbar -->
+        <link href="assets/css/bootstrap-select.min.css" rel="stylesheet" />
+
+        <link href="assets/css/steps.css" rel="stylesheet"/>
+
+        <!-- Main CSS -->
+        <!--<link href="css/main.css" rel="stylesheet">-->
+
+        <!-- Wizard CSS -->
+        <link href="css/wizard/smart_wizard.css" rel="stylesheet" type="text/css" />
+        <link href="css/wizard/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+        <link href="css/wizard/smart_wizard_theme_circles.css" rel="stylesheet" type="text/css" />
+
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                        <a href="" class="logo">
+                        <div class="icon-c-logo">
+                            <img src="assets/images/logo/logo-light-m.png" alt="logo-img" class="hidden-xs" >
+                            <img src="assets/images/logo/logo-m.png" alt="logo-img" class="visible-xs hidden-sm logo-m">
+                        </div>
+
+
+                          <span> 
+                            <img src="assets/images/logo/logo-light.png" alt="logo-img" class="" style="width: 110px">
+                         </span>
+                        </a>
+                       
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                            <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect">
+                                        <i class="fa fa-outdent"></i>
+                                    </button>
+                                <span class="clearfix"></span>
+                            </div>
+
+
+                            <form role="search" class="navbar-left app-search pull-left hidden-xs">
+			                     <input type="text" placeholder="Αναζήτηση..." class="form-control">
+			                     <a href=""><i class="fa fa-search"></i></a>
+			                </form>
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                <li class="dropdown hidden-xs">
+                                    <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                        <i class="fa fa-bell-o"></i> <span class="badge badge-xs badge-danger">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-animate drop-menu-right dropdown-menu-lg">
+                                        <li class="notifi-title"><span class="label label-default pull-right">2 Νεες</span>Eιδοποιησεις</li>
+                                        <li class="list-group nicescroll notification-list">
+                                           
+
+                                        
+
+                                           <!-- list item-->
+                                           <a href="" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-link noti-custom"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">Σύνδεση Φοιτητών</h5>
+                                                    <p class="m-0">
+                                                        <small>Εκκρέμουν <span class="text-primary font-600">2</span> νέα αιτήματα φοιτητών</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                           <!-- list item-->
+                                           <a href="" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-pencil-square-o noti-pink"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">Αίτημα Υποτροφίας</h5>
+                                                    <p class="m-0">
+                                                        <small>Εκκρέμουν <span class="text-primary font-600">4</span> νέα αιτήματα υποτροφίων</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="" class="list-group-item text-right">
+                                                <small class="font-600">Δείτε όλες τις ειδοποιήσεις</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="hidden-xs">
+                                    <a href="#" class="right-bar-toggle waves-effect"><i class="fa fa-commenting-o"></i></a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="#" id="btn-fullscreen" class="waves-effect"><i class="icon-size-fullscreen"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle profile waves-effect" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.png" alt="user-img" class="img-circle"> </a>
+                                    <ul class="dropdown-menu dropdown-menu-animate drop-menu-right">
+                                        <li><a href=""><i class="ti-user m-r-5"></i> Προφίλ</a></li>
+                                        <li><a href=""><i class="ti-settings m-r-5"></i> Ρυθμίσεις</a></li>
+                                        <li><a href=""><i class="ti-power-off m-r-5"></i> Αποσύνδεση</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <div class="user-details">
+                        <div class="pull-left">
+                            <img src="assets/images/users/avatar-1.png" alt="" class="thumb-md" style="margin-top: 5px">
+                        </div>
+                        <div class="user-info">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="" style="font-weight: 100; font-size: 95%"> American College of Thessaloniki </span> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                      <li><a href=""><i class="ti-user m-r-5"></i> Προφίλ</a></li>
+                                      <li><a href=""><i class="ti-settings m-r-5"></i> Ρυθμίσεις</a></li>
+                                      <li><a href=""><i class="ti-power-off m-r-5"></i> Αποσύνδεση</a></li>
+                                </ul>
+                            </div>
+                            <!--<p class="text-muted m-0">Κολλέγιο</p>-->
+                        </div>
+                    </div>
+                    <!--- Divider -->
+
+                    <div id="sidebar-menu">
+                        <ul>
+                        	<li class="text-muted menu-title">Διαχειριση</li>
+
+                            <li class="has_sub">
+                                <a href="#" class=""><i class="icon-people"></i> <span> Δυναμικό </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="">Φοιτητές </a> </li>
+                                    <li><a href="">Διδάσκοντες </a></li>
+                                    <li><a href="">Αιτήματα </a></li>
+                                </ul>
+                            </li>
+
+                
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="ion-android-user-menu"></i><span> Προφίλ </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="">Στοιχεία Επικοινωνίας</a></li>
+                                    <li><a href="">Ειδικότητες</a></li>
+                                    <li><a href="">Φωτογραφίες</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="ion-trophy"></i><span> Υποτροφίες </span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="">Δημιουργία Νέας</a></li>
+                                    <li><a href="">Προβολή</a></li>
+                                    <li><a href="">Αιτήματα
+                                        <!--<span class="label label-default pull-right">3</span>-->
+                                    </a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect waves-light"><i class="ion-ios7-star-half"></i><span> Αξιολογήσεις </span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="">Προβολή</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->                      
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                        <!-- Page-Title -->
+                        <div class="row">
+
+
+
+
+                            <!-- ============================================================== -->
+                            <!-- Step Wizard-->
+                            <!-- ============================================================== -->
+
+                                <div id="smartwizard" class="">
+
+                                         <ul class="clearfix">
+                                                 <li><a href="#step-1">Βήμα 1<br /><small class="">Οικονομική Προσφορά</small></a></li>
+                                                 <li><a href="#step-2">Βήμα 2<br /><small>Σπουδές/Ειδικότητα</small></a></li>
+                                                 <li><a href="#step-3">Βήμα 3<br /><small>Κριτήρια/Όροι</small></a></li>
+                                                 <!--<li><a href="#step-4">Βήμα 4<br /><small>Κριτήρια/Όροι</small></a></li>-->
+
+                                         </ul>
+
+                                    <div>
+                                        <div id="step-1">
+                                            <div class="step1">
+                                                <h2>Βήμα 1 </h2>
+                                                <div class="step-box">
+                                                    <div class="step-img">
+                                                    </div>
+                                                    <select class="selectpicker" data-width="100%" >
+                                                        <option data-icon="fa fa-scissors">&nbsp; Ποσοστό Επιδότησης</option>
+                                                        <option data-icon="fa fa-money">&nbsp; Ποσό Επιδότησης</option>
+                                                        <option data-icon="fa fa-clock-o">&nbsp; Χρόνος Δωρεαν Φοίτησης</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="step-2" class="">
+                                            <h2>Βήμα 2 </h2>
+                                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            </div>
+                                        </div>
+                                        <div id="step-3" class="">
+                                            <h2>Βήμα 3 </h2>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                        <div style="min-height: 700px;"></div>
+                        
+
+
+                    </div> <!-- container -->
+                               
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    2016 © Schol.io
+                </footer>
+
+            </div>
+            
+            
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar nicescroll">
+                <h4 class="text-center">Chat</h4>
+                <div class="contact-list nicescroll">
+                    <ul class="list-group contacts-list">
+                        <li class="list-group-item">
+                            <a href="#">
+                              <img class="thumb-sm" src="assets/images/users/avatar-3.png" alt="">
+                              <span class="name">ΙΕΚ Ακμή </span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <img class="thumb-sm" src="assets/images/users/avatar-2.png" alt="">
+                                <span class="name">New York College</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->
+
+
+    
+
+
+
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <!-- jQuery  -->
+        <!--<script src="assets/js/jquery.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>      <!-- for Responsive leftbar -->
+        <script src="assets/js/fastclick.js"></script>    <!-- for right sidebar chat click -->
+        <script src="assets/js/jquery.slimscroll.js"></script><!-- for Responsive leftbar -->
+
+        <!--<script src="assets/js/jquery.blockUI.js"></script>-->
+        <!--<script src="assets/js/waves.js"></script>-->
+        <!--<script src="assets/js/wow.min.js"></script>-->
+        <!--<script src="assets/js/jquery.nicescroll.js"></script>-->
+        <!--<script src="assets/js/jquery.scrollTo.min.js"></script>-->
+
+        <script src="assets/js/jquery.core.js"></script>   <!-- for Responsive leftbar -->
+        <script src="assets/js/jquery.app.js"></script>  <!-- for all manipulation tricks -->
+        <script src="assets/js/bootstrap-select.min.js" type="text/javascript"></script>
+
+
+        <!-- Include SmartWizard JavaScript source -->
+        <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
+
+
+        <script>
+            var resizefunc = [];
+
+
+            $(document).ready(function(){
+                // Smart Wizard
+                $('#smartwizard').smartWizard({
+                    selected: 0,
+                    theme: 'circles', // default, arrows, circles, dots,
+                    cycleSteps: false, // Allows to cycle the navigation of steps
+                    transitionEffect:'fade',
+                    toolbarSettings: {toolbarPosition: 'bottom',
+                        toolbarExtraButtons: [
+                            {label: 'Επαναφορά', css: 'btn sc-dark-grey sc-t-white', onClick: function(){ $('#smartwizard').smartWizard("reset"); }},
+                            {label: 'Οριστικοποίηση', css: 'btn  sc-dark-green sc-t-white', onClick: function(){ alert('Finish Clicked'); }}
+
+                        ]
+                    }
+                });
+
+            });
+        </script>
+
+
+
+
+    </body>
+</html>
