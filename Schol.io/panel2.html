@@ -32,7 +32,7 @@
     </head>
 
 
-    <body class="fixed-left">
+    <body class="fixed-left" ng-app="stepsApp">
 
         <!-- Begin page -->
         <div id="wrapper">
@@ -245,7 +245,7 @@
                             <!-- Step Wizard-->
                             <!-- ============================================================== -->
 
-                                <div id="smartwizard" class="">
+                                <div id="smartwizard" class="" ng-controller="stepsCtrl" data-ng-init="init()" ng-cloak>
 
                                          <ul class="clearfix">
                                                  <li><a href="#step-1">Βήμα 1<br /><small class="">Οικονομική Προσφορά</small></a></li>
@@ -255,18 +255,39 @@
 
                                          </ul>
 
-                                    <div>
+                                    <div class="row">
                                         <div id="step-1">
-                                            <div class="step1">
+                                            <div class="step1 centered-text">
                                                 <h2>Βήμα 1 </h2>
                                                 <div class="step-box">
                                                     <div class="step-img">
+                                                        <img  class="step-image" src="assets/images/steps/step1-reduce.png" alt="scholio logo" ng-show="step1Select=='reduce'">
+                                                        <img  class="step-image" src="assets/images/steps/step1-hand.png" alt="scholio logo" ng-show="step1Select=='amount'">
+                                                        <img  class="step-image" src="assets/images/steps/step1-clock.png" alt="scholio logo" ng-show="step1Select=='time'">
                                                     </div>
-                                                    <select class="selectpicker" data-width="100%" >
-                                                        <option data-icon="fa fa-scissors">&nbsp; Ποσοστό Επιδότησης</option>
-                                                        <option data-icon="fa fa-money">&nbsp; Ποσό Επιδότησης</option>
-                                                        <option data-icon="fa fa-clock-o">&nbsp; Χρόνος Δωρεαν Φοίτησης</option>
+                                                    <select class="selectpicker" data-width="100%" ng-model="step1Select">
+                                                        <option data-icon="fa fa-scissors" value="reduce">&nbsp; Μείωση Διδάκτρων</option>
+                                                        <option data-icon="fa fa-money" value="amount">&nbsp; Ποσό Επιδότησης</option>
+                                                        <option data-icon="fa fa-clock-o" value="time">&nbsp; Χρόνος Δωρεάν Φοίτησης</option>
                                                     </select>
+
+                                                    <div class="" style="width: 50%; margin-left: 25%;">
+                                                        <div class="input-group " style="padding: 15px 0; z-index: 1" ng-show="step1Select=='reduce'">
+                                                            <input type="text" class="form-control" placeholder="20" aria-describedby="basic-addon1">
+                                                            <span class="input-group-addon" id="basic-addon1">%</span>
+                                                        </div>
+
+                                                        <div class="input-group" style=" padding: 15px 0; z-index: 1" ng-show="step1Select=='amount'">
+                                                            <input type="text" class="form-control" placeholder="800" aria-describedby="basic-addon2">
+                                                            <span class="input-group-addon" id="basic-addon2">€</span>
+                                                        </div>
+
+                                                        <div class="input-group" style=" padding: 15px 0; z-index: 1" ng-show="step1Select=='time'">
+                                                            <input type="text" class="form-control" placeholder="2" aria-describedby="basic-addon3">
+                                                            <span class="input-group-addon" id="basic-addon3">Μήνες</span>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -374,6 +395,12 @@
 
         <!-- Include SmartWizard JavaScript source -->
         <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
+
+        <!-- Angular js-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.js"></script>
+        <script type="text/javascript" src="js/steps-app.js"></script>
 
 
         <script>
