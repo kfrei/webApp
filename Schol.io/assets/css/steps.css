@@ -5,13 +5,18 @@
     float: none;
 }
 
-.step1 {width: 100%; max-width: 500px; padding-bottom: 50px;}
+.step1 {width: 100%; max-width: 500px; padding-bottom: 30px; margin-top: 200px;}
 
-.step-box {height: 340px; padding: 20px; background-color: #fafafa;}
+.step-box {height: 240px; padding: 20px; background-color: #fafafa;}
 
 .step-img{height: 220px; background-color: #e8e8e8;}
 
 .step-image {height: 200px;  padding-top: 27px;}
+
+
+.step-anchor {  top: -200px; }
+
+
 
 
 @media (min-width: 1921px) {
