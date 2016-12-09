@@ -297,9 +297,48 @@
                                             </div>
                                         </div>
 
-                                        <div id="step-2" class="">
-                                            <h2>Βήμα 2 </h2>
-                                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        <div id="step-2" class="step-anchor">
+                                            <div class="step1 centered-text">
+                                                <h2>Βήμα 2 </h2>
+                                                <div class="step-box">
+                                                    <div class="step-img">
+                                                        <img  class="step-image" src="assets/images/steps/step1-reduce2.png" alt="scholio logo" ng-show="step2Select=='reduce'">
+                                                        <img  class="step-image" src="assets/images/steps/step1-hand2.png" alt="scholio logo" ng-show="step2Select=='amount'">
+                                                        <img  class="step-image" src="assets/images/steps/step1-clock2.png" alt="scholio logo" ng-show="step2Select=='time'">
+                                                    </div>
+
+                                                    <select class="selectpicker" data-live-search="true" data-width="100%" ng-model="step2Select" id="" mobile="true">
+                                                        <option data-icon="fa " value="Διοίκηση Επιχειρήσεων">&nbsp; Διοίκηση Επιχειρήσεων</option>
+                                                        <option data-icon="fa " value=" Εφαρμοσμένη Πληροφορική">&nbsp; Εφαρμοσμένη Πληροφορική</option>
+                                                        <option data-icon="fa " value="Διεθνείς Σχέσεις">&nbsp; Διεθνείς Σχέσεις</option>
+                                                        <option data-icon="fa " value="Αγγλική Φιλολογία & Νέα Μέσα">&nbsp; Αγγλική Φιλολογία & Νέα Μέσα</option>
+                                                        <option data-icon="fa " value="Τραπεζικά και Χρηματοοικονομικά">&nbsp; Τραπεζικά και Χρηματοοικονομικά</option>
+                                                        <option data-icon="fa " value="Επιχειρηματικότητα">&nbsp; Επιχειρηματικότητα</option>
+                                                        <option data-icon="fa " value="Διοίκηση">&nbsp; Διοίκηση</option>
+                                                    </select>
+
+
+
+
+
+
+
+
+
+                                                    <div class="" style="width: 50%; margin-left: 25%;">
+                                                                <div class="funkyradio">
+                                                                    <div class="funkyradio-success">
+                                                                        <input type="radio" name="radio" id="radio1" />
+                                                                        <label for="radio1">Προπτυχιακές Σπουδές</label>
+                                                                    </div>
+                                                                    <div class="funkyradio-success">
+                                                                        <input type="radio" name="radio" id="radio2" checked/>
+                                                                        <label for="radio2">Μεταπτυχικές Σπουδές</label>
+                                                                    </div>
+                                                                </div>
+                                                    </div>
+
+                                                </div>
                                             </div>
                                         </div>
                                         <div id="step-3" class="">
@@ -419,6 +458,9 @@
                 });
 
             });
+
+
+
         </script>
 
 
