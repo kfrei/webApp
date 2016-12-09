@@ -17,7 +17,7 @@
     min-height: 300px;
 }
 .sw-theme-circles .step-content { 
-    padding: 10px 0;     
+    padding: 10px 0;
     border: 0px solid #D4D4D4;    
     background-color: #FFF;
     text-align: left;
@@ -65,7 +65,7 @@
     font-weight: bold;
     border-radius: 50%;
     margin: 5px;
-    margin-left: 35px;  /*------- CHANGE ---------*/
+    margin-left: 25px;  /*------- CHANGE ---------*/
     margin-bottom: 35px;
     box-shadow: inset 0px 0px 0px 3px #fff !important;
     z-index: 0;     /*--- CHANGE ----*/
@@ -73,7 +73,7 @@
 .sw-theme-circles > ul.step-anchor > li > a small{
     position: absolute;
     bottom: -45px;
-    left: -30px;
+    left: -27px;
     display: block;
     width: 140px;
 
@@ -95,7 +95,7 @@
 }
 
 .sw-theme-circles > ul.step-anchor > li > a {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .sw-theme-circles > ul.step-anchor > li.done > a {
@@ -150,7 +150,7 @@ Courtesy: http://bootsnipp.com/snippets/featured/loading-button-effect-no-js
     top: 50%;
     left: 50%;
     margin-top: -16px;
-    margin-left: -16px;
+    margin-left: -36px;
     width: 32px;
     height: 32px;
     -webkit-animation: ld 1s ease-in-out infinite;

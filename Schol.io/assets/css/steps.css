@@ -5,18 +5,18 @@
     float: none;
 }
 
-.step1 {width: 100%; max-width: 500px; padding-bottom: 30px; margin-top: 200px;}
+.step1 {width: 100%; max-width: 500px;  margin-top: 220px;}
 
-.step-box {height: 240px; padding: 20px; background-color: #fafafa;}
+.step-box {height: 400px; padding: 20px; background-color: #fafafa;}
 
 .step-img{height: 220px; background-color: #e8e8e8;}
 
-.step-image {height: 200px;  padding-top: 27px;}
+.step-image {height: 190px;  padding-top: 27px;}
 
 
-.step-anchor {  top: -200px; }
+.step-anchor {  top: -220px; }
 
-
+.mar-le-10 {margin-left: -10px;}
 
 
 @media (min-width: 1921px) {
@@ -38,3 +38,8 @@
 
 }
 
+@media  (max-width: 480px) {
+    .step1 {width: 117%; margin-left: -25px;}
+    .step-box {padding: 8px;}
+    .step-image {height: 95%}
+}
