@@ -10,9 +10,9 @@
 
 .step1 {width: 100%; max-width: 500px;  margin-top: 220px; margin-bottom: -170px;}
 
-.step-box {height: 400px; padding: 20px; background-color: #fafafa;}
+.step-box {height: 400px; padding: 20px; background-color: #f4f4f4;}
 
-.step-img{height: 220px; background-color: #e8e8e8;}
+.step-img{height: 220px; background-color: #fcfcfc;}
 
 .step-image {height: 190px;  padding-top: 27px;}
 
@@ -22,9 +22,9 @@
 .mar-le-10 {margin-left: -10px;}
 
 
-
-
-
+/*=======================================*/
+/*=======  CheckBox Radio ===============*/
+/*=======================================*/
 
 
 .funkyradio div {
@@ -37,6 +37,7 @@
     border-radius: 3px;
     border: 1px solid #D1D3D4;
     font-weight: normal;
+    background-color: #fff;
 }
 
 .funkyradio input[type="radio"]:empty,
@@ -72,32 +73,17 @@
 
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label,
 .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
-    color: #888;
+    color: #fff;
 }
 
-.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
-.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
-    content: '\2714';
-    text-indent: .9em;
-    color: #C2C2C2;
-}
 
-.funkyradio input[type="radio"]:checked ~ label,
-.funkyradio input[type="checkbox"]:checked ~ label {
-    color: #777;
-}
 
 .funkyradio input[type="radio"]:checked ~ label:before,
 .funkyradio input[type="checkbox"]:checked ~ label:before {
     content: '\2714';
     text-indent: .3em;
     color: #333;
-    background-color: #ccc;
-}
-
-.funkyradio input[type="radio"]:focus ~ label:before,
-.funkyradio input[type="checkbox"]:focus ~ label:before {
-    box-shadow: 0 0 0 3px #999;
+    background-color: #ffffff;
 }
 
 
@@ -114,7 +100,8 @@
 }
 
 
-
+/*=======================================*/
+/*=======================================*/
 
 
 
