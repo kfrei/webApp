@@ -24,8 +24,8 @@
       <file leaf-file-name="panel2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/panel2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38271606">
-              <caret line="361" column="116" selection-start-line="361" selection-start-column="116" selection-end-line="361" selection-end-column="116" />
+            <state vertical-scroll-proportion="0.50060457">
+              <caret line="309" column="136" selection-start-line="309" selection-start-column="136" selection-end-line="309" selection-end-column="136" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -45,6 +45,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.625">
               <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="steps-app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/steps-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -95,16 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="64" column="9" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="steps-app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/steps-app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -207,9 +207,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="898" />
-    <option name="y" value="342" />
+    <option name="y" value="244" />
     <option name="width" value="1436" />
-    <option name="height" value="873" />
+    <option name="height" value="971" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -443,7 +443,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="898" y="342" width="1436" height="873" extended-state="0" />
+    <frame x="898" y="244" width="1436" height="971" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13780919" sideWeight="0.6608833" order="0" side_tool="false" content_ui="combo" />
@@ -842,14 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/steps.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/steps-app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -858,10 +850,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/steps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/panel2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38271606">
-          <caret line="361" column="116" selection-start-line="361" selection-start-column="116" selection-end-line="361" selection-end-column="116" />
+        <state vertical-scroll-proportion="0.50060457">
+          <caret line="309" column="136" selection-start-line="309" selection-start-column="136" selection-end-line="309" selection-end-column="136" />
           <folding>
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
