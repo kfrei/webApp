@@ -11,7 +11,8 @@ angular.module("stepsApp",['ngAnimate'])
     .controller("stepsCtrl",function ($timeout,$scope) {
 
         $scope.step1Select = 'reduce'; // set the default sort type
-        $scope.step2Select = 'Διοίκηση Επιχειρήσεων'; // set the default sort type
+        $scope.step2Select = 'Διοίκηση Επιχειρήσεων';
+        $scope.step3Select = 'talent';
 
         $scope.init = function () {
             console.log("initialize !");
