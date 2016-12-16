@@ -78,29 +78,42 @@
 
 </head>
 <body>
+<div class="container">
+    <div class="" ng-app="studiesApp" ng-controller="studiesCtrl" data-ng-init="init()" ng-cloak>
+        <h3  class="title">Επιλογή Ειδικοτήτων Σπουδών</h3>
 
-<div class="row" ng-app="studiesApp" ng-controller="studiesCtrl" data-ng-init="init()" ng-cloak>
-    <h3  class="title">Επιλογή Ειδικοτήτων Σπουδών</h3>
+        <!--<div class="clearfix">-->
+            <!--<ul class="">-->
+                <!--<li class=" " ng-repeat="study in studi">-->
 
-    <div class="clearfix">
-        <ul class="">
-            <li class=" " ng-repeat="study in studi">
+                    <!--<div>{{study.section}}</div>-->
 
-                <div>{{study.section}}</div>
-
-                <li class="" ng-repeat="secti in studi.studies">
-
-                    <div>{{secti}}</div>
-
-                </li>
+                        <!--<li class="" ng-repeat="secti in study.studies">-->
+                            <!--<div>{{secti.st}}</div>-->
+                        <!--</li>-->
 
 
-            </li>
-        </ul>
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+
+
+
+<div class="col-sm-6">
+    <div ng-repeat="secti in studi">
+        <label>{{secti.section}}</label>
+        <select ng-model="secti.selectedItem" ng-options="item as item.st for item in secti.studies">
+        </select>
     </div>
-
-
 </div>
+
+
+
+
+    </div>
+</div>
+
 
 
 </body>

@@ -47,6 +47,46 @@ angular.module("studiesApp",[])
             $scope.ready = true;
         },120);
 
+
+
+
+        $scope.fks = [
+            {
+                "field1": 1,
+                "field2": "Value01",
+                "field3": "Value02",
+                "refFields": [
+                    { "fieldId": 100,  "fieldValue": "1fieldValueA" },
+                    { "fieldId": 101, "fieldValue": "1fieldValueB" }
+                ]
+            },
+            {
+                "field1": 2,
+                "field2": "Value03",
+                "field3": "Value04",
+                "refFields": [
+                    { "fieldId": 102, "fieldValue": "2fieldValueA" },
+                    { "fieldId": 103, "fieldValue": "2fieldValueB" },
+                    { "fieldId": 104, "fieldValue": "2fieldValueC" },
+                    { "fieldId": 105, "fieldValue": "2fieldValueD" }
+                ]
+            },
+            {
+                "field1": 3,
+                "field2": "Value05",
+                "field3": "Value06",
+                "refFields": [
+                    { "fieldId": 106, "fieldValue": "3fieldValueA" },
+                    { "fieldId": 107, "fieldValue": "3fieldValueB" }
+                ]
+            }
+        ];
+
+
+
+
+
+
     });
 
 
