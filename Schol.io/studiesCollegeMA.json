@@ -1,0 +1,104 @@
+[
+{"id":1,
+"section":"Διοίκηση Επιχειρήσεων & Οικονομικά - Business",
+"studies":[
+"MBA International Business (Μεταπτυχιακό στη Διοίκηση Επιχειρήσεων)",
+"MBA (Διοίκηση Επιχειρήσεων)",
+"MBA in Banking and Finance",
+"MBA in Finance"
+"MBA in Entrepreneurship",
+"MBA in Management",
+"MBA in General Management"
+"MBA in Marketing",
+"MBA in Marketing in the Digital Era",
+"MBA Executive",
+"MBA in Logistics Management",
+"MBA in Healthcare Management",
+"MBA in Human Resource Management",
+"MA in International Management – Accounting & Finance",
+"MA in International Management – Aviation Management",
+"MA in International Management – International Marketing"
+"MA in Transport and Logistics Management",
+"MSc Global Shipping Management"
+]},   
+ 
+{"id":2,
+"section":"Ναυτιλιακά - Nautical Education",
+"studies":[
+"MSc in Marine Engineering Management"
+]},
+
+{"id":3,
+"section":"Τουριστισμός - Tourism",
+"studies":[
+"MBA in Hospitality (Μεταπτυχιακό στη Διοίκηση Ξενοδοχειακών Επιχειρήσεων)",
+"MS in Hospitality and Tourism Management",
+"Master 2 Management - Management of International Tourism"
+]},
+
+{"id":4,
+"section":"Πληροφορική - Informatics & Technology",
+"studies":[
+"MSc Software Engineering (Μεταπτυχιακό στη Μηχανική Λογισμικού)",
+"MSc Information Technology (Μεταπτυχιακό στην Τεχνολογία Πληροφοριών)",
+"MSc Information Security and Computer Forensics (Μεταπτυχιακό στην Ασφάλεια Πληροφοριών και την Ηλεκτρονική Εγκληματολογία)",
+"MSc. in Internet Engineering and Web Management"
+]},
+
+{"id":4,
+"section":"Επιστήμες Υγείας - Health Sciences",
+"studies":[
+"MSc Physiotherapy (Μεταπτυχιακό στη Φυσικοθεραπεία)",
+"MSc Advanced Dietetic Practice (Μεταπτυχιακό Πρόγραμμα στην Προηγμένη Διαιτολογική Πρακτική)",
+"MPhil - Psychology Specialisms",
+"MSc in Cognitive Behavioural Psychotherapies",
+"MSc in Psychology"
+]},
+
+{"id":5,
+"section":"Ανθρωπιστικές Επιστήμες - Humanities and Social Sciences",
+"studies":[
+"MA Special Educational Needs (SEN) (Μεταπτυχιακό στην Ειδική Αγωγή)",
+"ΜSc Clinical & Community Psychology (Μεταπτυχιακό στην Κλινική Κοινοτική Ψυχολογία)",
+"MSc Business Psychology (Μεταπτυχιακό στην Ψυχολογία της Εργασίας)",
+"MSc Psychology (Μεταπτυχιακό στην Ψυχολογία)",
+"MS in Counseling Psychology & Psychotherapy",
+"MA in Applied Educational Psychology",
+"MA in Strategic Communication & Public Relations",
+"MA in Digital Communication & Social Media",
+"MA in Teaching English to Speakers of Other Languages",
+"MA Counselling and Psychotherapy (Μεταπτυχιακό στη Συμβουλευτική και τη Ψυχοθεραπεία)",
+"MSc Applied Positive Psychology and Coaching (Εφαρμοσμένη Θετική Ψυχολογία και Ψυχολογία Coaching)",
+"MA Second Language Learning and Teaching",
+"MPhil - Education Specialisms"
+]},
+
+{"id":6,
+"section":"Πολυτεχνικές Σπουδές - Engineering",
+"studies":[
+"MArch Architecture and Urbanism (Μεταπτυχιακό στην Αρχιτεκτονική και τον Αστικό Σχεδιασμό)",
+"MSc Civil Engineering and the Built Environment (Μεταπτυχιακό Πολιτικών Μηχανικών)",
+"MSc Electronic Systems Engineering (Μεταπτυχιακό Ηλεκτρονικών Μηχανικών)",
+"MSc Electrical Engineering and Computer Systems",
+"MSc. in Civil Engineering"
+]},
+
+{"id":7,
+"section":"Πολιτισμός & Επικοινωνία",
+"studies":[
+]},
+
+{"id":8,
+"section":"Liberal Arts & Sciences",
+"studies":[
+]},
+
+{"id":9,
+"section":"Fine and Performing Arts",
+"studies":[
+]}
+
+
+]
+
+

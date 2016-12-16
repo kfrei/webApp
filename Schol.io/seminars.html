@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+<body>
+
+
+
+<div class="container" style="margin-top: 50px;">
+    <select id="category_id" name="category_id" class="selectpicker" data-live-search="true" data-size="10" multiple style="padding: 40px;">
+        <option value="0" selected="selected">Επιλέξτε κατηγορία</option>
+        <option value="1">&nbsp;&nbsp;&nbsp;Οργάνωση και Διοίκηση</option>
+        <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γενικά Θέματα Διοίκησης (Management)</option>
+        <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Διοίκηση Ανθρώπινου Δυναμικού (HR)</option>
+        <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Διοίκηση Έργων (Project Management)</option>
+        <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Αποθέματα - Προμήθειες - Lοgistics (Αποθήκη - Διανομή)</option>
+        <option value="119">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ελεγκτική και Εσωτερικός Έλεγχος</option>
+        <option value="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γραμματειακή Υποστήριξη</option>
+        <option value="128">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ναυτιλιακά</option>
+        <option value="101">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="19">&nbsp;&nbsp;&nbsp;Marketing - Πωλήσεις</option>
+        <option value="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Marketing</option>
+        <option value="21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πωλήσεις</option>
+        <option value="123">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μ.Μ.Ε. - Επικοινωνία - Social Media</option>
+        <option value="22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Δημόσιες Σχέσεις</option>
+        <option value="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Real Estate</option>
+        <option value="104">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="7">&nbsp;&nbsp;&nbsp;Λογιστικά - Φορολογικά</option>
+        <option value="8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γενική Λογιστική</option>
+        <option value="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Λογιστική Κόστους</option>
+        <option value="9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ναυτιλιακή Λογιστική</option>
+        <option value="12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ξενοδοχειακή Λογιστική</option>
+        <option value="11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Τραπεζική Λογιστική</option>
+        <option value="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Φορολογικά</option>
+        <option value="13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Εργατικά - Ασφαλιστικά Θέματα</option>
+        <option value="102">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="14">&nbsp;&nbsp;&nbsp;Χρηματοοικονομικά - Επενδύσεις</option>
+        <option value="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Χρηματοοικονομικά</option>
+        <option value="17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Επενδυτικά Προγράμματα</option>
+        <option value="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ευρωπαϊκά Προγράμματα</option>
+        <option value="16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Τραπεζικά</option>
+        <option value="103">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="23">&nbsp;&nbsp;&nbsp;Πληροφορική</option>
+        <option value="24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Προγράμματα Microsoft - ECDL</option>
+        <option value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Cisco - Oracle</option>
+        <option value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Internet - Web Design</option>
+        <option value="25">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γλώσσες Προγραμματισμού</option>
+        <option value="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Σχεδιαστικά Πακέτα - Multimedia</option>
+        <option value="28">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πακέτα Λογισμικού</option>
+        <option value="117">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Information Management - Information Technology</option>
+        <option value="127">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γραφικές Τέχνες - Graphic Design</option>
+        <option value="105">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="67">&nbsp;&nbsp;&nbsp;Πολυμέσα (Multimedia)</option>
+        <option value="68">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ήχος</option>
+        <option value="69">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Φωτογραφία</option>
+        <option value="70">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Βίντεο</option>
+        <option value="112">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="89">&nbsp;&nbsp;&nbsp;Νομικά</option>
+        <option value="118">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γενικά Θέματα</option>
+        <option value="176">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="124">&nbsp;&nbsp;&nbsp;Τουριστικά</option>
+        <option value="125">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γενικά Θέματα</option>
+        <option value="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hotel Management</option>
+        <option value="130">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="30">&nbsp;&nbsp;&nbsp;Ασφάλειες</option>
+        <option value="132">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γενικά Θέματα</option>
+        <option value="178">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="90">&nbsp;&nbsp;&nbsp;Δημόσιο - Οργανισμοί</option>
+        <option value="171">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γενικά Θέματα</option>
+        <option value="172">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="31">&nbsp;&nbsp;&nbsp;Πιστοποιήσεις</option>
+        <option value="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ISO</option>
+        <option value="33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Τρόφιμα - HACCP</option>
+        <option value="34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- OHSAS</option>
+        <option value="35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ΕΛΟΤ</option>
+        <option value="36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γεωργικά Προϊόντα - AGRO</option>
+        <option value="37">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Περιβάλλον</option>
+        <option value="38">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πληροφορική - Ασφάλεια Πληροφοριών</option>
+        <option value="121">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Λογιστικά Πρότυπα</option>
+        <option value="39">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ενέργεια</option>
+        <option value="134">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Άλλα πρότυπα - πιστοποιήσεις</option>
+        <option value="106">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="91">&nbsp;&nbsp;&nbsp;Βιομηχανία - Κατασκευές</option>
+        <option value="44">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Κατασκευές - Κτίρια</option>
+        <option value="96">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Υδραυλικά</option>
+        <option value="94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ηλεκτρολογικά</option>
+        <option value="93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μηχανολογικά</option>
+        <option value="97">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ψύξη - Θέρμανση</option>
+        <option value="98">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ανελκυστήρες</option>
+        <option value="99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πυροπροστασία</option>
+        <option value="95">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Συγκολλήσεις</option>
+        <option value="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Έλεγχος - Μετρήσεις </option>
+        <option value="92">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ασφάλεια και Υγιεινή Εργασίας</option>
+        <option value="122">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Παραγωγή</option>
+        <option value="116">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="41">&nbsp;&nbsp;&nbsp;Ενέργεια - Περιβάλλον - Καλλιέργειες</option>
+        <option value="42">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ενέργεια</option>
+        <option value="43">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Περιβάλλον</option>
+        <option value="129">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Καλλιέργειες</option>
+        <option value="107">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="45">&nbsp;&nbsp;&nbsp;Υγεία</option>
+        <option value="48">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ιατρικά</option>
+        <option value="46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Διοίκηση Μονάδων Υγείας</option>
+        <option value="47">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πρώτες Βοήθειες</option>
+        <option value="76">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Διατροφή</option>
+        <option value="78">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Φυσικοθεραπεία</option>
+        <option value="126">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Εγκυμοσύνη</option>
+        <option value="108">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="49">&nbsp;&nbsp;&nbsp;Εκπαίδευση - Γλώσσες</option>
+        <option value="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Παιδαγωγικά</option>
+        <option value="51">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ειδική Αγωγή</option>
+        <option value="52">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ΑΣΕΠ</option>
+        <option value="87">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μετάφραση - Διερμηνεία</option>
+        <option value="88">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Γλώσσες</option>
+        <option value="109">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="53">&nbsp;&nbsp;&nbsp;Ψυχολογία - Συμβουλευτική</option>
+        <option value="58">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ψυχολογία</option>
+        <option value="54">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ψυχοθεραπεία</option>
+        <option value="55">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Συμβουλευτική</option>
+        <option value="56">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Κατάρτιση</option>
+        <option value="57">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ψυχολογία Παιδιών - Εφήβων - Οικογένειας</option>
+        <option value="136">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Αυτογνωσία – Αυτοβελτίωση</option>
+        <option value="110">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="59">&nbsp;&nbsp;&nbsp;Τέχνη - Πολιτισμός - Διακόσμηση</option>
+        <option value="64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Διακόσμηση</option>
+        <option value="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ζωγραφική - Γλυπτική</option>
+        <option value="62">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Κινηματογράφος - Θέατρο</option>
+        <option value="66">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Κόσμημα</option>
+        <option value="61">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Λογοτεχνία - Φιλοσοφία</option>
+        <option value="131">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ιστορία - Αρχαιολογία</option>
+        <option value="63">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μουσική - Χορός</option>
+        <option value="65">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Χειροτεχνία</option>
+        <option value="111">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="71">&nbsp;&nbsp;&nbsp;Γαστρονομία - Οινολογία</option>
+        <option value="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ζαχαροπλαστική</option>
+        <option value="73">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μαγειρική</option>
+        <option value="74">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μπαρ</option>
+        <option value="75">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Οινολογία</option>
+        <option value="113">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="77">&nbsp;&nbsp;&nbsp;Μόδα - Ομορφιά</option>
+        <option value="133">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Αισθητική</option>
+        <option value="135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μόδα</option>
+        <option value="79">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μανικιούρ - Πεντικιούρ</option>
+        <option value="80">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Περιποίηση Προσώπου</option>
+        <option value="81">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Κομμωτική</option>
+        <option value="82">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μασάζ</option>
+        <option value="114">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="83">&nbsp;&nbsp;&nbsp;Αθλητισμός - Πολεμικές Τέχνες</option>
+        <option value="84">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Αθλητισμός</option>
+        <option value="85">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πολεμικές Τέχνες</option>
+        <option value="174">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Αυτοάμυνα</option>
+        <option value="86">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Yoga - Tai Chi - Pilates</option>
+        <option value="115">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- e-Learning</option>
+        <option value="137">&nbsp;&nbsp;&nbsp;e-Learning</option>
+        <option value="138">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Οργάνωση και Διοίκηση</option>
+        <option value="139">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Marketing - Πωλήσεις</option>
+        <option value="140">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Λογιστικά - Φορολογικά</option>
+        <option value="141">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Χρηματοοικονομικά - Επενδύσεις</option>
+        <option value="142">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πληροφορική</option>
+        <option value="143">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πολυμέσα (Multimedia)</option>
+        <option value="177">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Νομικά</option>
+        <option value="144">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Τουριστικά</option>
+        <option value="145">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πιστοποιήσεις</option>
+        <option value="146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Βιομηχανία - Κατασκευές</option>
+        <option value="147">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ενέργεια - Περιβάλλον - Καλλιέργειες</option>
+        <option value="148">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Υγεία</option>
+        <option value="149">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Εκπαίδευση - Γλώσσες</option>
+        <option value="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ψυχολογία - Συμβουλευτική</option>
+        <option value="151">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Τέχνη - Πολιτισμός - Διακόσμηση</option>
+        <option value="152">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μόδα - Ομορφιά</option>
+        <option value="153">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Αθλητισμός - Πολεμικές Τέχνες</option>
+        <option value="173">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Δημόσιο - Οργανισμοί</option>
+        <option value="179">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ασφάλειες</option>
+        <option value="154">&nbsp;&nbsp;&nbsp;Δωρεάν Σεμινάρια</option>
+        <option value="155">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Οργάνωση και Διοίκηση</option>
+        <option value="156">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Marketing - Πωλήσεις</option>
+        <option value="157">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Λογιστικά - Φορολογικά</option>
+        <option value="158">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Χρηματοοικονομικά - Επενδύσεις</option>
+        <option value="159">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πληροφορική</option>
+        <option value="160">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πολυμέσα (Multimedia)</option>
+        <option value="161">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Τουριστικά</option>
+        <option value="162">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Πιστοποιήσεις</option>
+        <option value="163">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Βιομηχανία - Κατασκευές</option>
+        <option value="164">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ενέργεια - Περιβάλλον - Καλλιέργειες</option>
+        <option value="165">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Υγεία</option>
+        <option value="166">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Εκπαίδευση - Γλώσσες</option>
+        <option value="167">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ψυχολογία - Συμβουλευτική</option>
+        <option value="168">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Τέχνη - Πολιτισμός - Διακόσμηση</option>
+        <option value="169">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Μόδα - Ομορφιά</option>
+        <option value="170">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Αθλητισμός - Πολεμικές Τέχνες</option>
+    </select>
+</div>
+
+
+
+
+
+
+</body>
+</html>

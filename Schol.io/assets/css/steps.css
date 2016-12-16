@@ -8,14 +8,13 @@
     float: none;
 }
 
-.step1 {width: 100%; max-width: 500px;  margin-top: 220px; margin-bottom: -170px; }
+.step {width: 100%; max-width: 500px;  margin-top: 220px; margin-bottom: -170px; }
 
 .step-box {height: 400px; padding: 20px; background-color: #f4f4f4; border-radius: 8px;}
 
 .step-img{height: 220px; background-color: #fcfcfc; border-top-left-radius: 8px; border-top-right-radius: 8px;}
 
 .step-image {height: 190px;  padding-top: 27px;}
-
 
 .step-anchor {  top: -220px; }
 
@@ -25,7 +24,6 @@
 /*=======================================*/
 /*=======  CheckBox Radio ===============*/
 /*=======================================*/
-
 
 .funkyradio div {
     clear: both;
@@ -77,7 +75,6 @@
 }
 
 
-
 .funkyradio input[type="radio"]:checked ~ label:before,
 .funkyradio input[type="checkbox"]:checked ~ label:before {
     content: '\2714';
@@ -86,19 +83,11 @@
     background-color: #ffffff;
 }
 
-
-.funkyradio-primary input[type="radio"]:checked ~ label:before,
-.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
-    color: #fff;
-    background-color: #337ab7;
-}
-
 .funkyradio-success input[type="radio"]:checked ~ label:before,
 .funkyradio-success input[type="checkbox"]:checked ~ label:before {
     color: #fff;
     background-color: #00bcd4;
 }
-
 
 /*=======================================*/
 /*=======================================*/

@@ -6,11 +6,11 @@
 
 
 
-angular.module("stepsApp",['ngAnimate'])
+angular.module("stepsApp",[])
 
     .controller("stepsCtrl",function ($timeout,$scope) {
 
-        $scope.step1Select = 'reduce'; // set the default sort type
+        $scope.step1Select = 'reduce'; // set the default value
         $scope.step2Select = 'Διοίκηση Επιχειρήσεων';
         $scope.step3Select = 'talent';
 
