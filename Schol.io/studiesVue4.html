@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>schol.io</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+
+
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <!--====== Javascript Files =======-->
+
+    <!-- jQuery js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Select js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.4/js/bootstrap-select.min.js"></script>
+
+
+</head>
+
+<body>
+<div class="container sc-t-grey pad-top-20" id="">
+
+    <div id="vue-elem">
+
+        <select class="" style="width: 50%"  v-model="sectionSelected1">
+            <option v-for="option in options"  :value="option.st">&nbsp; {{option.study}}</option>
+        </select>
+
+        <select class="selectpicker"  data-width="50%"  v-model="sectionSelected2">
+            <option v-for="option in options"  :value="option.st">&nbsp; {{option.study}}</option>
+        </select>
+
+        <div> Option Selected 1 = {{sectionSelected1}}</div>
+        <div> Option Selected 2 = {{sectionSelected2}}</div>
+
+    </div>
+
+</div>
+
+</body>
+
+<!-- Vue js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+<script src="js/studies-Vue4.js"></script>
+
+<script>
+    new Vue({
+        el: '#vue-elem',
+        data: {
+            sectionSelected1: '',
+            sectionSelected2: '',
+            options: [
+                { st: 'myPhysics', study: 'Physics' },
+                { st: 'myMaths', study: 'Maths' },
+                { st: 'myChemistry', study: 'Chemistry' }
+            ],
+        },
+    });
+
+</script>
+
+
+
+
+</html>

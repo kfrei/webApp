@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>schol.io</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+
+    <!--====== Javascript Files =======-->
+
+    <!-- jQuery js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Select js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+
+</head>
+
+<body>
+<div class="container" id="" style="margin-top: 50px;">
+
+        <div id="app">
+            <div style="margin-bottom: 50px;"> Selected Value = {{value}}</div>
+
+            <b-select :items="items" :value.sync="value" data-live-search="true">
+            </b-select>
+
+
+        </div>
+
+</div>
+
+</body>
+
+<!-- Vue js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
+
+
+<script>
+    var select2Component = Vue.extend({
+        //v-el:select
+        template: '<select v-el:select><option v-for="item in items" value="{{item.st}}">{{item.study}}</option></select>',
+
+        props: {value: "", items: []},
+
+        ready: function() {
+            var select = $(this.$els.select);
+
+            select.selectpicker("val", this.value);
+            var self = this;
+            select.on("changed.bs.select", function() {
+                self.value = select.selectpicker("val");
+            });
+        }
+    });
+
+
+    Vue.component('b-select', select2Component);
+
+    new Vue({
+        el: '#app',
+
+        data: {
+            items: [
+                {st: 1, study: 'Physics'},
+                {st: 2, study: 'Maths'},
+                {st: 3, study: 'Chemistry'}
+            ],
+
+            value: "2"
+        }
+
+    });
+</script>
+
+
+
+
+</html>

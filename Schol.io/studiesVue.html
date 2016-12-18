@@ -44,7 +44,7 @@
 
     <!-- Main CSS -->
     <link href="css/main.css" rel="stylesheet">
-
+    <link href="css/studies.css" rel="stylesheet">
 
 
 
@@ -61,14 +61,9 @@
 
 
 
-
-    <!-- Angular js-->
-    <!--  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-
-
-    <!-- -->
-    <script src="js/studies-app.js"></script>
+    <!-- Vue js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+    <!--<script src="js/studies-Vue.js"></script>-->
 
 
 
@@ -77,82 +72,92 @@
 
 
 </head>
+
 <body>
-<div class="container">
-    <div class="" ng-app="studiesApp" ng-controller="studiesCtrl" data-ng-init="init()" ng-cloak>
-        <h3  class="title">Επιλογή Ειδικοτήτων Σπουδών</h3>
-
-        <div class="clearfix">
-            <ul class="">
-                <li class=" " ng-repeat="study in studi">
-
-                    <div>{{study.section}}</div>
-
-                        <li class="" ng-repeat="secti in study.studies">
-                            <div class="">{{secti.st}}</div>
-                        </li>
-
-
-                </li>
-            </ul>
-        </div>
-
-
-
-
-<!--<div class="col-sm-6 pad-top-50" >-->
-    <!--<div ng-repeat="section in studi">-->
-        <!--<label>{{section.section}}</label>-->
-        <!--<select ng-model="section.selectedItem" ng-options="item as item.st for item in section.studies"></select>-->
-    <!--</div>-->
-<!--</div>-->
-
+<div class="container" id="vue-elem">
+    <div class="row col-sm-4 pad-top-20">
+        <!--<input class="" type="text" id="input" v-model="message">-->
+        <!--<h3> The value is {{message}}</h3>-->
 
         <!--<ul>-->
-            <!--<li ng-repeat="rows in studi.parentItems"> <h2>{{rows.section}}</h2>-->
-                <!--<ul>-->
-                    <!--<li ng-repeat="item in rows.studies">{{item.st}}</li>-->
-                <!--</ul>-->
-            <!--</li>-->
+            <!--<li v-for="name in names">{{name}}</li>-->
         <!--</ul>-->
+            <!--<input type="text" v-model="newName">-->
+            <!--<button @click="addName()">Add Name</button>-->
+            <!--<button @click="changeColor()">Change Color</button>-->
+            <!--<p :class="{'is-color':isColor}"> Color</p>-->
 
 
-        <!--<ul>-->
-            <!--<li ng-repeat="rows in studi.parentItems"> <h2>{{rows.titleParent}}</h2>-->
-                <!--<ul>-->
-                    <!--<li ng-repeat="item in rows.childeItems">{{item.titleChild}}</li>-->
-                <!--</ul>-->
-            <!--</li>-->
-        <!--</ul>-->
-
-
-
-
+        <h3>All Tasks</h3>
         <ul>
-            <li ng-repeat="rows in myarray.parentItems"> <h2>{{rows.titleParent}}</h2>
-                <ul>
-                    <li ng-repeat="item in rows.childeItems">{{item.titleChild}}</li>
-                </ul>
-            </li>
+            <li v-for="task in tasks"> {{task.description}}</li>
+        </ul>
+        <h5>Completed Tasks</h5>
+        <ul>
+            <li v-for="task in tasks" v-if="task.completed"> {{task.description}}</li>
+        </ul>
+        <h5>InCompleted Tasks</h5>
+        <ul>
+            <li v-for="task in incompleteTasks"> {{task.description}}</li>
         </ul>
 
 
 
 
-
-
     </div>
+
 </div>
-
-
-
 </body>
+
+<script>
+//    let data ={
+//        message: 'Hello kfrei'
+//    };
+
+    new Vue ({
+        el: '#vue-elem',
+        data:{
+//            message: 'Hello kfrei'
+//            names: ["Fredy", "Maria", "Pakis","Elena"],
+//            newName:'',
+//            isColor: false
+            tasks: [
+                { description: "Go to the store", completed: true },
+                { description: "Finish the screencast", completed: true },
+                { description: "Make donation", completed: false },
+                { description: "Clear inbox", completed: false },
+                { description: "Make dinner", completed: false },
+                { description: "Clean room", completed: false }
+            ]
+
+            },
+
+
+        computed:{
+            incompleteTasks() {
+                return this.tasks.filter(task => !task.completed);
+            }
+        },
+
+        methods: {
+//            addName(){
+//                this.names.push(this.newName);
+//                this.newName = '';
+//            },
+//            changeColor(){
+//                this.isColor=!this.isColor;
+//            }
+
+        },
+        mounted() {
+
+        }
+
+    })
+
 
 
 </script>
-
-
-
 
 
 </html>
