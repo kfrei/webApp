@@ -42,11 +42,12 @@
 <div class="container sc-t-grey" id="vue-elem">
 
         <div class="pad-top-20">
-            <ul>
-                <li v-for="secti in studi"> <h4 class="sc-t-green">{{secti.section}}</h4>
+            <h3> VueJs 2.1.6</h3>
+            <div >
+                <div v-for="secti in studi"> <h4 class="sc-t-green">{{secti.section}}</h4>
                         <div v-for="std in secti.studies">{{std.st}}</div>
-                </li>
-            </ul>
+                </div>
+            </div>
 
         </div>
 </div>

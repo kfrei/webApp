@@ -27,6 +27,8 @@
 
     <!-- Bootstrap Select js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+    <!-- Vue Strap  js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-strap/1.1.34/vue-strap.min.js"></script>
 
 
 </head>
@@ -35,23 +37,12 @@
 <div class="container" id="" style="margin-top: 50px;">
 
     <div class="row" id="app">
-        <h3> Bootstrap Select with VueJs 1.0.28</h3>
-        <div style="margin-bottom: 20px;"> Selected Value = {{value}}</div>
+        <h3> VueSelect 1.3.0 with VueJs 1.0.28</h3>
+        <div style="margin-bottom: 20px;"> Selected Value = {{value2}}</div>
 
-            <b-select  :items="items" :value.sync="value" data-live-search="true" data-width="400px" data-size="3.6">
-            </b-select>
 
-            <div v-for="secti in items">
-                <div  v-show="secti.id == value" v-for="std in secti.studies">
-                    <div class="col-md-6">
-                        <div class="input-group " style="position: relative">
-                             <span style="left: -15px; position: absolute">
-                                 <input type="checkbox">
-                             </span>    <span style="color: #333; font-weight: 300; font-size: 90%"> {{std.st}} </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <v-select id="select" :value2.sync="value2"  :options="items"></v-select>
+
 
     </div>
 
@@ -59,37 +50,23 @@
 
 <!-- Vue js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
+<script src="https://npmcdn.com/vue-select@1.3.0/dist/vue-select.js"></script>
 
 
 <script>
-    var selectComponent = Vue.extend({
-        //v-el:select
-        template: '<select v-el:select><option v-for="item in items" value="{{item.id}}">{{item.section}}</option></select>',
-
-        props: {value: "", items: []},
-
-        ready: function() {
-            var select = $(this.$els.select);
-
-            select.selectpicker("val", this.value);
-            var self = this;
-            select.on("changed.bs.select", function() {
-                self.value = select.selectpicker("val");
-            });
-        }
-    });
-
-
-    Vue.component('b-select', selectComponent);
 
     new Vue({
         el: '#app',
 
+        components: {
+            'vSelect': VueSelect.VueSelect
+        },
+
         data: {
             items:
                     [
-                        {"id":1,
-                            "section":"Διοίκηση Επιχειρήσεων & Οικονομικά - Business",
+                        {"value":1,
+                            "label":"Διοίκηση Επιχειρήσεων & Οικονομικά - Business",
                             "studies":[
                                 {"st":"BA (Hons) BusinessManagement (Διοίκηση Επιχειρήσεων)"},
                                 {"st":"BA (Hons) Marketing (Μάρκετινγκ)"},
@@ -131,8 +108,8 @@
                                 {"st":"BA Διοίκηση Ξενοδοχειακών Μονάδων και Επιχειρήσεων Φιλοξενίας"}
                             ]},
 
-                        {"id":2,
-                            "section":"Ναυτιλιακά - Nautical Education",
+                        {"value":2,
+                            "label":"Ναυτιλιακά - Nautical Education",
                             "studies":[
                                 {"st":"BSc (Hons) Maritime Business (Ναυτιλιακές Σπουδές)"},
                                 {"st":"BSc (Hons) Shipping and Port Management(Διοίκηση Λιμένων και Ναυτιλιακών Επιχειρήσεων)"},
@@ -140,8 +117,8 @@
                                 {"st":"BA in Navigation"}
                             ]},
 
-                        {"id":3,
-                            "section":"Τουρισμός - Tourism",
+                        {"value":3,
+                            "label":"Τουρισμός - Tourism",
                             "studies":[
                                 {"st":"BA (Hons) International Hospitality and Tourism Management(Τουρισμός και Ξενοδοχειακές Επιχειρήσεις)"},
                                 {"st":"BA Culinary Arts and Food Service Development (Επισιτιστικές Τέχνες και Ανάπτυξη Υπηρεσιών Εστίασης)"},
@@ -150,8 +127,8 @@
                                 {"st":"BSc (Hons) International Hospitality Management"}
                             ]},
 
-                        {"id":4,
-                            "section":"Πληροφορική - Informatics & Technology",
+                        {"value":4,
+                            "label":"Πληροφορική - Informatics & Technology",
                             "studies":[
                                 {"st":"BSc (Hons) Computing (Πληροφορική)"},
                                 {"st":"BSc (Hons) Computer Networks (Πληροφορική και Δίκτυα Η/Υ)"},
@@ -161,8 +138,8 @@
                                 {"st":"BSc Πληροφορική"}
                             ]},
 
-                        {"id":5,
-                            "section":"Επιστήμες Υγείας - Health Sciences",
+                        {"value":5,
+                            "label":"Επιστήμες Υγείας - Health Sciences",
                             "studies":[
                                 {"st":"BSc (Hons) Nursing (Νοσηλευτική)"},
                                 {"st":"BSc (Hons) Logopeadics (Λογοθεραπεία)"},
@@ -179,8 +156,8 @@
                                 {"st":"BSc (Hons) Extended in Science"}
                             ]},
 
-                        {"id":6,
-                            "section":"Ανθρωπιστικές Επιστήμες - Humanities and Social Sciences",
+                        {"value":6,
+                            "label":"Ανθρωπιστικές Επιστήμες - Humanities and Social Sciences",
                             "studies":[
                                 {"st":"BSc (Hons) Psychology (Ψυχολογία)"},
                                 {"st":"BA (Hons) Early Childhood Studies (Προσχολική Ηλικία)"},
@@ -199,8 +176,8 @@
                                 {"st":"BA Αγγλική Γλώσσα και Γλωσσολογία"}
                             ]},
 
-                        {"id":7,
-                            "section":"Πολυτεχνικές Σπουδές - Engineering",
+                        {"value":7,
+                            "label":"Πολυτεχνικές Σπουδές - Engineering",
                             "studies":[
                                 {"st":"BA (Hons) Architecture (Αρχιτεκτονική)"},
                                 {"st":"BEng (Hons) Civil Engineering & Construction (Πολιτικών Μηχανικών)"},
@@ -208,16 +185,16 @@
                                 {"st":"BEng (Hons) / MEng Mechanical Engineering and Manufacturing  (Μηχανολόγων Μηχανικών)"}
                             ]},
 
-                        {"id":8,
-                            "section":"Πολιτισμός & Επικοινωνία",
+                        {"value":8,
+                            "label":"Πολιτισμός & Επικοινωνία",
                             "studies":[
                                 {"st":"BA in Media Production - Journalism (Δημοσιογραφία)"},
                                 {"st":"BA in Media Production - Film Directing (Σκηνοθεσία Κινηματογράφου)"},
                                 {"st":"BSc (Hons) Music Technology (Μουσική Τεχνολογία)"}
                             ]},
 
-                        {"id":9,
-                            "section":"Liberal Arts & Sciences",
+                        {"value":9,
+                            "label":"Liberal Arts & Sciences",
                             "studies":[
                                 {"st":"BA (Hons) in Communication"},
                                 {"st":"BA (Hons) in Economics"},
@@ -232,8 +209,8 @@
                                 {"st":"BSc (Hons) in Information Technology (Network Technologies)"}
                             ]},
 
-                        {"id":10,
-                            "section":"Fine and Performing Arts",
+                        {"value":10,
+                            "label":"Fine and Performing Arts",
                             "studies":[
                                 {"st":"BA (Hons) in Art History"},
                                 {"st":"BA (Hons) in Contemporary Dance Practice"},
@@ -242,9 +219,11 @@
                                 {"st":"BA (Hons) in Theater Arts"},
                                 {"st":"BA (Hons) in Visual Arts"}
                             ]}
-                    ]
-            ,
-            value: "1",
+                    ],
+
+            value2: 2,
+            selected: null,
+            names: ['apple', 'banana', 'carrot', 'bread']
 
         }
 

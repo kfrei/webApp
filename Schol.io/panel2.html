@@ -28,7 +28,7 @@
 
         <!-- Wizard CSS -->
         <link href="css/wizard/smart_wizard.css" rel="stylesheet" type="text/css" />
-        <link href="css/wizard/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+        <!--<link href="css/wizard/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />-->
         <link href="css/wizard/smart_wizard_theme_circles.css" rel="stylesheet" type="text/css" />
 
 
@@ -248,7 +248,7 @@
                             <!-- Step Wizard-->
                             <!-- ============================================================== -->
 
-                                <div id="smartwizard" class="" ng-controller="stepsCtrl" data-ng-init="init()" ng-cloak>
+                                <div id="smartwizard" class="" ng-controller="stepsCtrl" data-ng-init="init()" ng-cloak >
 
                                          <ul class="clearfix">
                                                  <li><a href="#step-1">Βήμα 1<br /><small class="mar-le-10">Οικονομική <p style="margin-top: -18px;">Προσφορά</p> </small></a></li>
@@ -258,11 +258,11 @@
 
                                          </ul>
 
-                                    <div class="row">
+                                    <div class="row" style="min-height: 470px">
 
 
                                         <div id="step-1" class="step-anchor">
-                                            <div class="step centered-text">
+                                            <div class="step centered-text" >
                                                 <h2>Βήμα 1 </h2>
                                                 <div class="step-box">
                                                     <div class="step-img">
@@ -287,7 +287,7 @@
                                                             <span class="input-group-addon" id="basic-addon2">€</span>
                                                         </div>
 
-                                                        <div class="input-group" style=" padding: 15px 0; z-index: 1" ng-show="step1Select=='time'">
+                                                        <div class="input-group" style=" padding: 15px 0; z-index: 1;" ng-show="step1Select=='time'">
                                                             <input type="text" class="form-control" placeholder="2" aria-describedby="basic-addon3">
                                                             <span class="input-group-addon" id="basic-addon3">Μήνες</span>
                                                         </div>
@@ -420,11 +420,6 @@
 
         </div>
         <!-- END wrapper -->
-
-
-    
-
-
 
 
         <script src="assets/js/modernizr.min.js"></script>

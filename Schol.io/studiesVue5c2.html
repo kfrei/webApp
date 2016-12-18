@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>schol.io</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek" rel="stylesheet">
 
@@ -34,26 +33,21 @@
 <body>
 <div class="container" id="" style="margin-top: 50px;">
 
-    <div class="row" id="app">
-        <h3> Bootstrap Select with VueJs 1.0.28</h3>
-        <div style="margin-bottom: 20px;"> Selected Value = {{value}}</div>
+        <div id="app">
+            <div style="margin-bottom: 50px;"> Selected Value 1 = {{value}}</div>
+            <div style="margin-bottom: 50px;"> Selected Value 2 = {{value3}}</div>
 
             <b-select  :items="items" :value.sync="value" data-live-search="true" data-width="400px" data-size="3.6">
             </b-select>
 
-            <div v-for="secti in items">
-                <div  v-show="secti.id == value" v-for="std in secti.studies">
-                    <div class="col-md-6">
-                        <div class="input-group " style="position: relative">
-                             <span style="left: -15px; position: absolute">
-                                 <input type="checkbox">
-                             </span>    <span style="color: #333; font-weight: 300; font-size: 90%"> {{std.st}} </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-    </div>
+            <b-select2  :items="items" :value3.sync="value3" data-live-search="true" data-width="400px" data-size="3.6">
+            </b-select2>
+
+
+        </div>
+
+</div>
 
 </body>
 
@@ -62,7 +56,7 @@
 
 
 <script>
-    var selectComponent = Vue.extend({
+    var selectComponent1 = Vue.extend({
         //v-el:select
         template: '<select v-el:select><option v-for="item in items" value="{{item.id}}">{{item.section}}</option></select>',
 
@@ -79,13 +73,33 @@
         }
     });
 
+    var selectComponent2 = Vue.extend({
+        //v-el:select
+//        template: '<select v-el:select><option v-for="it in items" value="{{it.id}}">{{it.section}}</option></select>',
+//        template: '<select v-el:select><div v-for="item in items"><option v-for="it in item.studies" value="{{it.st}}">{{it.st}}</option></div></select>',
+        template: '<select v-el:select><option v-for="item in items"><li v-for="it in item.studies" value="{{it.st}}">{{it.st}}</li></option></select>',
+        props: {value3: "", items: []},
 
-    Vue.component('b-select', selectComponent);
+        ready: function() {
+            var select = $(this.$els.select);
 
+            select.selectpicker("val", this.value3);
+            var self = this;
+            select.on("changed.bs.select", function() {
+                self.value3 = select.selectpicker("val");
+            });
+        }
+    });
+
+
+
+    Vue.component('b-select', selectComponent1);
+    Vue.component('b-select2', selectComponent2);
     new Vue({
         el: '#app',
 
         data: {
+
             items:
                     [
                         {"id":1,
@@ -244,8 +258,11 @@
                             ]}
                     ]
             ,
-            value: "1",
 
+
+
+            value: "1",
+            value3: "10"
         }
 
     });
