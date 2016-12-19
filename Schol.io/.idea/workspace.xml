@@ -126,9 +126,11 @@
       <file leaf-file-name="studiesVue5d.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/studiesVue5d.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57394004">
-              <caret line="37" column="55" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="55" />
-              <folding />
+            <state vertical-scroll-proportion="0.6204757">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+              <folding>
+                <element signature="e#1619#13857#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -933,9 +935,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/studiesVue5d.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57394004">
-          <caret line="37" column="55" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="55" />
-          <folding />
+        <state vertical-scroll-proportion="0.6204757">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding>
+            <element signature="e#1619#13857#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
