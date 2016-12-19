@@ -61,8 +61,8 @@
       <file leaf-file-name="studiesVue5c2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/studiesVue5c2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625">
-              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="54" column="84" selection-start-line="54" selection-start-column="84" selection-end-line="54" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1912#2403#0" expanded="false" />
@@ -129,19 +129,19 @@
         <entry file="file://$PROJECT_DIR$/studiesVue5d.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.52130044">
-              <caret line="44" column="129" selection-start-line="44" selection-start-column="129" selection-end-line="44" selection-end-column="129" />
+              <caret line="44" column="120" selection-start-line="44" selection-start-column="120" selection-end-line="44" selection-end-column="120" />
               <folding>
-                <element signature="e#2239#14364#0" expanded="false" />
-                <element signature="e#2400#6218#0" expanded="false" />
-                <element signature="e#6367#6796#0" expanded="false" />
-                <element signature="e#6933#7586#0" expanded="false" />
-                <element signature="e#7742#8353#0" expanded="false" />
-                <element signature="e#8505#9721#0" expanded="false" />
-                <element signature="e#9895#11317#0" expanded="false" />
-                <element signature="e#11469#11984#0" expanded="false" />
-                <element signature="e#12126#12481#0" expanded="false" />
-                <element signature="e#12622#13680#0" expanded="false" />
-                <element signature="e#13823#14341#0" expanded="false" />
+                <element signature="e#2230#14355#0" expanded="false" />
+                <element signature="e#2391#6209#0" expanded="false" />
+                <element signature="e#6358#6787#0" expanded="false" />
+                <element signature="e#6924#7577#0" expanded="false" />
+                <element signature="e#7733#8344#0" expanded="false" />
+                <element signature="e#8496#9712#0" expanded="false" />
+                <element signature="e#9886#11308#0" expanded="false" />
+                <element signature="e#11460#11975#0" expanded="false" />
+                <element signature="e#12117#12472#0" expanded="false" />
+                <element signature="e#12613#13671#0" expanded="false" />
+                <element signature="e#13814#14332#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -942,20 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studiesVue5c2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1912#2403#0" expanded="false" />
-            <element signature="e#3412#14447#0" expanded="false" />
-            <element signature="e#3438#6982#0" expanded="false" />
-            <element signature="e#14478#24345#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/studiesVue6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.791667">
@@ -966,22 +952,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/studiesVue5c2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="54" column="84" selection-start-line="54" selection-start-column="84" selection-end-line="54" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1912#2403#0" expanded="false" />
+            <element signature="e#3412#14447#0" expanded="false" />
+            <element signature="e#3438#6982#0" expanded="false" />
+            <element signature="e#14478#24345#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/studiesVue5d.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52130044">
-          <caret line="44" column="129" selection-start-line="44" selection-start-column="129" selection-end-line="44" selection-end-column="129" />
+          <caret line="44" column="120" selection-start-line="44" selection-start-column="120" selection-end-line="44" selection-end-column="120" />
           <folding>
-            <element signature="e#2239#14364#0" expanded="false" />
-            <element signature="e#2400#6218#0" expanded="false" />
-            <element signature="e#6367#6796#0" expanded="false" />
-            <element signature="e#6933#7586#0" expanded="false" />
-            <element signature="e#7742#8353#0" expanded="false" />
-            <element signature="e#8505#9721#0" expanded="false" />
-            <element signature="e#9895#11317#0" expanded="false" />
-            <element signature="e#11469#11984#0" expanded="false" />
-            <element signature="e#12126#12481#0" expanded="false" />
-            <element signature="e#12622#13680#0" expanded="false" />
-            <element signature="e#13823#14341#0" expanded="false" />
+            <element signature="e#2230#14355#0" expanded="false" />
+            <element signature="e#2391#6209#0" expanded="false" />
+            <element signature="e#6358#6787#0" expanded="false" />
+            <element signature="e#6924#7577#0" expanded="false" />
+            <element signature="e#7733#8344#0" expanded="false" />
+            <element signature="e#8496#9712#0" expanded="false" />
+            <element signature="e#9886#11308#0" expanded="false" />
+            <element signature="e#11460#11975#0" expanded="false" />
+            <element signature="e#12117#12472#0" expanded="false" />
+            <element signature="e#12613#13671#0" expanded="false" />
+            <element signature="e#13814#14332#0" expanded="false" />
           </folding>
         </state>
       </provider>

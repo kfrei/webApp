@@ -42,7 +42,7 @@
         <div> Study Selected Value = {{studySelection}}</div>
 
         <v-select  search  :options="items" :value.sync="sectionSelection" @change="initializeStudy()"></v-select>
-        <v-select2  search  :options="items[sectionSelection-1].studies" options-label="st" :value.sync="studySelection" multiple></v-select2>
+        <v-select2  search  :options="items[sectionSelection-1].studies" options-label="st" :value.sync="studySelection"></v-select2>
     </div>
 
 </body>
