@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>schol.io</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-144.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-72.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon-57.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Ionic Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+
+    <!--<link href="css/Bootstrap-xxs-xxxs.css" rel="stylesheet">-->
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+
+
+    <!--====== Javascript Files =======-->
+
+    <!-- jQuery js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Select js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.4/js/bootstrap-select.min.js"></script>
+
+
+
+
+    <!-- Vue js-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>-->
+    <!--<script src="js/vue-app.js"></script>-->
+
+
+    <style>
+        .navbar-nav > li {
+            border-bottom: 1px solid transparent;
+        }
+        .navbar-nav > li:hover {
+            border-bottom-color: teal;
+            transition: border 0.5s linear;}
+
+        .line {background-color: transparent}
+        .line:hover {background-color: #ddd}
+
+        input:focus{
+            outline: none;
+            border-color: #5cb85c!important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+<div class="container" id="vue-elem">
+    <div>
+        <!--<div class="row margin-top-30">-->
+            <!--<div class="col-md-3 ">-->
+                <!--<ul class="nav navbar-nav list-inline">-->
+                    <!--<li  v-for="person in team" > {{person}}</li>-->
+                <!--</ul>-->
+
+                <!--<div class="input-group">-->
+                    <!--<input type="text" class="form-control" @keyup.enter="refresh" placeholder="" v-model="name" style="height: 33px; ">-->
+                <!--<span class="input-group-btn">-->
+                    <!--<button class="btn btn-success" type="button" @click="refresh" >add name</button>-->
+                <!--</span>-->
+                <!--</div>&lt;!&ndash; /input-group &ndash;&gt;-->
+
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-5 col-xs-8">-->
+                <!--<template v-for="(school,i) in schools">-->
+                    <!--<div class="line"> {{i+1}} &nbsp {{school.name}} <span class="pull-right"> {{school.students}} <i class="fa fa-user"></i></span> </div>-->
+                <!--</template>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row margin-top-30">-->
+            <!--<template v-for="school in schools" >-->
+                <!--<div class="col-xs-4 col-sm-3" style="min-height: 220px;">-->
+                    <!--<h4 class="margi"> {{school.name}} </h4>-->
+                    <!--<hr>-->
+                    <!--<span v-for="(value, i)  in school.studies">-->
+                        <!--<div>  {{i+1}} &nbsp  {{value.std}} </div>-->
+                    <!--</span>-->
+                <!--</div>-->
+            <!--</template>-->
+        <!--</div>-->
+
+        <!--<div>-->
+            <!--&lt;!&ndash;<div class="row col-sm-4">&ndash;&gt;-->
+            <!--&lt;!&ndash;<select class="" v-model="selected" >&ndash;&gt;-->
+            <!--&lt;!&ndash;<option v-for="(option,j) in schools" :value="j">&ndash;&gt;-->
+            <!--&lt;!&ndash;{{j+1}} &nbsp{{ option.name }}&ndash;&gt;-->
+            <!--&lt;!&ndash;</option>&ndash;&gt;-->
+            <!--&lt;!&ndash;</select>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span>Selected: {{ selected+1 }}</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="row col-sm-4">&ndash;&gt;-->
+            <!--&lt;!&ndash;<select class="" v-model="selected2" >&ndash;&gt;-->
+            <!--&lt;!&ndash;<option v-for="(op, i) in schools[selected].studies" :value="i">&ndash;&gt;-->
+            <!--&lt;!&ndash;{{i+1}} &nbsp {{ op.std }}&ndash;&gt;-->
+            <!--&lt;!&ndash;</option>&ndash;&gt;-->
+            <!--&lt;!&ndash;</select>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span>Selected: {{ selected2+1 }}</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div> &ndash;&gt;-->
+        <!--</div>-->
+
+
+
+        <!--<hr>-->
+
+
+
+    </div>
+
+
+    <div class="row col-sm-4">
+        <select class="" v-model="selected" >
+            <option v-for="(option,j) in schools" :value="j">
+            {{j+1}} &nbsp{{ option.name }}
+            </option>
+        </select>
+        <!--<span>Selected: {{ selected+1 }}</span>-->
+    </div>
+    <div class="row col-sm-4" style="clear: both">
+        <ul class="" v-model="selected2" >
+            <li v-for="(op, i) in schools[selected].studies">
+                <input type="checkbox"  :checked="op.status" :value="op.status"  @change="IfCheck(i, op.status, op.std)">
+                <span class="">  {{i+1}} &nbsp {{ op.std }} </span>  <!-- &nbsp {{ op.status }}-->
+            </li>
+        </ul>
+    </div>
+
+    <!--<div style="clear: both"> Selected Studies: {{checkedStudies}}</div>-->
+    <!--<div style="clear: both"> Studies Counter: {{studies}}</div>-->
+    <!--<div style="clear: both"> Status: {{status}}</div>-->
+
+    <hr>
+
+    <div class="row col-sm-6" style="clear: both">
+        <ul >
+            <li v-for="(op, i) in schools">
+                <h3 v-if="studies[i]>0" style="clear: both">  {{ op.name}} </h3>
+                <ul >
+                    <li v-for="(opt, k) in op.studies">
+                        <p v-if="status[i][k]" class="col-sm-7"> {{opt.std}} <i class="fa fa-trash pull-right" @click="deleteStudy(i,k)"> {{i+1}},{{k+1}}</i></p>
+
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+
+<!-- Vue js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.3/vue.min.js"></script>
+
+
+<script>
+
+
+    new Vue ({
+        el: '#vue-elem',
+        data:{
+            checkedStudies:[],
+            studies:[],
+            name:null,
+            team: ['Pakis', 'Elena', 'Vasili', 'Annia', 'Vikos'],
+            schools:[
+                {name:'Business & Economy',students:54,studies:[{std:'Business Management',status:false},{std:'Marketing',status:false},{std:'Accounting',status:false},{std:'Finance',status:false}]},
+                {name:'Nautical Education',students:148,studies:[{std:'Maritime Business',status:false},{std:'Shipping and Port Management',status:false},{std:'Marine Electrical Engineering',status:false},{std:'Navigation',status:false}]},
+                {name:'Informatics & Technology',students:108,studies:[{std:'Electronics',status:false},{std:'Computing',status:false},{std:'Computer Networks',status:false},{std:'Computer Science',status:false},{std:'Business and Computing',status:false}]},
+                {name:'Health Sciences',students:78,studies:[{std:'Biomedical Sciences',status:false},{std:'Human Nutrition',status:false},{std:'Sports Coaching',status:false},{std:'Physiotherapy',status:false},{std:'Occupational Therapy',status:false}]},
+                {name:'Humanities & Social Sciences',students:126,studies:[{std:'Early Childhood Studies',status:false},{std:'Film Studies',status:false},{std:'Politics and International Relations',status:false},{std:'Arts in English',status:false}]},
+                {name:'Liberal Arts',students:132,studies:[{std:'Communication',status:false},{std:'Economics',status:false},{std:'History',status:false},{std:'Philosophy',status:false},{std:'Sociology',status:false}]}
+            ],
+            selected:0,
+            selected2:0,
+            status:[
+                {0:false,1:false,2:false,3:false},
+                {0:false,1:false,2:false,3:false},
+                {0:false,1:false,2:false,3:false,4:false},
+                {0:false,1:false,2:false,3:false,4:false},
+                {0:false,1:false,2:false,3:false},
+                {0:false,1:false,2:false,3:false,4:false},
+            ]
+
+            },
+        created: function () {
+            console.log('initialize! ');
+            for (var i = 0; i < 6; i++)
+            {
+                this.studies[i]=0;
+                for (var j = 0; j < 4; j++) {}
+            }
+        },
+        computed:{
+
+        },
+        methods: {
+                refresh (){
+                    this.team.push(this.name);
+                    this.name=null;
+                },
+                IfCheck(i,check,study){
+                var j=this.selected;
+                this.schools[j].studies[i].status=!this.schools[j].studies[i].status;
+                    this.status[j][i]=!this.status[j][i];
+                if (!check) {
+                    this.studies[j]++;
+                    this.checkedStudies.push(study);
+
+                } else {
+                    this.studies[j]--;
+                    var index = this.checkedStudies.indexOf(i);
+                    this.checkedStudies.splice(index, 1);
+                }
+            },
+
+            deleteStudy (i,k){
+                console.log('delete! ');
+                var j=i;
+                this.schools[j].studies[k].status=!this.schools[j].studies[k].status;
+                this.status[j][k]=!this.status[j][k];
+
+                    this.studies[j]--;
+                    var index = this.checkedStudies.indexOf(k);
+                    this.checkedStudies.splice(index, 1);
+
+            }
+
+
+
+
+        },
+        watch: {
+
+        },
+        mounted() {
+
+
+        }
+
+    })
+</script>
+
+
+
+
+
+
+
+
+</html>

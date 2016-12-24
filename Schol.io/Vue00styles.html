@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>schol.io</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-144.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-72.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon-57.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--&lt;!&ndash; Bootstrap Select &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">-->
+
+    <!--&lt;!&ndash; font-awesome &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">-->
+
+    <!--&lt;!&ndash; Ionic Icons &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">-->
+
+    <!--<link href="css/Bootstrap-xxs-xxxs.css" rel="stylesheet">-->
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/studies.css" rel="stylesheet">
+
+
+
+    <!--====== Javascript Files =======-->
+
+    <!-- jQuery js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!--&lt;!&ndash; Bootstrap js&ndash;&gt;-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <!--&lt;!&ndash; Bootstrap Select js  &ndash;&gt;-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.4/js/bootstrap-select.min.js"></script>-->
+
+    <!-- Vue js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+    <!--<script src="js/vue-app.js"></script>-->
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            display: inline-block;
+            margin: 10px;
+        }
+        .red {  background-color: red;  }
+        .green {  background-color: green;  }
+        .blue {  background-color: blue;  }
+
+        .size1 {width: 40px; height: 40px;}
+        .size2 {width: 80px; height: 80px;}
+    </style>
+</head>
+
+
+
+<body>
+<div class="container" id="vue-elem">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
+            <div class="demo" :class="{red: attachRed}"></div>
+            <div class="demo" :class="[mycolor, mysize,{red: attachRed}]"></div>
+            <hr>
+            <span> class color <input type="text" v-model="mycolor"></span>
+            <span> class size <input type="text" v-model="mysize"></span>
+        </div>
+        <div class="col-md-6">
+            <div class="demo" :style="{backgroundColor: color}"></div>
+            <div class="demo" :style="myStyle"></div>
+            <div class="demo" :style="[myStyle, {height: width + 'px'}]"></div>
+            <hr>
+            <span> style color <input type="text" v-model="color"></span>
+            <span> style size <input type="text" v-model="width"></span>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- Vue js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+
+
+<script>
+
+
+    new Vue ({
+        el: '#vue-elem',
+        data:{
+            attachRed: false,
+            mycolor: 'green',
+            mysize:'size1',
+            color:'teal',
+            width: 80
+            },
+
+
+        computed:{
+            divClasses: function() {
+                return {
+                    red: this.attachRed,
+                    blue: !this.attachRed
+                };
+            },
+            myStyle: function() {
+                return {
+                    backgroundColor: this.color,
+                    width: this.width + 'px'
+                };
+            }
+
+        },
+        methods: {
+
+
+        },
+        watch: {
+
+        },
+        mounted() {
+
+        }
+
+    })
+
+
+
+</script>
+
+
+</html>
