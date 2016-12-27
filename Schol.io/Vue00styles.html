@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+
 
     <!--&lt;!&ndash; Bootstrap Select &ndash;&gt;-->
     <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">-->
@@ -31,6 +33,7 @@
 
     <!--<link href="css/Bootstrap-xxs-xxxs.css" rel="stylesheet">-->
 
+
     <!-- Main CSS -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/studies.css" rel="stylesheet">
@@ -41,12 +44,13 @@
 
     <!-- jQuery js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <!--&lt;!&ndash; Bootstrap js&ndash;&gt;-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!-- Bootstrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--&lt;!&ndash; Bootstrap Select js  &ndash;&gt;-->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.4/js/bootstrap-select.min.js"></script>-->
+
+
 
     <!-- Vue js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
@@ -55,7 +59,7 @@
         .demo {
             width: 100px;
             height: 100px;
-            background-color: gray;
+            background-color: #cdcdcd;
             display: inline-block;
             margin: 10px;
         }
@@ -65,13 +69,75 @@
 
         .size1 {width: 40px; height: 40px;}
         .size2 {width: 80px; height: 80px;}
+
+
+
+        input[type=range] {
+            -webkit-appearance: none;
+            margin: 20px 0;
+            width: 100%;
+        }
+        input[type=range]:focus {
+            outline: none;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            animate: 0.1s;
+            box-shadow: 0px 0px 0px #000000;
+            background: #cdcdcd;
+            border-radius: 5px;
+            border: 0px solid #000000;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            box-shadow: 0px 0px 0px #000000;
+            border: 0px solid #000000;
+            height: 15px;
+            width: 15px;
+            border-radius: 15px;
+            background: #00bcd4;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -3.5px;
+        }
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            animate: 0.2s;
+            box-shadow: 0px 0px 0px #000000;
+            background: #cdcdcd;
+            border-radius: 5px;
+            border: 0px solid #000000;
+        }
+        input[type=range]::-moz-range-thumb {
+            box-shadow: 0px 0px 0px #000000;
+            border: 0px solid #000000;
+            height: 15px;
+            width: 15px;
+            border-radius: 20px;
+            background: #00bcd4;
+            cursor: pointer;
+        }
+        input[type=range]::-ms-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            animate: 0.1s;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+        }
+
+
     </style>
 </head>
 
 
 
 <body>
-<div class="container" id="vue-elem">
+<div class="container" id="vue-elem1">
     <div class="row">
         <div class="col-md-6">
             <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
@@ -90,6 +156,15 @@
             <span> style size <input type="text" v-model="width"></span>
         </div>
     </div>
+    <hr>
+    <div class="demo" style="position: relative; width: 400px; margin: 0; padding: 0">
+        <div class="demo" style="background-color: #00bcd4; position: absolute; top: -10px; left: -10px;" :style="{width: length+'%'}">
+        </div>
+    </div>
+
+    <input id="" class="" type="range" min="0" max="100" step="1"  v-model="length" data-orientation="horizontal" style="width: 400px;">
+
+
 </div>
 </body>
 
@@ -99,17 +174,18 @@
 
 <script>
 
+    var mydata={
+        attachRed: false,
+        mycolor: 'green',
+        mysize:'size1',
+        color:'teal',
+        width: 80,
+        length:90
+    };
 
-    new Vue ({
-        el: '#vue-elem',
-        data:{
-            attachRed: false,
-            mycolor: 'green',
-            mysize:'size1',
-            color:'teal',
-            width: 80
-            },
-
+    var vm1=new Vue ({
+        el: '#vue-elem1',
+        data: mydata,
 
         computed:{
             divClasses: function() {
@@ -127,18 +203,21 @@
 
         },
         methods: {
-
-
         },
         watch: {
-
-        },
-        mounted() {
-
         }
 
-    })
+    });
 
+    setTimeout (function( ) {
+        vm1.length = 10;
+    }, 3000);    /* Access vm1 variable/property from outside*/
+
+    var vm2 = new Vue ({
+        el: '#vue-elem2',
+        data: {}
+
+    })
 
 
 </script>

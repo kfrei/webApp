@@ -23,6 +23,9 @@
     <!--&lt;!&ndash; Bootstrap Select &ndash;&gt;-->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">-->
 
+    <!-- Chosen Select Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.min.css">
+
     <!-- font-awesome -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
@@ -47,6 +50,10 @@
 
     <!--&lt;!&ndash; Bootstrap Select js  &ndash;&gt;-->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.4/js/bootstrap-select.min.js"></script>-->
+
+    <!-- Chosen Select js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js"></script>
+
 
 
     <!-- Vue js-->
@@ -143,8 +150,8 @@
 
 
     <div class="row col-sm-4 margin-top-30">
-        <select class="" v-model="selected" >
-            <option v-for="(option,j) in schools" :value="j">
+        <select class="chosen-select" v-model="selected" >
+            <option v-for="(option,j) in schools" :value="j" >
             {{j+1}} &nbsp{{ option.name }}
             </option>
         </select>
@@ -171,10 +178,7 @@
                 <h3 v-if="studies[i]>0" style="clear: both">  {{ op.name}} </h3>
                 <ul >
                     <li v-for="(opt, k) in op.studies">
-                        <p v-if="status[i][k]" class="col-sm-7"> {{opt.std}}
-                            <i class="fa fa-trash pull-right" @click="deleteStudy(i,k)">
-                                <!--{{i+1}},{{k+1}}-->
-                            </i></p>
+                        <p v-if="status[i][k]" class="col-sm-7"> {{opt.std}} <i class="fa fa-trash pull-right" @click="deleteStudy(i,k)"> {{i+1}},{{k+1}}</i></p>
 
                     </li>
                 </ul>
@@ -191,9 +195,9 @@
 
 
 <script>
+    $('.chosen-select').chosen({ width: '30%' });
 
-
-    var vm1 = new Vue ({
+    new Vue ({
         el: '#vue-elem',
         data:{
             checkedStudies:[],
@@ -270,15 +274,16 @@
         watch: {
 
         },
+
+        ready: function() {
+            $('.chosen-select').chosen({ width: '30%' }).change(function(e){
+                this.selected = e.currentTarget.value;
+            }.bind(this));
+        },
         mounted() {
-
-
         }
 
-    });
-
-
-
+    })
 </script>
 
 
