@@ -72,6 +72,7 @@
             -moz-box-shadow: none !important;
             box-shadow: none !important;
         }
+        .fa:hover {cursor: pointer; color: orange}
 
     </style>
 </head>
@@ -80,66 +81,7 @@
 
 <body>
 <div class="container" id="vue-elem">
-    <div>
-        <div class="row margin-top-30">
-        <div class="col-md-3 ">
-        <ul class="nav navbar-nav list-inline">
-        <li  v-for="person in team" > {{person}}</li>
-        </ul>
 
-        <div class="input-group">
-        <input type="text" class="form-control" @keyup.enter="refresh" placeholder="" v-model="name" style="height: 33px; ">
-        <span class="input-group-btn">
-        <button class="btn btn-success" type="button" @click="refresh" >add name</button>
-        </span>
-        </div><!-- /input-group -->
-
-        </div>
-        <div class="col-md-3 col-sm-5 col-xs-8">
-        <template v-for="(school,i) in schools">
-        <div class="line"> {{i+1}} &nbsp {{school.name}} <span class="pull-right"> {{school.students}} <i class="fa fa-user"></i></span> </div>
-        </template>
-
-        </div>
-        </div>
-        <div class="row margin-top-30">
-        <template v-for="school in schools" >
-        <div class="col-xs-4 col-sm-3" style="min-height: 220px;">
-        <h4 class="margi"> {{school.name}} </h4>
-        <hr>
-        <span v-for="(value, i)  in school.studies">
-        <div>  {{i+1}} &nbsp  {{value.std}} </div>
-        </span>
-        </div>
-        </template>
-        </div>
-
-        <div>
-        <div class="row col-sm-4">
-        <select class="" v-model="selected" >
-        <option v-for="(option,j) in schools" :value="j">
-        {{j+1}} &nbsp{{ option.name }}
-        </option>
-        </select>
-        <span>Selected: {{ selected+1 }}</span>
-        </div>
-        <div class="row col-sm-4">
-        <select class="" v-model="selected2" >
-        <option v-for="(op, i) in schools[selected].studies" :value="i">
-        {{i+1}} &nbsp {{ op.std }}
-        </option>
-        </select>
-        <span>Selected: {{ selected2+1 }}</span>
-        </div>
-        </div>
-
-
-
-        <hr>
-
-
-
-    </div>
 
 
     <div class="row col-sm-4 margin-top-30">
@@ -151,9 +93,14 @@
         <!--<span>Selected: {{ selected+1 }}</span>-->
     </div>
     <div class="row col-sm-4 margin-top-20" style="clear: both">
-        <ul class="" v-model="selected2" >
+        <ul class="form-group">
             <li v-for="(op, i) in schools[selected].studies">
-                <input type="checkbox"  :checked="op.status" :value="op.status"  @change="IfCheck(i, op.status, op.std)">
+                <input type="checkbox"
+                       @change="IfCheck(i, op.status, op.std)"
+                       :value="op.std"
+                       :checked="op.status">
+                       <!--v-model="selar"-->
+
                 <span class="">  {{i+1}} &nbsp {{ op.std }} </span>  <!-- &nbsp {{ op.status }}-->
             </li>
         </ul>
@@ -180,6 +127,10 @@
                 </ul>
             </li>
         </ul>
+    </div>
+
+    <div class="col-sm-6">
+        <div v-for="(s,i) in selar"> {{s}}</div>
     </div>
 </div>
 
@@ -210,6 +161,7 @@
             ],
             selected:0,
             selected2:0,
+            selar:[],
             status:[
                 {0:false,1:false,2:false,3:false},
                 {0:false,1:false,2:false,3:false},
@@ -243,16 +195,18 @@
                 if (!check) {
                     this.studies[j]++;
                     this.checkedStudies.push(study);
+                    console.log('import! checkedStudies['+j+','+i+']');
 
                 } else {
                     this.studies[j]--;
                     var index = this.checkedStudies.indexOf(i);
                     this.checkedStudies.splice(index, 1);
+                    console.log('delete! checkedStudies['+j+','+i+']');
                 }
             },
 
             deleteStudy (i,k){
-                console.log('delete! ');
+                console.log('delete! checkedStudies['+i+','+k+']');
                 var j=i;
                 this.schools[j].studies[k].status=!this.schools[j].studies[k].status;
                 this.status[j][k]=!this.status[j][k];

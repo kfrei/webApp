@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>schol.io</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-144.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-72.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon-57.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!--&lt;!&ndash; Bootstrap Select &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">-->
+
+    <!--&lt;!&ndash; font-awesome &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">-->
+
+    <!--&lt;!&ndash; Ionic Icons &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">-->
+
+    <!--<link href="css/Bootstrap-xxs-xxxs.css" rel="stylesheet">-->
+
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <!--====== Javascript Files =======-->
+
+    <!-- jQuery js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--&lt;!&ndash; Bootstrap Select js  &ndash;&gt;-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.4/js/bootstrap-select.min.js"></script>-->
+
+
+
+    <!-- Vue js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+    <!--<script src="js/vue-app.js"></script>-->
+    <style>
+
+
+    </style>
+</head>
+
+
+
+<body>
+<div class="" id="vue-elem1">
+    <my-comp></my-comp>
+    <my-comp></my-comp>
+</div>
+</body>
+
+<!-- Vue js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+
+
+<script>
+    var mydata={
+        message: 'kfrei',
+        tittle:'Best'
+    };
+
+  Vue.component('my-comp',{
+      data: function () {
+          msg=mydata.message;
+          tit=mydata.tittle;
+          return{
+             msg,tit
+          }
+      },
+
+      computed:{
+      },
+      methods: {
+          change: function(){
+              this.tit="Full"
+          }
+      },
+      template: '<p>{{msg}} {{tit}} Component <button @click="change">Change</button> </p>'
+
+  });
+
+
+    var vm1=new Vue ({
+        el: '#vue-elem1'
+    });
+
+
+</script>
+
+
+</html>
