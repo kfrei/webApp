@@ -195,18 +195,18 @@
                 if (!check) {
                     this.studies[j]++;
                     this.checkedStudies.push(study);
-                    console.log('import! checkedStudies['+j+','+i+']');
+                    console.log('import! checkedStudies['+j+','+i+'] ');
 
                 } else {
                     this.studies[j]--;
                     var index = this.checkedStudies.indexOf(i);
                     this.checkedStudies.splice(index, 1);
-                    console.log('delete! checkedStudies['+j+','+i+']');
+                    console.log('delete! checkedStudies['+j+','+i+'] ');
                 }
             },
 
             deleteStudy (i,k){
-                console.log('delete! checkedStudies['+i+','+k+']');
+                console.log('delete! checkedStudies['+i+','+k+'] ');
                 var j=i;
                 this.schools[j].studies[k].status=!this.schools[j].studies[k].status;
                 this.status[j][k]=!this.status[j][k];
