@@ -103,7 +103,7 @@ p {padding: 15px; color: #5d5d5d;  }
 
 /* ///////////////////////  dropDown   ////////////////////////////// */
 
-.mob-filter { z-index: 195; opacity: 0.96;
+.mobFilt { z-index: 195; opacity: 0.96;
     position: fixed;
     top: 145px;}
 

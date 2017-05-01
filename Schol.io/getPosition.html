@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+</head>
+
+<body>
+	  <button id="btnPos" onclick="getPosition();">Get Position</button>
+    <div id="result"></div>
+</body>
+
+<script>
+    function getPosition(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(successPosition)
+        }
+        else{
+            document.getElementById("result").innerHTML='error'
+        }
+    }
+
+
+    function successPosition(position){
+        var lat=position.coords.latitude;
+        var long=position.coords.longitude;
+        console.log('Latitude='+lat+' Longitude='+long)
+        document.getElementById("result").innerHTML='Latitude='+lat+' Longitude='+long
+    }
+</script>
+
+</html>
