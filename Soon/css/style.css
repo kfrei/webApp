@@ -154,7 +154,8 @@ img{
 	margin-top:-4px;
 }
 
-#news-divider:after,#news-divider:before,{border-bottom:dotted 2px #fff!important;}
+ #news-divider>.divider::after,
+ #news-divider>.divider::before{border-bottom:dotted 2px #fff!important;}
 
 .divider:before{
 	left:0;
