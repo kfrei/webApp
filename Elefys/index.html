@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>elefys</title>
+
+  
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300italic,300&subset=latin,greek'>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<style>
+    /*============================*/
+
+    .centered-text {
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    }
+    body{background-color: #F1F4F5}
+    *{font-family: Roboto, sans-serif; font-weight: 400; font-size: 102%}
+    a,a:focus,a:visited{color: black; text-decoration: none; float: none; display: inline;}
+    a:hover{color: #FD6A33;}
+   
+    
+    .border{border-radius: 10px; border: 2px solid #fafafa; margin-top: 20px;}
+    .borderY{border-radius: 10px; border: 2px solid #ef9920; margin-top: 20px; min-height: 150px}
+    .borderR{border-radius: 10px; border: 2px solid #FD6A33; margin-top: 20px; min-height: 150px}
+    .container{margin-top: 40px; }
+    .title,.title-pink{font-weight:400;
+         margin-top: 10px; padding: 15px 10px; min-height: 80px;
+          /*    justify-content: center;*/
+    }
+    .align-vertical{ display: flex; align-items: center; margin: 22px 0;}
+    .justify-horiz{justify-content: center;}
+    .title{ border-color:  #5f88ac; background-color: aliceblue; font-size: 200%; }
+    .title-pink{ border-color: #e69070; background-color: #f4e2d3; font-size: 110%;}
+    
+    .section{margin-top: 30px; margin-bottom: 30px;}
+    .row{margin-top: 10px; margin-bo: 10px;}
+    
+    .fa {color: #5f88ac;}
+    .faY {color: #ef9920;}
+    .faR {color: #FD6A33;}
+    .fxl{font-size: 240%; margin-top: 20px;}
+    .fl{font-size:  190%; margin-top: 20px;}
+    .fsm{font-size: 170%; margin-top: 16px; padding: 0!important; display: inline; margin: 0!imporatant;}
+    .fxs{font-size: 140%; margin-top: 15px; padding: 0!important; display: inline; margin: 0!imporatant;}
+    
+    .w5{width:10%; display: inline}
+    .text{padding:13px 20px}
+    
+    .pad-0{padding: 0!important}
+    .margin-0{margin-top: 0!important}
+    .phys,.examples{ min-height: 400px; border-color: #5f88ac; padding: 0!important;}
+    
+    /*============================*/
+    
+    .image{max-height: 120px;}
+    .rigth-container{padding-top: 12px;}
+    
+    /*============================*/
+
+    .box{border-color: #FD6A33 ; min-height: 40px;}
+    .box-cont{padding:0 5px 0 0}
+    
+    
+    
+     /*============================*/
+      @media (min-width: 875px){
+          .container{width: 870px }
+       }
+      
+    
+    
+       @media (min-width: 1210px){
+          .container{width: 1200px }
+           .text{padding:12px 20px 12px 2px;}
+       }
+      
+      @media (min-width: 1390px){
+          .container{width: 1380px }
+          .text{padding:13px 20px 13px 0;}
+       }
+      @media (min-width: 1690px){
+          .container{width: 1680px }
+       }
+      @media (min-width: 1890px){
+         .container{width: 1880px; }
+        
+       }
+    
+
+    
+    @media (min-width: 768px){
+        .justify{text-align: justify;}
+        
+    }
+    
+    @media (max-width: 767px){
+        .image{max-height: 160px;}
+    }
+    /*============================*/
+</style>
+   
+   <body>
+      <div class="container">
+         
+        <div class="row section titles">
+                 <div class="col-xs-12 col-sm-6 " style="padding:0 5px;">
+                    <div class="title border align-vertical">
+                        θερμοκρασία (η)
+                    </div>
+                 </div>
+                 
+                 <div class="col-sm-6 hidden-xs" style="padding:0 5px;">
+                    <div class="title-pink border align-vertical">
+                           Θερμοκρασία στα ΑΕ είχε την έννοια της ανάμειξης
+                    </div>
+                 </div>
+       </div> 
+       
+       <div class="row section main ">
+          
+           <div class="col-xs-12 col-sm-6 " style="padding:0 20px;">
+              <div class="border phys row" >
+                 
+                  <!-- ======= key  ======= -->
+                    <div class="col-xs-1" >
+                        <i class="fa fa-key fxl "></i> 
+                    </div>
+                    <div class=" col-xs-11 justify text">
+                       Για να καταλάβουμε αν έχει κρύο ή ζέστη, το πρωί πριν να πάμε στο σχολείο βλέπουμε τη θερμοκρασία. Όσο πιο χαμηλή είναι, τόσο πιο χοντρά ρούχα φοράμε.
+                    </div> 
+
+                    <!--  1 star  -->
+                       <div class="col-xs-1  ">
+                        <i class="fa fa-star fl"></i>
+                       </div>
+                       <div class=" col-xs-11  justify text">
+                             η έννοια που μας βοηθά να περιγράψουμε πόσο θερμό ή ψυχρό είναι ένα σώμα. Την μετράμε με τα θερμόμετρα.
+                       </div>
+                         <div class="clearfix"></div>
+                       
+                       <!-- 2 star -->
+                       <div class="col-xs-1">
+                        <i class="fa fa-star fsm pull-left"></i>
+                        <i class="fa fa-star fsm pull-left" style="margin-top:0"></i>
+                       </div>
+                       <div class=" col-xs-11  justify text" >
+                           ο βαθμός της θερμότητας ενός σώματος, όπως εκφράζεται σε σχέση με κάποια κλίμακα πάνω σε ένα θερμόμετρo
+                       </div>
+
+                      <div class="clearfix"></div>
+                    
+                       <!-- 3 star -->
+                       <div class="col-xs-1 ">
+                        <i class="fa fa-star fxs pull-left"></i>
+                        <i class="fa fa-star fxs pull-left" style="margin-top:0"></i>
+                        <i class="fa fa-star fxs pull-left" style="margin-top:0"></i>
+                       </div>
+                       <div class=" col-xs-11  justify text">
+                           ένα μέτρο της θερμότητας ή ψυχρότητας, με τη βοήθεια διαφόρων αυθαίρετων κλιμάκων θερμοκρασίας. Αποτελεί ένδειξη της κατεύθυνσης της αυθόρμητης ροής θερμότητας.
+                       </div>
+
+                    <div class="clearfix"></div>
+                   <!-- measurement -->
+
+                       <div class="col-xs-1">
+                        <i class="fa fa-thermometer-full fxl"></i>
+                       </div>
+                       <div class="col-xs-11  justify text">
+                         βαθμοί Κελσίου (℃), βαθμοί Φαρενάιτ (℉)
+                       </div>
+
+                  <div class="clearfix"></div>
+                   
+                    <!-- xeraki -->
+
+                        <div class="col-xs-1">
+                        <i class="fa fa-hand-peace-o fxl"></i>
+                       </div>
+                       <div class=" col-xs-11 justify text">
+                        θερμοκρασία βρασμού = η θερμοκρασία κατά την οποία ένα υγρό μετατρέπεται σε αέριο με την διαδικασία του βρασμού. Είναι σταθερή και χαρακτηριστική για κάθε σώμα.
+                       </div>
+                         <div class="clearfix"></div>
+
+                    <!-- xeraki  -->
+
+                       <div class="col-xs-1">
+                        <i class="fa fa-hand-peace-o fxl"></i>
+                       </div>
+                       <div class=" col-xs-11 justify text">
+                      θερμοκρασία τήξης = η θερμοκρασία κατά την οποία ένα στερεό μετατρέπεται σε υγρό. Είναι σταθερή και χαρακτηριστική για κάθε σώμα.
+                       </div>
+                         <div class="clearfix"></div>
+
+                    <!-- tree -->
+
+                       <div class="col-xs-1">
+                        <i class="fa fa-tree fxl"></i>
+                       </div>
+                       <div class=" col-xs-11 justify text">
+                              θερμόμετρο, θερμομέτρηση, θερμότητα, θερμοκρασία, αγωγός, μονωτής
+                       </div>
+                         <div class="clearfix"></div>
+
+                          <!-- tree -->
+
+                       <div class="col-xs-1">
+                        <i class="fa fa-eye fxl"></i>
+                       </div>
+                       <div class=" col-xs-11 justify text" style="padding-bottom: 40px;">
+                              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                       </div>
+                         <div class="clearfix"></div>
+                       
+                       
+
+                  
+              </div>
+              
+      
+               
+           </div>
+           
+           
+           
+   
+            <div class="col-xs-12 col-sm-6 "  style=" padding:0 20px;">
+              <div class="border examples row" >
+    
+             <!-- example1  -->
+             <div class="align-vertical">
+              <div class="col-xs-12 col-sm-5 col-lg-3 ">
+                  <div class="centered-text">
+                       <img src="particles.png" alt="" class="image img-responsive center-block" >
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-7  col-lg-9 rigth-container text justify">
+                   Η θερμοκρασία ενός σώματος συνδέεται με την κινητική ενέργεια των μορίων του. Όσο πιο έντονα κινούνται τα μόρια, τόσο μεγαλύτερη είναι η θερμοκρασία.
+               </div>
+              </div>
+              <div class="clearfix"></div>
+              
+              <!--  example2 -->
+             <div class="align-vertical">
+              <div class="col-xs-12 col-sm-5 col-lg-3">
+                  <div class="centered-text">
+                       <img src="fish.png" alt="" class="image img-responsive center-block">
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-7  col-lg-9 rigth-container text justify">
+                    Τα ψάρια είναι ποικιλόθερμα ζώα, έτσι η θερμοκρασία του σώματός τους ακολουθεί εκείνη του περιβάλλοντος που βρίσκεται, δηλαδή του νερού.
+               </div>
+              </div>
+              <div class="clearfix"></div>
+              
+                 <!-- example3 -->
+             <div class="align-vertical">
+              <div class="col-xs-12 col-sm-5 col-lg-3">
+                  <div class="centered-text">
+                       <img src="thermometer.png" alt="" class="image img-responsive center-block">
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-7  col-lg-9 rigth-container text justify">
+                  Τα θερμόμετρα τοίχου δείχνουν συνήθως τη θερμοκρασία από τη μια μεριά στην κλίμακα Κελσίου (℃) και από την άλλη στην κλίμακα Φαρενάιτ (℉).
+               </div>
+              </div>
+              <div class="clearfix"></div>
+              
+             <!-- example4  -->
+             <div class="align-vertical">
+              <div class="col-xs-12 col-sm-5 col-lg-3">
+                  <div class="centered-text">
+                       <img src="tshirt.png" alt="" class="image img-responsive center-block" >
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-7  col-lg-9 rigth-container text justify">
+                  Γιάννη, αυτό το μπλουζάκι είναι μάλλινο, πρέπει το πλύνεις σε χαμηλή θερμοκρασία για να μη μαζέψει
+               </div>
+              </div>
+              <div class="clearfix"></div>
+            
+                <!-- example5 -->
+             <div class="align-vertical">
+              <div class="col-xs-12 col-sm-5 col-lg-3">
+                  <div class="centered-text">
+                       <img src="ice.png" alt="" class="image img-responsive center-block" >
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-7  col-lg-9 rigth-container text justify">
+                Η θερμοκρασία της Γης αυξάνει συνεχώς, με αποτέλεσμα μεγάλα παγόβουνα στον Βόρειο Πόλο να λιώνουν.
+               </div>
+              </div>
+              <div class="clearfix"></div>
+              
+              
+              
+              
+              
+             </div>
+             
+             
+           
+          
+           </div>
+
+           <div class="clearfix"></div>
+
+               <div class="col-xs-12 col-sm-6 "  style=" padding:0 20px;">
+               <div class="borderY row ">
+
+                <!-- ======= ballons1  ======= -->
+                    <div class="col-xs-1" >
+                        <i class="fa fa-comments fxl faY "></i> 
+                    </div>
+                    <div class=" col-xs-11 justify text" style="padding-top: 25px;">
+                       Ανεβαίνει η θερμοκρασία = αυξάνει η ένταση μεταξύ ανθρώπων σε μια συζήτηση ή αντιπαράθεση
+                    </div> 
+                      <!-- ======= ballons2  ======= -->
+                    <div class="col-xs-1" >
+                        <i class="fa fa-comments fxl faY "></i> 
+                    </div>
+                    <div class=" col-xs-11 justify text" style="padding-top: 25px;">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </div> 
+
+
+
+
+                </div>
+               </div>
+
+
+             <div class="col-xs-12 col-sm-6 "  style=" padding:0 20px;">
+               <div class="borderY row ">
+
+                <!-- ======= pencil ======= -->
+                    <div class="col-xs-1" >
+                        <i class="fa fa-pencil-square-o fxl faY "></i> 
+                    </div>
+                    <div class=" col-xs-11 justify text" style="padding-top: 25px;">
+                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                    </div> 
+                      <!-- ======= penguins1 ======= -->
+                    <div class="col-xs-1" >
+                        <i class="fa fa-users fxl faY "></i> 
+                    </div>
+                    <div class=" col-xs-11 justify text" style="padding-top: 25px;">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </div> 
+                      <!-- ======= penguins1 ======= -->
+                    <div class="col-xs-1" >
+                        <i class="fa fa-users fxl faY "></i> 
+                    </div>
+                    <div class=" col-xs-11 justify text" style="padding-top: 25px;">
+                      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                    </div> 
+
+
+
+
+                </div>
+               </div>
+
+
+                  <div class="clearfix"></div>
+
+                 <div class="col-xs-12 col-sm-6 "  style=" padding:0 20px;">
+                 </div>
+
+             
+
+
+             <div class="col-xs-12 col-sm-6 "  style=" padding:0 20px;">
+               <div class="borderY row ">
+                <!-- example1  -->
+             <div class="align-vertical">
+              <div class="col-xs-12 col-sm-5 col-lg-3 ">
+                  <div class="centered-text">
+                       <img src="speaking.png" alt="" class="image img-responsive center-block" >
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-7  col-lg-9 rigth-container text justify">
+                  Η θερμοκρασία μέσα στην αίθουσα της Βουλής ανέβηκε όταν ο Πρωθυπουργός ανακοίνωσε τα νέα μέτρα.
+
+               </div>
+              </div>
+              <div class="clearfix"></div>
+
+
+
+                </div>
+               </div>
+
+                <div class="clearfix"></div>
+
+
+<div class="clearfix"></div>
+
+
+
+             <div class="col-xs-12 col-sm-6 "  style=" padding:0 20px;">
+               <div class=" row ">
+
+               <div class=" col-xs-12">
+                 <div class="align-vertical justify-horiz">
+                   <i class="fa fa-globe fxl faR"></i>
+                 </div>
+               </div>
+
+               <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-3 box-cont">
+                 <div class="border box align-vertical justify-horiz margin-0">temperature</div>
+               </div>
+               <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-3 box-cont">
+                 <div class="border box align-vertical justify-horiz margin-0" >corporis</div>
+               </div>
+                 <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-3 box-cont">
+                 <div class="border box align-vertical justify-horiz margin-0" >exercitationem</div>
+               </div>
+               <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-3 box-cont">
+               <div class="border box align-vertical justify-horiz margin-0" ></div>
+               </div>
+                  <div class=" col-xs-6  col-sm-6 col-md-4 col-lg-3 box-cont">
+                 <div class="border box align-vertical justify-horiz margin-0"></div>
+               </div>
+               <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-3 box-cont">
+                 <div class="border box align-vertical justify-horiz margin-0" ></div>
+               </div>
+                 <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-3 box-cont">
+                 <div class="border box align-vertical justify-horiz margin-0" ></div>
+               </div>
+               <div class=" col-xs-6 col-sm-6 col-md-4 col-lg-3 box-cont">
+               <div class="border box align-vertical justify-horiz margin-0" ></div>
+               </div>
+
+
+                </div>
+               </div>
+
+
+
+
+  <div class="col-xs-12 col-sm-6 "  style=" padding:0 20px;">
+               <div class=" row ">
+
+               <div class=" col-xs-12">
+                 <div class="align-vertical justify-horiz">
+                   <i class="fa fa-wikipedia-w fxl faR"></i>
+                 </div>
+               </div>
+
+               <div class=" col-xs-12 box-cont">
+                 <div class="border box margin-0" style="padding: 20px;">
+                   Σύμφωνα με τα επίσημα επιστημονικά στοιχεία, η μέση θερμοκρασία της Γης έχει αυξηθεί 0.6 ± 0.2 °C τα τελευταία 200 χρόνια και η αύξηση αυτή οφείλεται σημαντικά στην ανθρώπινη δραστηριότητα των τελευταίων 50 ετών. Αυτή η κλιματική μεταβολή μπορεί να έχει σοβαρές συνέπειες. Διάβασε περισσότερα
+                    <a href="https://el.wikipedia.org/wiki/%CE%98%CE%B5%CF%81%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%83%CE%AF%CE%B1" target="_blank">εδώ…</a>
+                   
+
+
+                 </div>
+               </div>
+         
+
+
+                </div>
+               </div>
+
+           
+            
+       </div>
+       
+  
+       
+       
+       
+      </div>
+
+   </body>
+
+   
+
+</html>
